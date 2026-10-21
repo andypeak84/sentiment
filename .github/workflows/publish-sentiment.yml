@@ -1,0 +1,53 @@
+name: Publish GBP/USD sentiment
+
+on:
+  schedule:
+    # Once a day, 06:00 UTC (07:00 UK in BST, 06:00 in winter) -- after the overnight news and
+    # before the UK market opens. The Android app fetches the result at 08:00 UTC, leaving a
+    # 2-hour buffer because GitHub's `schedule` is best-effort and has been seen firing hours
+    # late. A late or skipped run just means a staler reading:
+    # the app shows the file's age and ignores it once it is older than a day and a bit.
+    - cron: '0 6 * * *'
+  workflow_dispatch: {}  # manual "Run workflow" button, for testing
+
+permissions:
+  contents: write  # commits data/sentiment*.json back to the repo
+
+concurrency:
+  group: publish-sentiment
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      # Optional repo secret. Unset -> empty string -> the offline rule scorer is used.
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install the Claude SDK (only when LLM scoring is enabled)
+        if: env.ANTHROPIC_API_KEY != ''
+        run: pip install -q anthropic
+
+      - name: Score news and publish sentiment
+        run: python scripts/publish_sentiment.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/sentiment.json data/sentiment-history.json data/sentiment-cache.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Update GBP/USD sentiment $(date -u +%Y-%m-%dT%H:%MZ)"
+          # Rebase and retry on a non-fast-forward rather than fail
+          # the run (and lose an hour's reading) on a non-fast-forward.
+          for attempt in 1 2 3; do
+            git pull --rebase origin main && git push && exit 0
+            sleep 5
+          done
+          exit 1
