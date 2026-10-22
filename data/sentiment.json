@@ -1,6 +1,6 @@
 {
   "pair": "GBP/USD",
-  "generated_ts": 1792661331,
+  "generated_ts": 1792661355,
   "scale": "-1 = strongly bearish for GBP/USD, +1 = strongly bullish",
   "windows": {
     "1h": {
@@ -14,13 +14,13 @@
       "articles": 4
     },
     "24h": {
-      "score": -0.088,
+      "score": -0.061,
       "label": "neutral",
-      "articles": 11
+      "articles": 10
     }
   },
   "scorers_24h": {
-    "rules": 41
+    "rules": 40
   },
   "headlines": [
     {
@@ -118,7 +118,9 @@
       "url": null,
       "title_withheld": true,
       "source": "Guardian Business",
-      "also_reported_by": [],
+      "also_reported_by": [
+        "BBC Business"
+      ],
       "published_ts": 1792588876.0,
       "direction": -1,
       "confidence": 0.9,
@@ -138,18 +140,6 @@
       "confidence": 0.55,
       "driver": "rates",
       "reason": "US news reads strong, which is bearish for GBP/USD."
-    },
-    {
-      "title": null,
-      "url": null,
-      "title_withheld": true,
-      "source": "BBC Business",
-      "also_reported_by": [],
-      "published_ts": 1792577777.0,
-      "direction": -1,
-      "confidence": 0.9,
-      "driver": "inflation",
-      "reason": "UK inflation rising (owner ruling: very bad for the UK, weighted most): negative for the pound, bearish for GBP/USD."
     }
   ],
   "neutral_stories_24h": 31,
