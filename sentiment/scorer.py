@@ -94,7 +94,8 @@ def _driver(text):
 # a price fall. Owner rated "Middle East crude exports fall sharply ... Brent touched $110" negative.
 _VOL = r"(exports?|output|production|supply|supplies|shipments|flows?|stocks|inventories)"
 SUPPLY_FALL = (r"\b" + _VOL + r"\s+(\w+\s+)?(fall|falls|fell|falling|drop|drops|dropped|slump|slumps|"
-               r"slumped|plunge|plunges|plunged|decline|declines|declined|shrink|shrinks|shrank|tumble|tumbles)\b")
+               r"slumped|plunge|plunges|plunged|decline|declines|declined|shrink|shrinks|shrank|tumble|tumbles|"
+               r"sink|sinks|sank|slide|slides|slid|dip|dips|dipped)\b")
 SUPPLY_RISE = (r"\b" + _VOL + r"\s+(\w+\s+)?(rise|rises|rose|jump|jumps|jumped|surge|surges|surged|"
                r"increase|increases|increased|recover|recovers|recovered)\b")
 ENERGY_UP_EXTRA = (r"\b(tighter|tightening|touch(es|ed)? \$?\d|(security|shipping) (threats?|concerns?|risks?)|"
@@ -187,7 +188,11 @@ POLITICAL_UNCERTAINTY = (r"\b(elections?|snap election|general election|midterms
                          r"political (uncertainty|turmoil|crisis|instability|chaos)|government (collapse|collapses|"
                          r"collapsed|crisis)|shutdown|impeach\w*|resign(s|ed|ation)?|reshuffle|"
                          r"budget (standoff|deadlock|row|rebellion)|debt ceiling|rebels?|rebellion|"
-                         r"uncertainty|toppl\w+|ousted?)\b")
+                         r"uncertainty|toppl\w+|ousted?|"
+                         # Legal / court turmoil around a government (owner, 2026-10-22: "Trump sued over
+                         # Canadian tariffs in latest legal challenge" = +1, "political unrest in the
+                         # country of USD").
+                         r"sued|sues|lawsuits?|legal challenges?|struck down|strikes down)\b")
 
 
 def _uncertainty(text):
@@ -237,14 +242,19 @@ def _investment(text):
 UK_SUPPLY_OBJ = (r"\b(north sea|jackdaw|rosebank|cambo|gas ?fields?|oil ?fields?|offshore (gas|oil)|"
                  r"drilling|licen[cs]es?)\b")
 UK_SUPPLY_GO = (r"\b(approv\w+|go-ahead|green[- ]?light\w*|backs?|clears?|cleared|announce\w*|"
-                r"announcement|develop\w*|expan\w+|new (drilling|licen[cs]es?|gas|oil))\b")
+                r"announcement|develop\w*|expan\w+|decision|defend\w*|new (drilling|licen[cs]es?|gas|oil))\b")
 UK_SUPPLY_BLOCK = r"\b(bans?|banned|scrap\w*|blocks?|blocked|halts?|halted|freezes?|ends?|stops?|rejects?|refuses?)\b"
+# Removing a ban on UK drilling is a green light, not a block (owner, ratings.csv 2026-10-22: "Burnham
+# defends Jackdaw decision as Badenoch urges PM to overturn ban on new oil and gas licences" = +1).
+UK_SUPPLY_REMOVES_BAN = r"\b(overturn|lift|scrap|end|reverse|repeal)\w*\s+(the\s+|a\s+|this\s+)?ban\b"
 
 
 def _uk_energy_supply(text):
     if not (re.search(UK_SUPPLY_OBJ, text) and re.search(UK_SUPPLY_GO, text)):
         return None
-    if re.search(UK_SUPPLY_BLOCK, text) or re.search(US_MARKERS, text):
+    if re.search(UK_SUPPLY_BLOCK, text) and not re.search(UK_SUPPLY_REMOVES_BAN, text):
+        return None
+    if re.search(US_MARKERS, text):
         return None
     return dict(direction=1, confidence=0.5, driver="energy",
                 reason="UK developing its own gas/oil (owner ruling): easing energy supply, positive "
@@ -278,8 +288,8 @@ def _jobs_and_tax(text):
 # FALLING = bullish) is an assumption, not rated -- kept at low confidence. US inflation is
 # untouched. NOTE: surprise.py (manual data releases) still uses the textbook reading.
 INFLATION = r"\b(inflation|cpi)\b"
-INFL_UP = (r"\b(rise|rises|rising|rose|jump\w*|accelerat\w+|surg\w+|climb\w*|hotter|higher|soar\w*|"
-           r"spike\w*|exceeds?|above (forecasts?|expectations?|target))\b")
+INFL_UP = (r"\b(rise|rises|rising|rose|jump\w*|accelerat\w+|surg\w+|climb\w*|hotter|higher|highest|soar\w*|"
+           r"spike\w*|peak\w*|exceeds?|above (forecasts?|expectations?|target))\b")
 INFL_DOWN = (r"\b(fall|falls|falling|fell|drop\w*|slow\w*|cool\w*|eas(e|es|ed|ing)|slid\w*|declin\w+|"
              r"lowest|below (forecasts?|expectations?|target))\b")
 
@@ -385,8 +395,18 @@ def _currency_move(text):
                 reason="Headline states the pound/dollar move directly.")
 
 
-def score_rules(title: str, summary: str = ""):
-    text = f"{title} {summary}".lower()
+def _apply_region_hint(text, region):
+    """A source whose headlines are about one country rarely say so ("Inflation and government
+    borrowing highest for a year ahead of next week's Budget" is a UK story with no UK word in it).
+    When the headline names neither the UK nor the US itself, treat it as that region by adding the
+    marker word, so every channel below sees it. A headline that names a country is never overridden."""
+    if region in ("UK", "US") and not re.search(UK_MARKERS, text) and not re.search(US_MARKERS, text):
+        return ("uk " if region == "UK" else "us ") + text
+    return text
+
+
+def score_rules(title: str, summary: str = "", region=None):
+    text = _apply_region_hint(f"{title} {summary}".lower(), region)
     special = _special(text)
     if special:
         return special
@@ -396,6 +416,13 @@ def score_rules(title: str, summary: str = ""):
     uk = bool(re.search(UK_MARKERS, text))
     us = bool(re.search(US_MARKERS, text))
     driver = _driver(text)
+    if driver == "other":
+        # The generic strong/weak WORD rules below only make sense for an economic subject. Without
+        # one a word like "slowdown" or "hit" is just English ("Trump denies ordering Starlink slowdown in
+        # Ukraine" was scored weak US economic news, bullish GBP/USD). The owner's specific channels
+        # above (energy, war, politics, inflation, FTSE ...) run first and are not affected.
+        return dict(direction=0, confidence=0.0, driver="other",
+                    reason="No economic subject in the headline.")
 
     # Decide strong vs weak, letting explicit flip phrases win.
     tone = None
@@ -478,11 +505,11 @@ def score_llm(title: str, summary: str = ""):
     return _clean(json.loads(match.group(0)))
 
 
-def score(title: str, summary: str = ""):
-    """Returns (result_dict, scorer_name)."""
+def score(title: str, summary: str = "", region=None):
+    """Returns (result_dict, scorer_name). region: optional "UK"/"US" hint from the feed (see config.FEEDS)."""
     if config.USE_LLM:
         try:
             return score_llm(title, summary), "llm"
         except Exception:
             pass
-    return score_rules(title, summary), "rules"
+    return score_rules(title, summary, region), "rules"

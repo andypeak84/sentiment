@@ -5,16 +5,45 @@ DB_PATH = os.environ.get("GBPUSD_DB", "sentiment.db")
 OUT_DIR = os.environ.get("GBPUSD_OUT", "out")
 
 # RSS feeds to poll. Verify each URL still works before relying on it.
+# Each feed: name, url, weight (how much the scorer trusts it), and two optional fields:
+#   region:    "UK" or "US" -- a hint for a source whose headlines are about one country but rarely
+#              say so ("Inflation and government borrowing highest for a year ahead of next week's
+#              Budget" is a BBC Business UK story with no UK word in it). Only used when the headline
+#              names neither country itself (see scorer.score_rules).
+#   republish: True only where the headline TEXT may be republished in the public JSON (open-licence or
+#              official sources). Every other source is still scored and counted, but only our own
+#              one-line reason is published, not its headline (see the publisher).
+# All feeds below were fetched live and parsed on 2026-10-22.
 FEEDS = [
-    {"name": "Bank of England", "url": "https://www.bankofengland.co.uk/rss/news", "weight": 1.0},
-    {"name": "Federal Reserve", "url": "https://www.federalreserve.gov/feeds/press_all.xml", "weight": 1.0},
-    # BBC feeds: URLs not yet verified. BBC terms have historically limited RSS to personal,
-    # non-commercial use: re-check them before publishing the app.
-    {"name": "BBC Business", "url": "https://feeds.bbci.co.uk/news/business/rss.xml", "weight": 0.7},
+    {"name": "Bank of England", "url": "https://www.bankofengland.co.uk/rss/news", "weight": 1.0, "region": "UK", "republish": True},
+    {"name": "Federal Reserve", "url": "https://www.federalreserve.gov/feeds/press_all.xml", "weight": 1.0, "region": "US", "republish": True},
+    {"name": "HM Treasury", "url": "https://www.gov.uk/government/organisations/hm-treasury.atom", "weight": 1.0, "region": "UK", "republish": True},
+    {"name": "ONS", "url": "https://www.ons.gov.uk/releasecalendar?rss", "weight": 1.0, "region": "UK", "republish": True},
+    # BBC terms have historically limited RSS to personal, non-commercial use: scored, never republished.
+    {"name": "BBC Business", "url": "https://feeds.bbci.co.uk/news/business/rss.xml", "weight": 0.7, "region": "UK"},
     {"name": "BBC Top Stories", "url": "https://feeds.bbci.co.uk/news/rss.xml", "weight": 0.5},
-    # Add other news-site feeds you have the right to use, e.g.:
-    # {"name": "Example Markets", "url": "...", "weight": 0.7},
+    {"name": "Guardian Business", "url": "https://www.theguardian.com/uk/business/rss", "weight": 0.7, "region": "UK"},
+    {"name": "Sky News Business", "url": "https://feeds.skynews.com/feeds/rss/business.xml", "weight": 0.7, "region": "UK"},
+    {"name": "CNBC Economy", "url": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=20910258", "weight": 0.6},
+    {"name": "CNBC World Markets", "url": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114", "weight": 0.6},
+    {"name": "OilPrice.com", "url": "https://oilprice.com/rss/main", "weight": 0.5},
+    {"name": "Al Jazeera", "url": "https://www.aljazeera.com/xml/rss/all.xml", "weight": 0.4},
+    # Tried and rejected 2026-10-22: OBR (HTTP 403), Telegraph (paywalled, 402), Independent (malformed
+    # XML), Yahoo Finance (404), FXStreet (timeout), ECB press (feed works, but nothing relevant to GBP/USD).
 ]
+
+
+def region_for(source_name):
+    """The region hint configured for a source, or None."""
+    for feed in FEEDS:
+        if feed["name"] == source_name:
+            return feed.get("region")
+    return None
+
+
+def republish_sources():
+    """Names of the sources whose headline text may be republished."""
+    return {feed["name"] for feed in FEEDS if feed.get("republish")}
 
 # How much to trust each source when no explicit feed weight applies.
 DEFAULT_SOURCE_WEIGHT = 0.5

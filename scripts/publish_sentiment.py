@@ -25,9 +25,11 @@ Scorer: the Claude scorer if ANTHROPIC_API_KEY is set (repo secret), otherwise t
 rule scorer -- which currently rates most headlines neutral, so expect a near-zero signal
 until the LLM scorer is enabled.
 
-BBC headlines are scored and counted but NOT republished in the public JSON: BBC's RSS
-terms have historically limited it to personal, non-commercial use, and a public repo is
-a republication. Central-bank items (BoE, Fed) are republished.
+Only sources marked `republish` in sentiment/config.py (Bank of England, Federal Reserve, HM
+Treasury, ONS: official or open-licence) have their headline text published in the public JSON.
+Every other source (BBC, Guardian, Sky, CNBC, ...) is scored and counted, but only our own
+one-line reason is published: news sites' RSS terms are for personal use, and a public repo is a
+republication.
 """
 import hashlib
 import json
@@ -58,7 +60,7 @@ HISTORY_FILE = DATA_DIR / "sentiment-history.json"
 HISTORY_MAX_POINTS = 24 * 60  # one point per run -> far more than the weeks of history needed
 KEEP_STORIES_HOURS = 72       # stored stories older than this are deleted
 HEADLINES_PUBLISHED = 10
-NOT_REPUBLISHED_SOURCE_PREFIXES = ("BBC",)
+REPUBLISH_TEXT_FROM = config.republish_sources()  # an allow-list: a new feed is withheld until marked republish
 
 
 def load_json(path: Path, default):
@@ -117,21 +119,21 @@ def main() -> None:
     for row in db.unscored(conn, limit=500):
         if row["published_ts"] < window_start:
             continue
-        res, name = scorer.score(row["title"])
+        res, name = scorer.score(row["title"], region=config.region_for(row["source"]))
         db.save_score(conn, row["id"], res["direction"], res["confidence"],
                       res["driver"], res["reason"], name)
         scored_fresh += 1
 
     signal = aggregate.build_signal(conn, now=now, headline_limit=200)
     # Stories (same-story duplicates already merged by aggregate.dedupe) that carry a direction,
-    # newest first. A BBC story is published with OUR OWN one-line reason and its score, but
-    # without BBC's headline text or link (see the module docstring), so the app can still show
-    # why it counted without republishing BBC content.
+    # newest first. A story from a non-whitelisted source is published with OUR OWN one-line reason and
+    # its score, but without its headline text or link (see the module docstring), so the app can still
+    # show why it counted without republishing a news site's content.
     published = []
     for h in signal["headlines"]:
         if not h["direction"]:
             continue
-        withheld = any(h["source"].startswith(p) for p in NOT_REPUBLISHED_SOURCE_PREFIXES)
+        withheld = h["source"] not in REPUBLISH_TEXT_FROM
         published.append({
             "title": None if withheld else h["title"],
             "url": None if withheld else h["url"],
@@ -158,8 +160,8 @@ def main() -> None:
         "scorers_24h": scorers_24h,
         "headlines": published,
         "neutral_stories_24h": neutral_stories_24h,
-        "headlines_note": "Same-story duplicates are merged and counted once. BBC stories are scored "
-                          "and shown with our own reason, but BBC headline text and links are not republished.",
+        "headlines_note": "Same-story duplicates are merged and counted once. Stories from news sites are scored "
+                          "and shown with our own reason, but their headline text and links are not republished.",
         "feeds": {"ok": total_feeds - len(errors), "total": total_feeds},
         "disclaimer": signal["disclaimer"],
     }
