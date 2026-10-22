@@ -160,8 +160,8 @@ def main() -> None:
         "scorers_24h": scorers_24h,
         "headlines": published,
         "neutral_stories_24h": neutral_stories_24h,
-        "headlines_note": "Same-story duplicates are merged and counted once. Stories from news sites are scored "
-                          "and shown with our own reason, but their headline text and links are not republished.",
+        "headlines_note": "Same-story duplicates are merged and counted once. Each headline is shown with its source, "
+                          "link and our own reason; headline text belongs to its publisher.",
         "feeds": {"ok": total_feeds - len(errors), "total": total_feeds},
         "disclaimer": signal["disclaimer"],
     }

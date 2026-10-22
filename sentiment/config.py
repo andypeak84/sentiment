@@ -19,15 +19,15 @@ FEEDS = [
     {"name": "Federal Reserve", "url": "https://www.federalreserve.gov/feeds/press_all.xml", "weight": 1.0, "region": "US", "republish": True},
     {"name": "HM Treasury", "url": "https://www.gov.uk/government/organisations/hm-treasury.atom", "weight": 1.0, "region": "UK", "republish": True},
     {"name": "ONS", "url": "https://www.ons.gov.uk/releasecalendar?rss", "weight": 1.0, "region": "UK", "republish": True},
-    # BBC terms have historically limited RSS to personal, non-commercial use: scored, never republished.
-    {"name": "BBC Business", "url": "https://feeds.bbci.co.uk/news/business/rss.xml", "weight": 0.7, "region": "UK"},
-    {"name": "BBC Top Stories", "url": "https://feeds.bbci.co.uk/news/rss.xml", "weight": 0.5},
-    {"name": "Guardian Business", "url": "https://www.theguardian.com/uk/business/rss", "weight": 0.7, "region": "UK"},
-    {"name": "Sky News Business", "url": "https://feeds.skynews.com/feeds/rss/business.xml", "weight": 0.7, "region": "UK"},
-    {"name": "CNBC Economy", "url": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=20910258", "weight": 0.6},
-    {"name": "CNBC World Markets", "url": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114", "weight": 0.6},
-    {"name": "OilPrice.com", "url": "https://oilprice.com/rss/main", "weight": 0.5},
-    {"name": "Al Jazeera", "url": "https://www.aljazeera.com/xml/rss/all.xml", "weight": 0.4},
+    # Owner decision 2026-10-22: headline text and links are republished for every source.
+    {"name": "BBC Business", "url": "https://feeds.bbci.co.uk/news/business/rss.xml", "weight": 0.7, "region": "UK", "republish": True},
+    {"name": "BBC Top Stories", "url": "https://feeds.bbci.co.uk/news/rss.xml", "weight": 0.5, "republish": True},
+    {"name": "Guardian Business", "url": "https://www.theguardian.com/uk/business/rss", "weight": 0.7, "region": "UK", "republish": True},
+    {"name": "Sky News Business", "url": "https://feeds.skynews.com/feeds/rss/business.xml", "weight": 0.7, "region": "UK", "republish": True},
+    {"name": "CNBC Economy", "url": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=20910258", "weight": 0.6, "republish": True},
+    {"name": "CNBC World Markets", "url": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114", "weight": 0.6, "republish": True},
+    {"name": "OilPrice.com", "url": "https://oilprice.com/rss/main", "weight": 0.5, "republish": True},
+    {"name": "Al Jazeera", "url": "https://www.aljazeera.com/xml/rss/all.xml", "weight": 0.4, "republish": True},
     # Tried and rejected 2026-10-22: OBR (HTTP 403), Telegraph (paywalled, 402), Independent (malformed
     # XML), Yahoo Finance (404), FXStreet (timeout), ECB press (feed works, but nothing relevant to GBP/USD).
 ]
