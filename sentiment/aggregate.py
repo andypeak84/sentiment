@@ -94,10 +94,22 @@ def _proper_nouns(title):
     return names
 
 
+# One official inflation release (the ONS CPI/borrowing figures) is written up by every outlet in
+# different words with no shared name ("Inflation and government borrowing highest for a year" vs a
+# paper's "UK price rises accelerate ahead of Budget"), so neither test below links them. Within a short
+# window, two same-direction inflation items are treated as the one release. Only inflation: other drivers
+# (jobs, growth, energy) really do have several unrelated stories in a day (two firms cutting jobs).
+_RELEASE_DRIVERS = {"inflation"}
+_RELEASE_WINDOW_S = 18 * 3600
+
+
 def same_story(a, b):
     """a, b: scored rows (dict-like). See the block comment above for the rule."""
     if not a["direction"] or a["direction"] != b["direction"] or (a["driver"] or "") != (b["driver"] or ""):
         return False
+    if (a["driver"] in _RELEASE_DRIVERS
+            and abs((a["published_ts"] or 0) - (b["published_ts"] or 0)) <= _RELEASE_WINDOW_S):
+        return True
     ta, tb = _tokens(a["title"]), _tokens(b["title"])
     if ta and tb and len(ta & tb) / len(ta | tb) >= 0.6:
         return True
