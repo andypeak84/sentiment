@@ -1,6 +1,6 @@
 {
   "pair": "GBP/USD",
-  "generated_ts": 1792581449,
+  "generated_ts": 1792642911,
   "scale": "-1 = strongly bearish for GBP/USD, +1 = strongly bullish",
   "windows": {
     "1h": {
@@ -9,46 +9,21 @@
       "articles": 0
     },
     "6h": {
-      "score": 1.0,
-      "label": "strongly bullish",
-      "articles": 1
+      "score": 0.0,
+      "label": "neutral",
+      "articles": 0
     },
     "24h": {
-      "score": 0.698,
-      "label": "strongly bullish",
-      "articles": 2
+      "score": 0.0,
+      "label": "neutral",
+      "articles": 0
     }
   },
   "scorers_24h": {
-    "rules": 8
+    "rules": 11
   },
-  "headlines": [
-    {
-      "title": null,
-      "url": null,
-      "title_withheld": true,
-      "source": "BBC Top Stories",
-      "also_reported_by": [],
-      "published_ts": 1792572584.0,
-      "direction": 1,
-      "confidence": 0.5,
-      "driver": "energy",
-      "reason": "UK developing its own gas/oil (owner ruling): easing energy supply, positive for the pound, bullish for GBP/USD."
-    },
-    {
-      "title": null,
-      "url": null,
-      "title_withheld": true,
-      "source": "BBC Business",
-      "also_reported_by": [],
-      "published_ts": 1792511593.0,
-      "direction": -1,
-      "confidence": 0.45,
-      "driver": "jobs",
-      "reason": "Job cuts blamed on tax rises (owner ruling): negative for the pound, bearish for GBP/USD."
-    }
-  ],
-  "neutral_stories_24h": 6,
+  "headlines": [],
+  "neutral_stories_24h": 11,
   "headlines_note": "Same-story duplicates are merged and counted once. BBC stories are scored and shown with our own reason, but BBC headline text and links are not republished.",
   "feeds": {
     "ok": 4,
