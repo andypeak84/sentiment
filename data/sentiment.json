@@ -1,37 +1,61 @@
 {
   "pair": "GBP/USD",
-  "generated_ts": 1792661488,
+  "generated_ts": 1792667792,
   "scale": "-1 = strongly bearish for GBP/USD, +1 = strongly bullish",
   "windows": {
     "1h": {
-      "score": 0.0,
-      "label": "neutral",
-      "articles": 0
-    },
-    "6h": {
-      "score": -0.576,
-      "label": "strongly bearish",
+      "score": -0.382,
+      "label": "mildly bearish",
       "articles": 3
     },
+    "6h": {
+      "score": -0.338,
+      "label": "mildly bearish",
+      "articles": 5
+    },
     "24h": {
-      "score": -0.442,
-      "label": "strongly bearish",
-      "articles": 9
+      "score": -0.281,
+      "label": "mildly bearish",
+      "articles": 10
     }
   },
   "scorers_24h": {
-    "rules": 38
+    "rules": 44
   },
   "headlines": [
     {
-      "title": "Brent crude tops $112 on Middle East worries as U.S., Israel reportedly weigh fresh Iran strikes",
+      "title": "Too little, too late: Trump takes on gas prices as fuel costs hamper his midterm hopes",
+      "url": "https://www.theguardian.com/us-news/2026/oct/22/trump-high-gas-prices-midterms-cycle",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1792666840.0,
+      "direction": 1,
+      "confidence": 0.45,
+      "driver": "politics",
+      "reason": "US political uncertainty: negative for that currency, bullish for GBP/USD."
+    },
+    {
+      "title": "India's Middle East Oil Imports Jumped 32% in September",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-Middle-East-Oil-Imports-Jumped-32-in-September.html",
+      "title_withheld": false,
+      "source": "OilPrice.com",
+      "also_reported_by": [],
+      "published_ts": 1792666800.0,
+      "direction": -1,
+      "confidence": 0.6,
+      "driver": "energy",
+      "reason": "Middle East oil disruption (owner: generally negative for the pound): negative for the pound, bearish for GBP/USD."
+    },
+    {
+      "title": "Brent crude tops $111 on Middle East worries as U.S., Israel reportedly weigh fresh Iran strikes",
       "url": "https://www.cnbc.com/2026/10/22/oil-prices-today-wti-brent-saudi-arabia.html",
       "title_withheld": false,
       "source": "CNBC World Markets",
       "also_reported_by": [
         "OilPrice.com"
       ],
-      "published_ts": 1792657482.0,
+      "published_ts": 1792665741.0,
       "direction": -1,
       "confidence": 0.7,
       "driver": "energy",
@@ -90,25 +114,11 @@
       "reason": "Ukrainian assault on Russia: positive for the pound, bullish for GBP/USD."
     },
     {
-      "title": "India\u2019s Top State Refiner to Reduce Middle East Term Oil Purchases",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-Top-State-Refiner-to-Reduce-Middle-East-Term-Oil-Purchases.html",
-      "title_withheld": false,
-      "source": "OilPrice.com",
-      "also_reported_by": [],
-      "published_ts": 1792596600.0,
-      "direction": -1,
-      "confidence": 0.6,
-      "driver": "energy",
-      "reason": "Middle East oil disruption (owner: generally negative for the pound): negative for the pound, bearish for GBP/USD."
-    },
-    {
       "title": "Double blow to Healey as inflation rises to 3.5% and monthly deficit hits \u00a324bn",
       "url": "https://www.theguardian.com/business/2026/oct/21/inflation-rises-middle-east-conflict-drives-up-fuel-prices",
       "title_withheld": false,
       "source": "Guardian Business",
-      "also_reported_by": [
-        "BBC Business"
-      ],
+      "also_reported_by": [],
       "published_ts": 1792588876.0,
       "direction": -1,
       "confidence": 0.9,
@@ -130,7 +140,7 @@
       "reason": "US news reads strong, which is bearish for GBP/USD."
     }
   ],
-  "neutral_stories_24h": 30,
+  "neutral_stories_24h": 35,
   "headlines_note": "Same-story duplicates are merged and counted once. Each headline is shown with its source, link and our own reason; headline text belongs to its publisher.",
   "feeds": {
     "ok": 12,
