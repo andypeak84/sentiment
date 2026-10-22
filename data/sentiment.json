@@ -1,44 +1,32 @@
 {
   "pair": "GBP/USD",
-  "generated_ts": 1792661355,
+  "generated_ts": 1792661488,
   "scale": "-1 = strongly bearish for GBP/USD, +1 = strongly bullish",
   "windows": {
     "1h": {
-      "score": 1.0,
-      "label": "strongly bullish",
-      "articles": 1
+      "score": 0.0,
+      "label": "neutral",
+      "articles": 0
     },
     "6h": {
-      "score": -0.071,
-      "label": "neutral",
-      "articles": 4
+      "score": -0.576,
+      "label": "strongly bearish",
+      "articles": 3
     },
     "24h": {
-      "score": -0.061,
-      "label": "neutral",
-      "articles": 10
+      "score": -0.442,
+      "label": "strongly bearish",
+      "articles": 9
     }
   },
   "scorers_24h": {
-    "rules": 40
+    "rules": 38
   },
   "headlines": [
     {
-      "title": null,
-      "url": null,
-      "title_withheld": true,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1792660892.0,
-      "direction": 1,
-      "confidence": 0.55,
-      "driver": "rates",
-      "reason": "UK news reads strong, which is bullish for GBP/USD."
-    },
-    {
-      "title": null,
-      "url": null,
-      "title_withheld": true,
+      "title": "Brent crude tops $112 on Middle East worries as U.S., Israel reportedly weigh fresh Iran strikes",
+      "url": "https://www.cnbc.com/2026/10/22/oil-prices-today-wti-brent-saudi-arabia.html",
+      "title_withheld": false,
       "source": "CNBC World Markets",
       "also_reported_by": [
         "OilPrice.com"
@@ -50,9 +38,9 @@
       "reason": "Iran-linked oil disruption (owner: especially negative for the pound): negative for the pound, bearish for GBP/USD."
     },
     {
-      "title": null,
-      "url": null,
-      "title_withheld": true,
+      "title": "Iran\u2019s Oil Reserves Run Dry as U.S. Naval Blockade Tightens",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Irans-Oil-Reserves-Run-Dry-as-US-Naval-Blockade-Tightens.html",
+      "title_withheld": false,
       "source": "OilPrice.com",
       "also_reported_by": [],
       "published_ts": 1792652400.0,
@@ -62,9 +50,9 @@
       "reason": "Iran-linked oil disruption (owner: especially negative for the pound): negative for the pound, bearish for GBP/USD."
     },
     {
-      "title": null,
-      "url": null,
-      "title_withheld": true,
+      "title": "Is the UK set to green-light a huge untapped oil field in the North Atlantic?",
+      "url": "https://www.bbc.co.uk/news/videos/cxnv0emj06v1o?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
       "source": "BBC Top Stories",
       "also_reported_by": [
         "OilPrice.com"
@@ -76,9 +64,9 @@
       "reason": "UK developing its own gas/oil (owner ruling): easing energy supply, positive for the pound, bullish for GBP/USD."
     },
     {
-      "title": null,
-      "url": null,
-      "title_withheld": true,
+      "title": "How bad is Jackdaw gasfield approval for the climate? \u2013 The Latest",
+      "url": "https://www.theguardian.com/news/video/2026/oct/21/how-bad-is-jackdaw-gasfield-approval-for-the-climate-the-latest",
+      "title_withheld": false,
       "source": "Guardian Business",
       "also_reported_by": [
         "BBC Top Stories"
@@ -90,9 +78,9 @@
       "reason": "UK developing its own gas/oil (owner ruling): easing energy supply, positive for the pound, bullish for GBP/USD."
     },
     {
-      "title": null,
-      "url": null,
-      "title_withheld": true,
+      "title": "How Ukraine\u2019s drone strikes on Russia crippled the world\u2019s second-largest diesel supplier",
+      "url": "https://www.cnbc.com/2026/10/21/ukraine-russia-drone-diesel-refinery-trump-putin-zelenskyy.html",
+      "title_withheld": false,
       "source": "CNBC World Markets",
       "also_reported_by": [],
       "published_ts": 1792603654.0,
@@ -102,9 +90,9 @@
       "reason": "Ukrainian assault on Russia: positive for the pound, bullish for GBP/USD."
     },
     {
-      "title": null,
-      "url": null,
-      "title_withheld": true,
+      "title": "India\u2019s Top State Refiner to Reduce Middle East Term Oil Purchases",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-Top-State-Refiner-to-Reduce-Middle-East-Term-Oil-Purchases.html",
+      "title_withheld": false,
       "source": "OilPrice.com",
       "also_reported_by": [],
       "published_ts": 1792596600.0,
@@ -114,9 +102,9 @@
       "reason": "Middle East oil disruption (owner: generally negative for the pound): negative for the pound, bearish for GBP/USD."
     },
     {
-      "title": null,
-      "url": null,
-      "title_withheld": true,
+      "title": "Double blow to Healey as inflation rises to 3.5% and monthly deficit hits \u00a324bn",
+      "url": "https://www.theguardian.com/business/2026/oct/21/inflation-rises-middle-east-conflict-drives-up-fuel-prices",
+      "title_withheld": false,
       "source": "Guardian Business",
       "also_reported_by": [
         "BBC Business"
@@ -128,9 +116,9 @@
       "reason": "UK inflation rising (owner ruling: very bad for the UK, weighted most): negative for the pound, bearish for GBP/USD."
     },
     {
-      "title": null,
-      "url": null,
-      "title_withheld": true,
+      "title": "Housing is flashing warning signs just as the Fed weighs more interest rate hikes",
+      "url": "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html",
+      "title_withheld": false,
       "source": "CNBC World Markets",
       "also_reported_by": [
         "CNBC Economy"
@@ -142,8 +130,8 @@
       "reason": "US news reads strong, which is bearish for GBP/USD."
     }
   ],
-  "neutral_stories_24h": 31,
-  "headlines_note": "Same-story duplicates are merged and counted once. Stories from news sites are scored and shown with our own reason, but their headline text and links are not republished.",
+  "neutral_stories_24h": 30,
+  "headlines_note": "Same-story duplicates are merged and counted once. Each headline is shown with its source, link and our own reason; headline text belongs to its publisher.",
   "feeds": {
     "ok": 12,
     "total": 12
