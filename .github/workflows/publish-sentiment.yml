@@ -34,6 +34,18 @@ jobs:
         if: env.ANTHROPIC_API_KEY != ''
         run: pip install -q anthropic
 
+      # The checker's memory of the stories it has already seen (a SQLite file in state/). Kept in a
+      # private Actions cache, never committed: it holds BBC headline text. A fresh unique key per
+      # run, restoring the newest earlier one, so each run saves the updated memory for the next.
+      # Without it every run starts empty and only sees what is in the news feeds right now, and the
+      # feeds drop roughly everything older than a day -- so stories fell out of the 24h window early.
+      - name: Restore the story memory
+        uses: actions/cache@v4
+        with:
+          path: state
+          key: sentiment-state-${{ github.run_id }}
+          restore-keys: sentiment-state-
+
       - name: Score news and publish sentiment
         run: python scripts/publish_sentiment.py
 
@@ -41,7 +53,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/sentiment.json data/sentiment-history.json data/sentiment-cache.json
+          git add data/sentiment.json data/sentiment-history.json
           git diff --cached --quiet && exit 0
           git commit -m "Update GBP/USD sentiment $(date -u +%Y-%m-%dT%H:%MZ)"
           # Rebase and retry on a non-fast-forward rather than fail

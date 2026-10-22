@@ -24,10 +24,13 @@ US_MARKERS = (r"\b(us|u\.s\.|american|federal reserve|the fed|fed|fomc|powell|tr
 # "Strong" = hawkish / better economy for that currency. "Weak" = the opposite.
 STRONG = (r"\b(hikes?|raises? (interest )?rates?|hawkish|higher than expected|hotter|above forecasts?|beats?|"
           r"surges?|jumps?|rises?|expands?|accelerates?|rebounds?|strong(er)?|robust|rallies|rally|"
-          r"grows|grew|faster (pace|growth)|holds? (interest )?rates? (high|steady))")
+          r"grows|grew|faster (pace|growth)|holds? (interest )?rates? (high|steady))\b")
+# NB: the trailing \b on STRONG and WEAK matters. Without it a short word like "miss" matched the
+# start of "missiles" (and "hike" the start of "hiker"...): "Missiles hit Kyiv after Russia agrees
+# to US call to resume Ukraine peace talks" was scored bullish GBP/USD, "US news reads weak".
 WEAK = (r"\b(cuts? (interest )?rates?|rate cuts?|dovish|lower than expected|cooler|below forecasts?|miss(es)?|"
         r"falls?|slumps?|contracts?|stalls?|recession|slows?|slowdown|weak(er)?|shrinks?|"
-        r"plunges?|sell-?off|downgrades?|signals? (more |further )?(cuts?|easing))")
+        r"plunges?|sell-?off|downgrades?|signals? (more |further )?(cuts?|easing))\b")
 
 # Phrases where the usual word direction flips for the currency.
 FLIPS = [
