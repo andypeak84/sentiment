@@ -1,33 +1,148 @@
 {
   "pair": "GBP/USD",
-  "generated_ts": 1792642985,
+  "generated_ts": 1792655665,
   "scale": "-1 = strongly bearish for GBP/USD, +1 = strongly bullish",
   "windows": {
     "1h": {
-      "score": 0.0,
-      "label": "neutral",
-      "articles": 0
+      "score": -1.0,
+      "label": "strongly bearish",
+      "articles": 1
     },
     "6h": {
-      "score": 0.0,
-      "label": "neutral",
-      "articles": 0
+      "score": -0.453,
+      "label": "strongly bearish",
+      "articles": 3
     },
     "24h": {
-      "score": 0.0,
-      "label": "neutral",
-      "articles": 0
+      "score": -0.358,
+      "label": "mildly bearish",
+      "articles": 10
     }
   },
   "scorers_24h": {
-    "rules": 11
+    "rules": 38
   },
-  "headlines": [],
-  "neutral_stories_24h": 11,
-  "headlines_note": "Same-story duplicates are merged and counted once. BBC stories are scored and shown with our own reason, but BBC headline text and links are not republished.",
+  "headlines": [
+    {
+      "title": null,
+      "url": null,
+      "title_withheld": true,
+      "source": "OilPrice.com",
+      "also_reported_by": [],
+      "published_ts": 1792652400.0,
+      "direction": -1,
+      "confidence": 0.7,
+      "driver": "energy",
+      "reason": "Iran-linked oil disruption (owner: especially negative for the pound): negative for the pound, bearish for GBP/USD."
+    },
+    {
+      "title": null,
+      "url": null,
+      "title_withheld": true,
+      "source": "BBC Top Stories",
+      "also_reported_by": [
+        "OilPrice.com"
+      ],
+      "published_ts": 1792649384.0,
+      "direction": 1,
+      "confidence": 0.5,
+      "driver": "energy",
+      "reason": "UK developing its own gas/oil (owner ruling): easing energy supply, positive for the pound, bullish for GBP/USD."
+    },
+    {
+      "title": null,
+      "url": null,
+      "title_withheld": true,
+      "source": "OilPrice.com",
+      "also_reported_by": [],
+      "published_ts": 1792647000.0,
+      "direction": -1,
+      "confidence": 0.6,
+      "driver": "energy",
+      "reason": "Middle East oil disruption (owner: generally negative for the pound): negative for the pound, bearish for GBP/USD."
+    },
+    {
+      "title": null,
+      "url": null,
+      "title_withheld": true,
+      "source": "Guardian Business",
+      "also_reported_by": [
+        "BBC Top Stories"
+      ],
+      "published_ts": 1792608699.0,
+      "direction": 1,
+      "confidence": 0.5,
+      "driver": "energy",
+      "reason": "UK developing its own gas/oil (owner ruling): easing energy supply, positive for the pound, bullish for GBP/USD."
+    },
+    {
+      "title": null,
+      "url": null,
+      "title_withheld": true,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
+      "published_ts": 1792603654.0,
+      "direction": 1,
+      "confidence": 0.6,
+      "driver": "war",
+      "reason": "Ukrainian assault on Russia: positive for the pound, bullish for GBP/USD."
+    },
+    {
+      "title": null,
+      "url": null,
+      "title_withheld": true,
+      "source": "OilPrice.com",
+      "also_reported_by": [],
+      "published_ts": 1792596600.0,
+      "direction": -1,
+      "confidence": 0.6,
+      "driver": "energy",
+      "reason": "Middle East oil disruption (owner: generally negative for the pound): negative for the pound, bearish for GBP/USD."
+    },
+    {
+      "title": null,
+      "url": null,
+      "title_withheld": true,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1792588876.0,
+      "direction": -1,
+      "confidence": 0.9,
+      "driver": "inflation",
+      "reason": "UK inflation rising (owner ruling: very bad for the UK, weighted most): negative for the pound, bearish for GBP/USD."
+    },
+    {
+      "title": null,
+      "url": null,
+      "title_withheld": true,
+      "source": "CNBC World Markets",
+      "also_reported_by": [
+        "CNBC Economy"
+      ],
+      "published_ts": 1792581658.0,
+      "direction": -1,
+      "confidence": 0.55,
+      "driver": "rates",
+      "reason": "US news reads strong, which is bearish for GBP/USD."
+    },
+    {
+      "title": null,
+      "url": null,
+      "title_withheld": true,
+      "source": "BBC Business",
+      "also_reported_by": [],
+      "published_ts": 1792577777.0,
+      "direction": -1,
+      "confidence": 0.9,
+      "driver": "inflation",
+      "reason": "UK inflation rising (owner ruling: very bad for the UK, weighted most): negative for the pound, bearish for GBP/USD."
+    }
+  ],
+  "neutral_stories_24h": 29,
+  "headlines_note": "Same-story duplicates are merged and counted once. Stories from news sites are scored and shown with our own reason, but their headline text and links are not republished.",
   "feeds": {
-    "ok": 4,
-    "total": 4
+    "ok": 12,
+    "total": 12
   },
   "disclaimer": "Informational only. Not financial advice."
 }
