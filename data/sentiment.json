@@ -1,28 +1,142 @@
 {
   "pair": "GBP/USD",
-  "generated_ts": 1792667792,
+  "generated_ts": 1792734992,
   "scale": "-1 = strongly bearish for GBP/USD, +1 = strongly bullish",
   "windows": {
     "1h": {
-      "score": -0.382,
-      "label": "mildly bearish",
-      "articles": 3
+      "score": 0.0,
+      "label": "neutral",
+      "articles": 0
     },
     "6h": {
-      "score": -0.338,
-      "label": "mildly bearish",
-      "articles": 5
+      "score": -0.02,
+      "label": "neutral",
+      "articles": 4
     },
     "24h": {
-      "score": -0.281,
-      "label": "mildly bearish",
-      "articles": 10
+      "score": 0.343,
+      "label": "mildly bullish",
+      "articles": 18
     }
   },
   "scorers_24h": {
-    "rules": 44
+    "rules": 65
   },
   "headlines": [
+    {
+      "title": "UK consumer confidence falls at fastest rate since Covid as cost of living bites",
+      "url": "https://www.theguardian.com/business/2026/oct/23/uk-consumer-confidence-falls-fastest-since-covid-cost-of-living",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1792728005.0,
+      "direction": -1,
+      "confidence": 0.55,
+      "driver": "rates",
+      "reason": "UK news reads weak, which is bearish for GBP/USD."
+    },
+    {
+      "title": "Trump, Musk, Zelenskyy: who is blaming who in the Ukraine-Starlink row?",
+      "url": "https://www.theguardian.com/world/2026/oct/23/trump-musk-zelenskyy-who-is-blaming-who-in-ukraine-starlink-row",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1792721786.0,
+      "direction": 1,
+      "confidence": 0.4,
+      "driver": "politics",
+      "reason": "US-Ukraine relationship worsening (owner ruling): US setback, negative for the dollar, bullish for GBP/USD."
+    },
+    {
+      "title": "Will ICE agents play a role in the 2026 US midterm elections?",
+      "url": "https://www.aljazeera.com/news/2026/10/23/will-ice-agents-play-a-role-in-the-2026-us-midterm-elections?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1792720059.0,
+      "direction": 1,
+      "confidence": 0.45,
+      "driver": "politics",
+      "reason": "US political uncertainty: negative for that currency, bullish for GBP/USD."
+    },
+    {
+      "title": "Sharp drops for AI stocks overwhelm markets worldwide as oil prices jump",
+      "url": "https://www.theguardian.com/business/2026/oct/22/stock-markets-drop-ai-oil",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1792705813.0,
+      "direction": 1,
+      "confidence": 0.55,
+      "driver": "inflation",
+      "reason": "UK news reads strong, which is bullish for GBP/USD."
+    },
+    {
+      "title": "Elon Musk reportedly invests $1bn in David Ellison\u2019s Skydance",
+      "url": "https://www.theguardian.com/technology/2026/oct/22/elon-musk-david-ellison-skydance-investment",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1792704219.0,
+      "direction": 1,
+      "confidence": 0.5,
+      "driver": "growth",
+      "reason": "New investment in the UK: positive for that currency."
+    },
+    {
+      "title": "EU\u2019s Proposed Shipping Subsidies Could Make BioLNG Cheaper Than Fuel Oil",
+      "url": "https://oilprice.com/Energy/Energy-General/EUs-Proposed-Shipping-Subsidies-Could-Make-BioLNG-Cheaper-Than-Fuel-Oil.html",
+      "title_withheld": false,
+      "source": "OilPrice.com",
+      "also_reported_by": [],
+      "published_ts": 1792692000.0,
+      "direction": 1,
+      "confidence": 0.5,
+      "driver": "energy",
+      "reason": "Energy prices falling or supply easing: positive for the pound, bullish for GBP/USD."
+    },
+    {
+      "title": "US judge orders Trump to sit for deposition in $10bn lawsuit against BBC",
+      "url": "https://www.theguardian.com/us-news/2026/oct/22/trump-bbc-lawsuit-deposition-discovery",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [
+        "Al Jazeera",
+        "BBC Top Stories",
+        "CNBC World Markets"
+      ],
+      "published_ts": 1792689492.0,
+      "direction": 1,
+      "confidence": 0.45,
+      "driver": "politics",
+      "reason": "US political uncertainty: negative for that currency, bullish for GBP/USD."
+    },
+    {
+      "title": "We will make the net-zero transition work for Britain \u2013 approving the Jackdaw gasfield is part of the plan | Andy Burnham",
+      "url": "https://www.theguardian.com/commentisfree/2026/oct/22/net-zero-transition-britain-jackdaw-gasfield-jobs-energy-security-labour",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1792688445.0,
+      "direction": 1,
+      "confidence": 0.5,
+      "driver": "energy",
+      "reason": "UK developing its own gas/oil (owner ruling): easing energy supply, positive for the pound, bullish for GBP/USD."
+    },
+    {
+      "title": "Trump's approval rating on economy hits all-time low as midterm looms: CNBC survey",
+      "url": "https://www.cnbc.com/2026/10/22/trump-economic-approval-rating-midterms-poll.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [
+        "CNBC Economy"
+      ],
+      "published_ts": 1792675116.0,
+      "direction": 1,
+      "confidence": 0.45,
+      "driver": "politics",
+      "reason": "US political uncertainty: negative for that currency, bullish for GBP/USD."
+    },
     {
       "title": "Too little, too late: Trump takes on gas prices as fuel costs hamper his midterm hopes",
       "url": "https://www.theguardian.com/us-news/2026/oct/22/trump-high-gas-prices-midterms-cycle",
@@ -34,113 +148,9 @@
       "confidence": 0.45,
       "driver": "politics",
       "reason": "US political uncertainty: negative for that currency, bullish for GBP/USD."
-    },
-    {
-      "title": "India's Middle East Oil Imports Jumped 32% in September",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-Middle-East-Oil-Imports-Jumped-32-in-September.html",
-      "title_withheld": false,
-      "source": "OilPrice.com",
-      "also_reported_by": [],
-      "published_ts": 1792666800.0,
-      "direction": -1,
-      "confidence": 0.6,
-      "driver": "energy",
-      "reason": "Middle East oil disruption (owner: generally negative for the pound): negative for the pound, bearish for GBP/USD."
-    },
-    {
-      "title": "Brent crude tops $111 on Middle East worries as U.S., Israel reportedly weigh fresh Iran strikes",
-      "url": "https://www.cnbc.com/2026/10/22/oil-prices-today-wti-brent-saudi-arabia.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [
-        "OilPrice.com"
-      ],
-      "published_ts": 1792665741.0,
-      "direction": -1,
-      "confidence": 0.7,
-      "driver": "energy",
-      "reason": "Iran-linked oil disruption (owner: especially negative for the pound): negative for the pound, bearish for GBP/USD."
-    },
-    {
-      "title": "Iran\u2019s Oil Reserves Run Dry as U.S. Naval Blockade Tightens",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Irans-Oil-Reserves-Run-Dry-as-US-Naval-Blockade-Tightens.html",
-      "title_withheld": false,
-      "source": "OilPrice.com",
-      "also_reported_by": [],
-      "published_ts": 1792652400.0,
-      "direction": -1,
-      "confidence": 0.7,
-      "driver": "energy",
-      "reason": "Iran-linked oil disruption (owner: especially negative for the pound): negative for the pound, bearish for GBP/USD."
-    },
-    {
-      "title": "Is the UK set to green-light a huge untapped oil field in the North Atlantic?",
-      "url": "https://www.bbc.co.uk/news/videos/cxnv0emj06v1o?at_medium=RSS&at_campaign=rss",
-      "title_withheld": false,
-      "source": "BBC Top Stories",
-      "also_reported_by": [
-        "OilPrice.com"
-      ],
-      "published_ts": 1792649384.0,
-      "direction": 1,
-      "confidence": 0.5,
-      "driver": "energy",
-      "reason": "UK developing its own gas/oil (owner ruling): easing energy supply, positive for the pound, bullish for GBP/USD."
-    },
-    {
-      "title": "How bad is Jackdaw gasfield approval for the climate? \u2013 The Latest",
-      "url": "https://www.theguardian.com/news/video/2026/oct/21/how-bad-is-jackdaw-gasfield-approval-for-the-climate-the-latest",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [
-        "BBC Top Stories"
-      ],
-      "published_ts": 1792608699.0,
-      "direction": 1,
-      "confidence": 0.5,
-      "driver": "energy",
-      "reason": "UK developing its own gas/oil (owner ruling): easing energy supply, positive for the pound, bullish for GBP/USD."
-    },
-    {
-      "title": "How Ukraine\u2019s drone strikes on Russia crippled the world\u2019s second-largest diesel supplier",
-      "url": "https://www.cnbc.com/2026/10/21/ukraine-russia-drone-diesel-refinery-trump-putin-zelenskyy.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1792603654.0,
-      "direction": 1,
-      "confidence": 0.6,
-      "driver": "war",
-      "reason": "Ukrainian assault on Russia: positive for the pound, bullish for GBP/USD."
-    },
-    {
-      "title": "Double blow to Healey as inflation rises to 3.5% and monthly deficit hits \u00a324bn",
-      "url": "https://www.theguardian.com/business/2026/oct/21/inflation-rises-middle-east-conflict-drives-up-fuel-prices",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1792588876.0,
-      "direction": -1,
-      "confidence": 0.9,
-      "driver": "inflation",
-      "reason": "UK inflation rising (owner ruling: very bad for the UK, weighted most): negative for the pound, bearish for GBP/USD."
-    },
-    {
-      "title": "Housing is flashing warning signs just as the Fed weighs more interest rate hikes",
-      "url": "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [
-        "CNBC Economy"
-      ],
-      "published_ts": 1792581658.0,
-      "direction": -1,
-      "confidence": 0.55,
-      "driver": "rates",
-      "reason": "US news reads strong, which is bearish for GBP/USD."
     }
   ],
-  "neutral_stories_24h": 35,
+  "neutral_stories_24h": 51,
   "headlines_note": "Same-story duplicates are merged and counted once. Each headline is shown with its source, link and our own reason; headline text belongs to its publisher.",
   "feeds": {
     "ok": 12,
