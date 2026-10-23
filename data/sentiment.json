@@ -1,28 +1,81 @@
 {
   "pair": "GBP/USD",
-  "generated_ts": 1792737450,
+  "generated_ts": 1792753665,
   "scale": "-1 = strongly bearish for GBP/USD, +1 = strongly bullish",
   "windows": {
     "1h": {
-      "score": -0.028,
-      "label": "neutral",
-      "articles": 2
+      "score": -1.0,
+      "label": "strongly bearish",
+      "articles": 3
     },
     "6h": {
-      "score": 0.393,
-      "label": "mildly bullish",
+      "score": -0.855,
+      "label": "strongly bearish",
       "articles": 5
     },
     "24h": {
-      "score": 0.452,
-      "label": "strongly bullish",
+      "score": -0.524,
+      "label": "strongly bearish",
       "articles": 14
     }
   },
   "scorers_24h": {
-    "rules": 49
+    "rules": 54
   },
   "headlines": [
+    {
+      "title": "U.S. oil holds above $100, Brent at five-month high as Iran says it\u2019s prepared for warfare",
+      "url": "https://www.cnbc.com/2026/10/23/oil-price-brent-wti-iran-war-saudi-arabia.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [
+        "OilPrice.com"
+      ],
+      "published_ts": 1792752701.0,
+      "direction": -1,
+      "confidence": 0.7,
+      "driver": "energy",
+      "reason": "Iran-linked oil disruption (owner: especially negative for the pound): negative for the pound, bearish for GBP/USD."
+    },
+    {
+      "title": "Retail sales in Great Britain fall as struggling households cut back",
+      "url": "https://www.theguardian.com/business/2026/oct/23/retail-sales-in-great-britain-fall-as-struggling-households-cut-back",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1792751755.0,
+      "direction": -1,
+      "confidence": 0.55,
+      "driver": "rates",
+      "reason": "UK news reads weak, which is bearish for GBP/USD."
+    },
+    {
+      "title": "Oil hits five-month high as global stocks wobble on AI fears; retail sales in Great Britain fall as shoppers cut back - business live",
+      "url": "https://www.theguardian.com/business/live/2026/oct/23/global-stocks-fall-ai-fears-grow-british-retail-sales-fall-business-live-latest-news",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [
+        "Al Jazeera",
+        "OilPrice.com"
+      ],
+      "published_ts": 1792750834.0,
+      "direction": -1,
+      "confidence": 0.5,
+      "driver": "energy",
+      "reason": "Energy prices rising or supply tightening: negative for the pound, bearish for GBP/USD."
+    },
+    {
+      "title": "UK consumer confidence falls at fastest rate since Brexit vote as cost of living bites",
+      "url": "https://www.theguardian.com/business/2026/oct/23/uk-consumer-confidence-falls-fastest-since-covid-cost-of-living",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1792740357.0,
+      "direction": -1,
+      "confidence": 0.55,
+      "driver": "rates",
+      "reason": "UK news reads weak, which is bearish for GBP/USD."
+    },
     {
       "title": "How the midterms could change Trump\u2019s presidency",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/23/aje-onl-nf_trumpmidterms-231026?traffic_source=rss",
@@ -34,18 +87,6 @@
       "confidence": 0.45,
       "driver": "politics",
       "reason": "US political uncertainty: negative for that currency, bullish for GBP/USD."
-    },
-    {
-      "title": "EU entering winter with lowest gas reserves on record, IEA boss warns",
-      "url": "https://www.aljazeera.com/economy/2026/10/23/eu-entering-winter-with-lowest-gas-reserves-on-record-iea-boss-warns?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1792735335.0,
-      "direction": -1,
-      "confidence": 0.5,
-      "driver": "energy",
-      "reason": "Energy prices rising or supply tightening: negative for the pound, bearish for GBP/USD."
     },
     {
       "title": "Trump, Musk, Zelenskyy: who is blaming who in the Ukraine-Starlink row?",
@@ -110,50 +151,9 @@
       "confidence": 0.5,
       "driver": "energy",
       "reason": "UK developing its own gas/oil (owner ruling): easing energy supply, positive for the pound, bullish for GBP/USD."
-    },
-    {
-      "title": "Trump's approval rating on economy hits all-time low as midterm looms: CNBC survey",
-      "url": "https://www.cnbc.com/2026/10/22/trump-economic-approval-rating-midterms-poll.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [
-        "CNBC Economy"
-      ],
-      "published_ts": 1792675116.0,
-      "direction": 1,
-      "confidence": 0.45,
-      "driver": "politics",
-      "reason": "US political uncertainty: negative for that currency, bullish for GBP/USD."
-    },
-    {
-      "title": "Too little, too late: Trump takes on gas prices as fuel costs hamper his midterm hopes",
-      "url": "https://www.theguardian.com/us-news/2026/oct/22/trump-high-gas-prices-midterms-cycle",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1792666840.0,
-      "direction": 1,
-      "confidence": 0.45,
-      "driver": "politics",
-      "reason": "US political uncertainty: negative for that currency, bullish for GBP/USD."
-    },
-    {
-      "title": "Brent crude tops $111 on Middle East worries as U.S., Israel reportedly weigh fresh Iran strikes",
-      "url": "https://www.cnbc.com/2026/10/22/oil-prices-today-wti-brent-saudi-arabia.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [
-        "Guardian Business",
-        "OilPrice.com"
-      ],
-      "published_ts": 1792665741.0,
-      "direction": -1,
-      "confidence": 0.7,
-      "driver": "energy",
-      "reason": "Iran-linked oil disruption (owner: especially negative for the pound): negative for the pound, bearish for GBP/USD."
     }
   ],
-  "neutral_stories_24h": 38,
+  "neutral_stories_24h": 43,
   "headlines_note": "Same-story duplicates are merged and counted once. Each headline is shown with its source, link and our own reason; headline text belongs to its publisher.",
   "feeds": {
     "ok": 12,
