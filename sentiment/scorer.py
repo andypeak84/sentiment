@@ -92,7 +92,7 @@ def _driver(text):
 
 # Volumes: when exports/output/supply FALL that is tighter supply (bearish GBP/USD), the reverse of
 # a price fall. Owner rated "Middle East crude exports fall sharply ... Brent touched $110" negative.
-_VOL = r"(exports?|output|production|supply|supplies|shipments|flows?|stocks|inventories)"
+_VOL = r"(exports?|output|production|supply|supplies|shipments|flows?|stocks|inventories|reserves?|storage)"
 SUPPLY_FALL = (r"\b" + _VOL + r"\s+(\w+\s+)?(fall|falls|fell|falling|drop|drops|dropped|slump|slumps|"
                r"slumped|plunge|plunges|plunged|decline|declines|declined|shrink|shrinks|shrank|tumble|tumbles|"
                r"sink|sinks|sank|slide|slides|slid|dip|dips|dipped)\b")
@@ -119,12 +119,22 @@ ENERGY_DOWN_DIRECT = (r"\b" + ENERGY_NOUN + r" (fall|falls|fell|drop|drops|dropp
                       r"plunges|plunged|tumble|tumbles|tumbled|slide|slides|sink|sinks)\b")
 
 
+# "lowest gas reserves on record" / "storage at record low" is TIGHTER supply (bearish GBP/USD), not a
+# price fall: ENERGY_DOWN's "lowest/lower" is about prices. Reserves, stocks, storage and inventories that are
+# low or depleted count as supply tightening, and the "lowest" they contain is not counted as a price fall.
+_RESERVES = r"(reserves?|stocks|stockpiles?|storage|inventories|supplies)"
+RESERVES_LOW = (r"\b(lowest|low|record low|depleted|dwindl\w+|run(s|ning)? (low|dry))\b.{0,30}\b" + _RESERVES + r"\b"
+                r"|\b" + _RESERVES + r"\b.{0,25}\b(lowest|record low|depleted|dwindl\w+|run(s|ning)? (low|dry)|at a low)\b")
+
+
 def _energy(text):
     if not re.search(ENERGY, text) or re.search(CENTRAL_BANK, text):
         return None
     sf = len(re.findall(SUPPLY_FALL, text))
     sr = len(re.findall(SUPPLY_RISE, text))
-    stripped = re.sub(SUPPLY_FALL + "|" + SUPPLY_RISE, " ", text)
+    rl = len(re.findall(RESERVES_LOW, text))
+    stripped = re.sub(SUPPLY_FALL + "|" + SUPPLY_RISE + "|" + RESERVES_LOW, " ", text)
+    sf += rl
     up = (len(re.findall(ENERGY_UP, stripped)) + len(re.findall(ENERGY_UP_EXTRA, stripped))
           + len(re.findall(ENERGY_UP_OWNER, stripped)) + sf + len(re.findall(ENERGY_UP_DIRECT, stripped)))
     down = len(re.findall(ENERGY_DOWN, stripped)) + sr + len(re.findall(ENERGY_DOWN_DIRECT, stripped))
