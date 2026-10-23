@@ -1,39 +1,51 @@
 {
   "pair": "GBP/USD",
-  "generated_ts": 1792734992,
+  "generated_ts": 1792737372,
   "scale": "-1 = strongly bearish for GBP/USD, +1 = strongly bullish",
   "windows": {
     "1h": {
-      "score": 0.0,
-      "label": "neutral",
-      "articles": 0
+      "score": 1.0,
+      "label": "strongly bullish",
+      "articles": 2
     },
     "6h": {
-      "score": -0.02,
-      "label": "neutral",
-      "articles": 4
+      "score": 0.953,
+      "label": "strongly bullish",
+      "articles": 5
     },
     "24h": {
-      "score": 0.343,
-      "label": "mildly bullish",
-      "articles": 18
+      "score": 0.815,
+      "label": "strongly bullish",
+      "articles": 14
     }
   },
   "scorers_24h": {
-    "rules": 65
+    "rules": 49
   },
   "headlines": [
     {
-      "title": "UK consumer confidence falls at fastest rate since Covid as cost of living bites",
-      "url": "https://www.theguardian.com/business/2026/oct/23/uk-consumer-confidence-falls-fastest-since-covid-cost-of-living",
+      "title": "How the midterms could change Trump\u2019s presidency",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/23/aje-onl-nf_trumpmidterms-231026?traffic_source=rss",
       "title_withheld": false,
-      "source": "Guardian Business",
+      "source": "Al Jazeera",
       "also_reported_by": [],
-      "published_ts": 1792728005.0,
-      "direction": -1,
-      "confidence": 0.55,
-      "driver": "rates",
-      "reason": "UK news reads weak, which is bearish for GBP/USD."
+      "published_ts": 1792736885.0,
+      "direction": 1,
+      "confidence": 0.45,
+      "driver": "politics",
+      "reason": "US political uncertainty: negative for that currency, bullish for GBP/USD."
+    },
+    {
+      "title": "EU entering winter with lowest gas reserves on record, IEA boss warns",
+      "url": "https://www.aljazeera.com/economy/2026/10/23/eu-entering-winter-with-lowest-gas-reserves-on-record-iea-boss-warns?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1792735335.0,
+      "direction": 1,
+      "confidence": 0.5,
+      "driver": "energy",
+      "reason": "Energy prices falling or supply easing: positive for the pound, bullish for GBP/USD."
     },
     {
       "title": "Trump, Musk, Zelenskyy: who is blaming who in the Ukraine-Starlink row?",
@@ -58,30 +70,6 @@
       "confidence": 0.45,
       "driver": "politics",
       "reason": "US political uncertainty: negative for that currency, bullish for GBP/USD."
-    },
-    {
-      "title": "Sharp drops for AI stocks overwhelm markets worldwide as oil prices jump",
-      "url": "https://www.theguardian.com/business/2026/oct/22/stock-markets-drop-ai-oil",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1792705813.0,
-      "direction": 1,
-      "confidence": 0.55,
-      "driver": "inflation",
-      "reason": "UK news reads strong, which is bullish for GBP/USD."
-    },
-    {
-      "title": "Elon Musk reportedly invests $1bn in David Ellison\u2019s Skydance",
-      "url": "https://www.theguardian.com/technology/2026/oct/22/elon-musk-david-ellison-skydance-investment",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1792704219.0,
-      "direction": 1,
-      "confidence": 0.5,
-      "driver": "growth",
-      "reason": "New investment in the UK: positive for that currency."
     },
     {
       "title": "EU\u2019s Proposed Shipping Subsidies Could Make BioLNG Cheaper Than Fuel Oil",
@@ -148,9 +136,24 @@
       "confidence": 0.45,
       "driver": "politics",
       "reason": "US political uncertainty: negative for that currency, bullish for GBP/USD."
+    },
+    {
+      "title": "Brent crude tops $111 on Middle East worries as U.S., Israel reportedly weigh fresh Iran strikes",
+      "url": "https://www.cnbc.com/2026/10/22/oil-prices-today-wti-brent-saudi-arabia.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [
+        "Guardian Business",
+        "OilPrice.com"
+      ],
+      "published_ts": 1792665741.0,
+      "direction": -1,
+      "confidence": 0.7,
+      "driver": "energy",
+      "reason": "Iran-linked oil disruption (owner: especially negative for the pound): negative for the pound, bearish for GBP/USD."
     }
   ],
-  "neutral_stories_24h": 51,
+  "neutral_stories_24h": 38,
   "headlines_note": "Same-story duplicates are merged and counted once. Each headline is shown with its source, link and our own reason; headline text belongs to its publisher.",
   "feeds": {
     "ok": 12,
