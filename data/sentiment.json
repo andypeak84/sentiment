@@ -1,20 +1,20 @@
 {
   "pair": "GBP/USD",
-  "generated_ts": 1792737372,
+  "generated_ts": 1792737450,
   "scale": "-1 = strongly bearish for GBP/USD, +1 = strongly bullish",
   "windows": {
     "1h": {
-      "score": 1.0,
-      "label": "strongly bullish",
+      "score": -0.028,
+      "label": "neutral",
       "articles": 2
     },
     "6h": {
-      "score": 0.953,
-      "label": "strongly bullish",
+      "score": 0.393,
+      "label": "mildly bullish",
       "articles": 5
     },
     "24h": {
-      "score": 0.815,
+      "score": 0.452,
       "label": "strongly bullish",
       "articles": 14
     }
@@ -42,10 +42,10 @@
       "source": "Al Jazeera",
       "also_reported_by": [],
       "published_ts": 1792735335.0,
-      "direction": 1,
+      "direction": -1,
       "confidence": 0.5,
       "driver": "energy",
-      "reason": "Energy prices falling or supply easing: positive for the pound, bullish for GBP/USD."
+      "reason": "Energy prices rising or supply tightening: negative for the pound, bearish for GBP/USD."
     },
     {
       "title": "Trump, Musk, Zelenskyy: who is blaming who in the Ukraine-Starlink row?",
