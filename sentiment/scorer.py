@@ -108,6 +108,17 @@ ENERGY_UP_OWNER = (r"\b(tops?|topped|exceeds?|exceeded|surpass\w*|reach(es|ed)?)
                    r"|\b(oil|crude|brent|wti)\b[^.;:]{0,40}\$\s?(1\d\d|[2-9]\d\d)\b")
 
 
+# Owner rating 2026-10-23: "Sharp drops for AI stocks overwhelm markets worldwide as oil prices jump" = -1
+# ("oil price increasing"). The word "drops" (about stocks) used to cancel "jump" (about oil) and the headline
+# scored neutral. An energy noun directly followed by a move word is the real energy signal, so it counts
+# once more, and the same for falls, so an unrelated "drops/jumps" elsewhere in the headline can't tie it.
+ENERGY_NOUN = r"(oil|crude|brent|wti|natural gas|gas|lng|energy)( prices?)?"
+ENERGY_UP_DIRECT = (r"\b" + ENERGY_NOUN + r" (jump|jumps|jumped|rise|rises|rose|surge|surges|surged|soar|soars|"
+                    r"soared|spike|spikes|spiked|climb|climbs|climbed)\b")
+ENERGY_DOWN_DIRECT = (r"\b" + ENERGY_NOUN + r" (fall|falls|fell|drop|drops|dropped|slump|slumps|slumped|plunge|"
+                      r"plunges|plunged|tumble|tumbles|tumbled|slide|slides|sink|sinks)\b")
+
+
 def _energy(text):
     if not re.search(ENERGY, text) or re.search(CENTRAL_BANK, text):
         return None
@@ -115,8 +126,8 @@ def _energy(text):
     sr = len(re.findall(SUPPLY_RISE, text))
     stripped = re.sub(SUPPLY_FALL + "|" + SUPPLY_RISE, " ", text)
     up = (len(re.findall(ENERGY_UP, stripped)) + len(re.findall(ENERGY_UP_EXTRA, stripped))
-          + len(re.findall(ENERGY_UP_OWNER, stripped)) + sf)
-    down = len(re.findall(ENERGY_DOWN, stripped)) + sr
+          + len(re.findall(ENERGY_UP_OWNER, stripped)) + sf + len(re.findall(ENERGY_UP_DIRECT, stripped)))
+    down = len(re.findall(ENERGY_DOWN, stripped)) + sr + len(re.findall(ENERGY_DOWN_DIRECT, stripped))
     if up == down:
         return None
     if up > down:
@@ -217,7 +228,11 @@ INVEST_GAIN = (r"\b(invest(s|ing)?|announces? (new )?(\w+ )?(investment|plant|fa
                r"creat(es|ing) [\d,]+ (new )?jobs|expands? (operations )?in|opens? (a )?new (plant|factory|data cent\w+|hub))\b")
 
 
-def _investment(text):
+def _investment(text, hinted=False):
+    # Owner rating 2026-10-23: "Elon Musk reportedly invests $1bn in David Ellison's Skydance" = 0 (a US
+    # company, nothing to do with UK investment). A source's region hint (Guardian = UK) must not turn
+    # an investment GAIN into "new investment in the UK"; only a country named in the headline can.
+    # Losses keep the hint ("Paddy Power cuts 1,400 jobs", owner -1).
     uk = bool(re.search(UK_MARKERS, text))
     us = bool(re.search(US_MARKERS, text))
     if uk == us:
@@ -225,6 +240,8 @@ def _investment(text):
     if re.search(INVEST_LOSS, text):
         sign = -1
     elif re.search(INVEST_GAIN, text):
+        if hinted:
+            return None
         sign = 1
     else:
         return None
@@ -342,7 +359,7 @@ def _us_ukraine_rift(text):
     return None
 
 
-def _special(text):
+def _special(text, hinted=False):
     """Owner's channels (energy, war, policy). Agreeing channels add confidence; conflicting
     channels leave the headline neutral with low confidence."""
     war = _war(text)
@@ -356,7 +373,7 @@ def _special(text):
     weak = _us_weakness(text)
     if weak:
         return weak
-    results = [r for r in (_energy(text), _policy(text), _uncertainty(text), _investment(text),
+    results = [r for r in (_energy(text), _policy(text), _uncertainty(text), _investment(text, hinted),
                            _uk_energy_supply(text), _jobs_and_tax(text), _uk_inflation(text),
                            _ftse(text), _us_ukraine_rift(text)) if r]
     if not results:
@@ -395,6 +412,11 @@ def _currency_move(text):
                 reason="Headline states the pound/dollar move directly.")
 
 
+def _hint_applied(text, region):
+    """True when _apply_region_hint would add a marker (the headline names neither country)."""
+    return region in ("UK", "US") and not re.search(UK_MARKERS, text) and not re.search(US_MARKERS, text)
+
+
 def _apply_region_hint(text, region):
     """A source whose headlines are about one country rarely say so ("Inflation and government
     borrowing highest for a year ahead of next week's Budget" is a UK story with no UK word in it).
@@ -406,8 +428,10 @@ def _apply_region_hint(text, region):
 
 
 def score_rules(title: str, summary: str = "", region=None):
-    text = _apply_region_hint(f"{title} {summary}".lower(), region)
-    special = _special(text)
+    raw = f"{title} {summary}".lower()
+    hinted = _hint_applied(raw, region)
+    text = _apply_region_hint(raw, region)
+    special = _special(text, hinted)
     if special:
         return special
     move = _currency_move(text)
