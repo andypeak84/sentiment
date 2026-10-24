@@ -1,36 +1,134 @@
 {
   "pair": "GBP/USD",
-  "generated_ts": 1792753665,
+  "generated_ts": 1792837474,
   "scale": "-1 = strongly bearish for GBP/USD, +1 = strongly bullish",
   "windows": {
     "1h": {
-      "score": -1.0,
-      "label": "strongly bearish",
-      "articles": 3
+      "score": 0.0,
+      "label": "neutral",
+      "articles": 0
     },
     "6h": {
-      "score": -0.855,
-      "label": "strongly bearish",
-      "articles": 5
+      "score": 0.56,
+      "label": "strongly bullish",
+      "articles": 3
     },
     "24h": {
-      "score": -0.524,
-      "label": "strongly bearish",
-      "articles": 14
+      "score": 0.244,
+      "label": "mildly bullish",
+      "articles": 12
     }
   },
   "scorers_24h": {
-    "rules": 54
+    "rules": 44
   },
   "headlines": [
     {
-      "title": "U.S. oil holds above $100, Brent at five-month high as Iran says it\u2019s prepared for warfare",
-      "url": "https://www.cnbc.com/2026/10/23/oil-price-brent-wti-iran-war-saudi-arabia.html",
+      "title": "Former Goldman Sachs chief leaves Britain amid tax hike fears",
+      "url": "https://news.sky.com/story/former-goldman-chief-sherwood-leaves-britain-amid-tax-hike-fears-13602963",
+      "title_withheld": false,
+      "source": "Sky News Business",
+      "also_reported_by": [],
+      "published_ts": 1792824000.0,
+      "direction": 1,
+      "confidence": 0.55,
+      "driver": "rates",
+      "reason": "UK news reads strong, which is bullish for GBP/USD."
+    },
+    {
+      "title": "Watch: The rise of AI election ads in US midterms campaign",
+      "url": "https://www.bbc.co.uk/news/videos/cm62y59zw8zko?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Top Stories",
+      "also_reported_by": [],
+      "published_ts": 1792818224.0,
+      "direction": 1,
+      "confidence": 0.45,
+      "driver": "politics",
+      "reason": "US political uncertainty: negative for that currency, bullish for GBP/USD."
+    },
+    {
+      "title": "Massive oil slick seen weeks after tanker struck off UAE\u2019s coast",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/24/massive-oil-slick-seen-weeks-after-tanker-struck-off-uaes-coast?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1792817320.0,
+      "direction": -1,
+      "confidence": 0.5,
+      "driver": "energy",
+      "reason": "Energy prices rising or supply tightening: negative for the pound, bearish for GBP/USD."
+    },
+    {
+      "title": "White House lifts tariffs on some Canadian goods as midterm elections loom",
+      "url": "https://www.bbc.co.uk/news/articles/c60qk573yzz8o?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Business",
+      "also_reported_by": [],
+      "published_ts": 1792802207.0,
+      "direction": 1,
+      "confidence": 0.45,
+      "driver": "politics",
+      "reason": "US political uncertainty: negative for that currency, bullish for GBP/USD."
+    },
+    {
+      "title": "UK to invest \u00a3100m in 'world first' AI Biosecurity Lab",
+      "url": "https://www.bbc.co.uk/news/articles/cqdjv8xllvyyo?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Business",
+      "also_reported_by": [
+        "BBC Top Stories"
+      ],
+      "published_ts": 1792800345.0,
+      "direction": 1,
+      "confidence": 0.5,
+      "driver": "growth",
+      "reason": "New investment in the UK: positive for that currency."
+    },
+    {
+      "title": "U.S. Dips Into Strategic Oil Reserve Again Amid Supply Disruptions",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Dips-Into-Strategic-Oil-Reserve-Again-Amid-Supply-Disruptions.html",
+      "title_withheld": false,
+      "source": "OilPrice.com",
+      "also_reported_by": [],
+      "published_ts": 1792794600.0,
+      "direction": -1,
+      "confidence": 0.5,
+      "driver": "energy",
+      "reason": "Energy prices rising or supply tightening: negative for the pound, bearish for GBP/USD."
+    },
+    {
+      "title": "Dow tumbles more than 600 points as oil prices rise and market sell-off hits most sectors",
+      "url": "https://www.cnbc.com/2026/10/22/stock-market-today-live-update.html",
       "title_withheld": false,
       "source": "CNBC World Markets",
       "also_reported_by": [
         "OilPrice.com"
       ],
+      "published_ts": 1792786614.0,
+      "direction": -1,
+      "confidence": 0.5,
+      "driver": "energy",
+      "reason": "Energy prices rising or supply tightening: negative for the pound, bearish for GBP/USD."
+    },
+    {
+      "title": "Island inflation rate rises to 3%, figures show",
+      "url": "https://www.bbc.co.uk/news/articles/cmz6581p1ee8o?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Business",
+      "also_reported_by": [],
+      "published_ts": 1792756699.0,
+      "direction": -1,
+      "confidence": 0.9,
+      "driver": "inflation",
+      "reason": "UK inflation rising (owner ruling: very bad for the UK, weighted most): negative for the pound, bearish for GBP/USD."
+    },
+    {
+      "title": "U.S. oil holds above $100, Brent at five-month high as Iran says it\u2019s prepared for warfare",
+      "url": "https://www.cnbc.com/2026/10/23/oil-price-brent-wti-iran-war-saudi-arabia.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
       "published_ts": 1792752701.0,
       "direction": -1,
       "confidence": 0.7,
@@ -38,122 +136,19 @@
       "reason": "Iran-linked oil disruption (owner: especially negative for the pound): negative for the pound, bearish for GBP/USD."
     },
     {
-      "title": "Retail sales in Great Britain fall as struggling households cut back",
-      "url": "https://www.theguardian.com/business/2026/oct/23/retail-sales-in-great-britain-fall-as-struggling-households-cut-back",
+      "title": "Volvo Cars in share price crash as 2,500 job cuts follow sales slump",
+      "url": "https://news.sky.com/story/volvo-cars-in-share-price-crash-as-2500-job-cuts-follow-sales-slump-13602644",
       "title_withheld": false,
-      "source": "Guardian Business",
+      "source": "Sky News Business",
       "also_reported_by": [],
-      "published_ts": 1792751755.0,
+      "published_ts": 1792752000.0,
       "direction": -1,
       "confidence": 0.55,
       "driver": "rates",
       "reason": "UK news reads weak, which is bearish for GBP/USD."
-    },
-    {
-      "title": "Oil hits five-month high as global stocks wobble on AI fears; retail sales in Great Britain fall as shoppers cut back - business live",
-      "url": "https://www.theguardian.com/business/live/2026/oct/23/global-stocks-fall-ai-fears-grow-british-retail-sales-fall-business-live-latest-news",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [
-        "Al Jazeera",
-        "OilPrice.com"
-      ],
-      "published_ts": 1792750834.0,
-      "direction": -1,
-      "confidence": 0.5,
-      "driver": "energy",
-      "reason": "Energy prices rising or supply tightening: negative for the pound, bearish for GBP/USD."
-    },
-    {
-      "title": "UK consumer confidence falls at fastest rate since Brexit vote as cost of living bites",
-      "url": "https://www.theguardian.com/business/2026/oct/23/uk-consumer-confidence-falls-fastest-since-covid-cost-of-living",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1792740357.0,
-      "direction": -1,
-      "confidence": 0.55,
-      "driver": "rates",
-      "reason": "UK news reads weak, which is bearish for GBP/USD."
-    },
-    {
-      "title": "How the midterms could change Trump\u2019s presidency",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/23/aje-onl-nf_trumpmidterms-231026?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1792736885.0,
-      "direction": 1,
-      "confidence": 0.45,
-      "driver": "politics",
-      "reason": "US political uncertainty: negative for that currency, bullish for GBP/USD."
-    },
-    {
-      "title": "Trump, Musk, Zelenskyy: who is blaming who in the Ukraine-Starlink row?",
-      "url": "https://www.theguardian.com/world/2026/oct/23/trump-musk-zelenskyy-who-is-blaming-who-in-ukraine-starlink-row",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1792721786.0,
-      "direction": 1,
-      "confidence": 0.4,
-      "driver": "politics",
-      "reason": "US-Ukraine relationship worsening (owner ruling): US setback, negative for the dollar, bullish for GBP/USD."
-    },
-    {
-      "title": "Will ICE agents play a role in the 2026 US midterm elections?",
-      "url": "https://www.aljazeera.com/news/2026/10/23/will-ice-agents-play-a-role-in-the-2026-us-midterm-elections?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1792720059.0,
-      "direction": 1,
-      "confidence": 0.45,
-      "driver": "politics",
-      "reason": "US political uncertainty: negative for that currency, bullish for GBP/USD."
-    },
-    {
-      "title": "EU\u2019s Proposed Shipping Subsidies Could Make BioLNG Cheaper Than Fuel Oil",
-      "url": "https://oilprice.com/Energy/Energy-General/EUs-Proposed-Shipping-Subsidies-Could-Make-BioLNG-Cheaper-Than-Fuel-Oil.html",
-      "title_withheld": false,
-      "source": "OilPrice.com",
-      "also_reported_by": [],
-      "published_ts": 1792692000.0,
-      "direction": 1,
-      "confidence": 0.5,
-      "driver": "energy",
-      "reason": "Energy prices falling or supply easing: positive for the pound, bullish for GBP/USD."
-    },
-    {
-      "title": "US judge orders Trump to sit for deposition in $10bn lawsuit against BBC",
-      "url": "https://www.theguardian.com/us-news/2026/oct/22/trump-bbc-lawsuit-deposition-discovery",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [
-        "Al Jazeera",
-        "BBC Top Stories",
-        "CNBC World Markets"
-      ],
-      "published_ts": 1792689492.0,
-      "direction": 1,
-      "confidence": 0.45,
-      "driver": "politics",
-      "reason": "US political uncertainty: negative for that currency, bullish for GBP/USD."
-    },
-    {
-      "title": "We will make the net-zero transition work for Britain \u2013 approving the Jackdaw gasfield is part of the plan | Andy Burnham",
-      "url": "https://www.theguardian.com/commentisfree/2026/oct/22/net-zero-transition-britain-jackdaw-gasfield-jobs-energy-security-labour",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1792688445.0,
-      "direction": 1,
-      "confidence": 0.5,
-      "driver": "energy",
-      "reason": "UK developing its own gas/oil (owner ruling): easing energy supply, positive for the pound, bullish for GBP/USD."
     }
   ],
-  "neutral_stories_24h": 43,
+  "neutral_stories_24h": 33,
   "headlines_note": "Same-story duplicates are merged and counted once. Each headline is shown with its source, link and our own reason; headline text belongs to its publisher.",
   "feeds": {
     "ok": 12,
