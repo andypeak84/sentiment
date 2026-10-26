@@ -59,7 +59,9 @@ HISTORY_FILE = DATA_DIR / "sentiment-history.json"
 
 HISTORY_MAX_POINTS = 24 * 60  # one point per run -> far more than the weeks of history needed
 KEEP_STORIES_HOURS = 72       # stored stories older than this are deleted
-HEADLINES_PUBLISHED = 10
+# Every story the app needs to show the full list and let the owner flag any of them (v88): all scored stories in the
+# 24h window -- neutral ones too -- plus directional ones from the rest of the stored window.
+HEADLINES_PUBLISHED = 200
 REPUBLISH_TEXT_FROM = config.republish_sources()  # an allow-list: a new feed is withheld until marked republish
 
 
@@ -129,10 +131,17 @@ def main() -> None:
     # newest first. A story from a non-whitelisted source is published with OUR OWN one-line reason and
     # its score, but without its headline text or link (see the module docstring), so the app can still
     # show why it counted without republishing a news site's content.
+    feed_weight = {f["name"]: f.get("weight", config.DEFAULT_SOURCE_WEIGHT) for f in config.FEEDS}
     published = []
     for h in signal["headlines"]:
-        if not h["direction"]:
+        age_h = (now - h["published_ts"]) / 3600.0
+        in_24h = age_h <= 24
+        if not h["direction"] and not in_24h:
             continue
+        # base_w = source weight x time decay at publish time. The 24h score is sum(direction * confidence * base_w)
+        # / sum(confidence * base_w) over the in_24h stories, so the app can recompute it exactly after the owner
+        # flags a story (aggregate.window_score).
+        base_w = feed_weight.get(h["source"], config.DEFAULT_SOURCE_WEIGHT) * aggregate.decay(age_h) if in_24h else 0.0
         withheld = h["source"] not in REPUBLISH_TEXT_FROM
         published.append({
             "title": None if withheld else h["title"],
@@ -145,6 +154,8 @@ def main() -> None:
             "confidence": h["confidence"],
             "driver": h["driver"],
             "reason": h["reason"],
+            "in_24h": in_24h,
+            "base_w": round(base_w, 6),
         })
     published = published[:HEADLINES_PUBLISHED]
     neutral_stories_24h = sum(1 for h in signal["headlines"] if not h["direction"])

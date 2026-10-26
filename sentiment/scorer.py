@@ -71,7 +71,11 @@ ENERGY_UP = (r"(\b(rise|rises|rising|rose|jump|jumps|jumped|surge|surges|surged|
              r"|\b(tighten|tightens|tightened|impose|imposes|imposed|new|fresh|more|tougher|further) sanctions?\b"
              r"|\bcuts? (\w+ ){0,2}(output|production|supply|supplies)\b"
              r"|\b(disrupt|disrupts|disrupted|disruption|disruptions|blockade|blockades|halt|halts|halted|attack|attacks|"
-             r"attacked|outage|hit|hits|struck|seized|seizes|explosion|explosions|sabotage|sabotaged)\b"
+             r"attacked|outage|hit|hits|struck|seized|seizes|explosion|explosions|sabotage|sabotaged|"
+             # owner 2026-10-26: "Oil spill washes up on UAE beaches after tanker strike" = -1 (an attacked tanker
+             # leaking oil pushes the price up). A strike on a tanker / an oil workers' strike, a spill or a slick
+             # all mean disrupted supply.
+             r"strike|strikes|spill|spills|slick|slicks)\b"
              r"|\bsupply (fears|disruption|shortage|crunch)\b)")
 ENERGY_DOWN = (r"(\b(fall|falls|falling|fell|drop|drops|dropped|slump|slumps|slumped|tumble|tumbles|"
                r"tumbled|plunge|plunges|plunged|sink|sinks|slide|slides|lower|cheaper|lowest)\b"
@@ -144,7 +148,7 @@ def _energy(text):
         conf, why = 0.5, "Energy prices rising or supply tightening"
         if re.search(r"\b(iran|iranian|tehran|hormuz)\b", text):
             conf, why = 0.7, "Iran-linked oil disruption (owner: especially negative for the pound)"
-        elif re.search(r"\b(middle east|mideast|gulf|red sea|saudi|iraq|yemen|houthis?|israel)\b", text):
+        elif re.search(r"\b(middle east|mideast|gulf|red sea|saudi|iraq|yemen|houthis?|israel|uae|u\.a\.e\.)\b", text):
             conf, why = 0.6, "Middle East oil disruption (owner: generally negative for the pound)"
         return dict(direction=-1, confidence=conf, driver="energy",
                     reason=why + ": negative for the pound, bearish for GBP/USD.")
@@ -172,6 +176,35 @@ def _war(text):
     if re.search(WAR_UA_ATTACK, text):
         return dict(direction=1, confidence=0.45, driver="war",
                     reason="Ukrainian assault on Russia: positive for the pound, bullish for GBP/USD.")
+    return None
+
+
+# UK policy going backwards (owner 2026-10-26: "Could A Major Part Of Brexit Be Reversed?" = -1, "Going back on
+# policy changes"). Limited to Brexit reversal and an explicit UK U-turn: a plain "overturn" also appears in
+# "Badenoch urges PM to overturn ban on new oil and gas licences", which the owner rated +1 (UK drilling).
+_UK_REVERSAL = (r"\bbrexit\b.{0,60}\b(revers\w*|undo\w*|undone|unravel\w*|rejoin\w*|u-?turns?)\b"
+                r"|\b(revers\w*|undo\w*|unravel\w*|rejoin\w*)\b.{0,60}\bbrexit\b")
+
+
+def _uk_policy_reversal(text):
+    if re.search(_UK_REVERSAL, text) or (re.search(UK_MARKERS, text) and re.search(r"\bu-?turns?\b", text)
+                                          and not re.search(US_MARKERS, text)):
+        return dict(direction=-1, confidence=0.5, driver="politics",
+                    reason="UK policy reversal (owner ruling): uncertainty for the pound, bearish for GBP/USD.")
+    return None
+
+
+# Wealth / people leaving the UK over tax (owner 2026-10-26: "Former Goldman Sachs chief leaves Britain amid tax hike
+# fears" = -1, "Wealth leaving UK due to tax"). It scored +1 before: "tax hike" looked like a rate HIKE.
+_LEAVES_UK = (r"\b(leaves?|leaving|left|quits?|quitting|flees?|fleeing|flee|exodus|moves? abroad|moving abroad|"
+              r"relocat\w+|emigrat\w+)\b.{0,40}\b(uk|britain|london)\b"
+              r"|\b(uk|britain|london)\b.{0,40}\b(exodus|brain drain)\b")
+
+
+def _wealth_leaving_uk(text):
+    if re.search(_LEAVES_UK, text) and re.search(r"\btax(es|ation)?\b", text):
+        return dict(direction=-1, confidence=0.6, driver="growth",
+                    reason="Wealth leaving the UK over tax (owner ruling): negative for the pound, bearish for GBP/USD.")
     return None
 
 
@@ -385,7 +418,8 @@ def _special(text, hinted=False):
         return weak
     results = [r for r in (_energy(text), _policy(text), _uncertainty(text), _investment(text, hinted),
                            _uk_energy_supply(text), _jobs_and_tax(text), _uk_inflation(text),
-                           _ftse(text), _us_ukraine_rift(text)) if r]
+                           _ftse(text), _us_ukraine_rift(text), _uk_policy_reversal(text),
+                           _wealth_leaving_uk(text)) if r]
     if not results:
         return None
     if len({r["direction"] for r in results}) > 1:
