@@ -105,6 +105,12 @@ _RELEASE_WINDOW_S = 18 * 3600
 
 def same_story(a, b):
     """a, b: scored rows (dict-like). See the block comment above for the rule."""
+    if not a["direction"] and not b["direction"]:
+        # Neutral stories carry no direction to double count, but since v88 the app lists every story, so the same
+        # headline from two feeds (BBC Business and BBC Top Stories ran "Chancellor to cut tariffs on some food..."
+        # word for word, 2026-10-27) showed twice. Only near-identical wording merges here -- no name matching.
+        ta, tb = _tokens(a["title"]), _tokens(b["title"])
+        return bool(ta and tb and len(ta & tb) / len(ta | tb) >= 0.8)
     if not a["direction"] or a["direction"] != b["direction"] or (a["driver"] or "") != (b["driver"] or ""):
         return False
     if (a["driver"] in _RELEASE_DRIVERS
@@ -120,8 +126,8 @@ def same_story(a, b):
 
 def dedupe(rows):
     """Collapse same-story rows into one, keeping the strongest (confidence x source weight)
-    as the representative; newest first overall, like the input. Neutral rows are never
-    merged (they carry no direction to double count)."""
+    as the representative; newest first overall, like the input. Neutral rows merge only when
+    their wording is near-identical (see same_story)."""
     rows = [dict(r) for r in rows]
     parent = list(range(len(rows)))
 
