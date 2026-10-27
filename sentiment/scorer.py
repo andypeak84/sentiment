@@ -131,6 +131,12 @@ RESERVES_LOW = (r"\b(lowest|low|record low|depleted|dwindl\w+|run(s|ning)? (low|
                 r"|\b" + _RESERVES + r"\b.{0,25}\b(lowest|record low|depleted|dwindl\w+|run(s|ning)? (low|dry)|at a low)\b")
 
 
+_MIDEAST_ATTACK = (r"\b(attacks?|attacked|strikes?|struck|drones?|missiles?|sabotage\w*|bomb\w*)\b"
+                   r"(?=.*\b(saudi|aramco|iran|iranian|iraq|gulf|middle east|mideast|houthis?|yemen|hormuz|uae|kuwait|qatar)\b)"
+                   r"|\b(saudi|aramco|iran|iranian|iraq|gulf|middle east|mideast|houthis?|yemen|hormuz|uae|kuwait|qatar)\b"
+                   r".*\b(attacks?|attacked|strikes?|struck|drones?|missiles?|sabotage\w*|bomb\w*)\b")
+
+
 def _energy(text):
     if not re.search(ENERGY, text) or re.search(CENTRAL_BANK, text):
         return None
@@ -142,6 +148,14 @@ def _energy(text):
     up = (len(re.findall(ENERGY_UP, stripped)) + len(re.findall(ENERGY_UP_EXTRA, stripped))
           + len(re.findall(ENERGY_UP_OWNER, stripped)) + sf + len(re.findall(ENERGY_UP_DIRECT, stripped)))
     down = len(re.findall(ENERGY_DOWN, stripped)) + sr + len(re.findall(ENERGY_DOWN_DIRECT, stripped))
+    # Owner ruling 2026-10-27: an attack (or the threat of one) on Middle East oil supply outweighs a falling price --
+    # "Oil slides over 2% as traders weigh Saudi attack risks, demand destruction" = -1, and the earlier
+    # "Brent crude edges lower, even after Houthi attacks on Saudi infrastructure" re-rated from 0 to -1.
+    if down >= up and re.search(_MIDEAST_ATTACK, text):
+        iran = bool(re.search(r"\b(iran|iranian|tehran|hormuz)\b", text))
+        return dict(direction=-1, confidence=0.7 if iran else 0.6, driver="energy",
+                    reason="Attack on Middle East oil supply (owner ruling: outweighs a falling price): "
+                           "negative for the pound, bearish for GBP/USD.")
     if up == down:
         return None
     if up > down:
