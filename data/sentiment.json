@@ -1,6 +1,6 @@
 {
   "pair": "GBP/USD",
-  "generated_ts": 1793101535,
+  "generated_ts": 1793101730,
   "scale": "-1 = strongly bearish for GBP/USD, +1 = strongly bullish",
   "windows": {
     "1h": {
@@ -20,7 +20,7 @@
     }
   },
   "scorers_24h": {
-    "rules": 33
+    "rules": 31
   },
   "headlines": [
     {
@@ -35,7 +35,7 @@
       "driver": "politics",
       "reason": "UK news reads strong, which is bullish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.682726
+      "base_w": 0.678473
     },
     {
       "title": "Melania Trump-brokered local ceasefire begins as Russia continues attacks on Ukraine",
@@ -49,7 +49,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.56952
+      "base_w": 0.565973
     },
     {
       "title": "Truce begins in Ukraine city where residents ate weeds to survive",
@@ -63,35 +63,23 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.473627
+      "base_w": 0.470676
     },
     {
       "title": "Chancellor to cut tariffs on some food and freeze fuel duty to give families 'breathing space'",
       "url": "https://www.bbc.co.uk/news/articles/c6d93gq1xdgno?at_medium=RSS&at_campaign=rss",
       "title_withheld": false,
       "source": "BBC Top Stories",
-      "also_reported_by": [],
+      "also_reported_by": [
+        "BBC Business"
+      ],
       "published_ts": 1793099753.0,
       "direction": 0,
       "confidence": 0.0,
       "driver": "rates",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.4722
-    },
-    {
-      "title": "Chancellor to cut tariffs on some food and freeze fuel duty to give families 'breathing space'",
-      "url": "https://www.bbc.co.uk/news/articles/c6d93gq1xdgno?at_medium=RSS&at_campaign=rss",
-      "title_withheld": false,
-      "source": "BBC Business",
-      "also_reported_by": [],
-      "published_ts": 1793099753.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "rates",
-      "reason": "No clear strong/weak signal in headline.",
-      "in_24h": true,
-      "base_w": 0.66108
+      "base_w": 0.469259
     },
     {
       "title": "What is the Budget and what could be in it?",
@@ -105,7 +93,7 @@
       "driver": "politics",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.649723
+      "base_w": 0.645676
     },
     {
       "title": "Oil prices seesaw amid renewed diplomatic efforts to end Mideast conflict",
@@ -119,7 +107,7 @@
       "driver": "inflation",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.529849
+      "base_w": 0.526548
     },
     {
       "title": "India Rejects Claims of U.S. Pressure Over Russian Oil Purchases",
@@ -133,7 +121,7 @@
       "driver": "energy",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.432274
+      "base_w": 0.429581
     },
     {
       "title": "Trump Moves to Ease Methane Regulations for U.S. Oil Producers",
@@ -147,7 +135,7 @@
       "driver": "energy",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.388837
+      "base_w": 0.386415
     },
     {
       "title": "India\u2019s Oil Buyers Squeezed by $123 Crude and Weak Rupee",
@@ -161,7 +149,7 @@
       "driver": "energy",
       "reason": "Energy prices rising or supply tightening: negative for the pound, bearish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.305664
+      "base_w": 0.303759
     },
     {
       "title": "Another major lender profits in billions as higher bank tax expected in budget",
@@ -175,7 +163,7 @@
       "driver": "politics",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.387159
+      "base_w": 0.384747
     },
     {
       "title": "Will the Budget pass Burnham's Makerfield test?",
@@ -189,7 +177,7 @@
       "driver": "politics",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.372343
+      "base_w": 0.370023
     },
     {
       "title": "First-time buyers hoping for help from the Budget",
@@ -203,7 +191,7 @@
       "driver": "politics",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.371197
+      "base_w": 0.368885
     },
     {
       "title": "Oil Prices Drop Despite Threat of New U.S. Strikes on Iran",
@@ -217,7 +205,7 @@
       "driver": "energy",
       "reason": "Attack on Middle East oil supply (owner ruling: outweighs a falling price): negative for the pound, bearish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.265047
+      "base_w": 0.263396
     },
     {
       "title": "Budget 2026: 'Surrey is a lovely place - but it can be stressful'",
@@ -231,35 +219,23 @@
       "driver": "politics",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.368834
+      "base_w": 0.366537
     },
     {
       "title": "Donald Trump's biggest economic problem looks strangely familiar",
       "url": "https://www.bbc.co.uk/news/articles/cwvg0ddz1z77o?at_medium=RSS&at_campaign=rss",
       "title_withheld": false,
       "source": "BBC Top Stories",
-      "also_reported_by": [],
+      "also_reported_by": [
+        "BBC Business"
+      ],
       "published_ts": 1793080871.0,
       "direction": 0,
       "confidence": 0.0,
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.257618
-    },
-    {
-      "title": "Donald Trump's biggest economic problem looks strangely familiar",
-      "url": "https://www.bbc.co.uk/news/articles/cwvg0ddz1z77o?at_medium=RSS&at_campaign=rss",
-      "title_withheld": false,
-      "source": "BBC Business",
-      "also_reported_by": [],
-      "published_ts": 1793080871.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.360665
+      "base_w": 0.256013
     },
     {
       "title": "My advice for Burnham\u2019s first budget? Hit the banks \u2013 and hit them hard | Polly Toynbee",
@@ -273,7 +249,7 @@
       "driver": "politics",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.359879
+      "base_w": 0.357637
     },
     {
       "title": "Bessent dines at Cheesecake Factory, slams Obama over Trump joke",
@@ -287,7 +263,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.208858
+      "base_w": 0.207557
     },
     {
       "title": "UK shop price inflation \u2018highest since 2024\u2019 as retailers struggle to limit price rises",
@@ -301,7 +277,7 @@
       "driver": "inflation",
       "reason": "UK inflation rising (owner ruling: very bad for the UK, weighted most): negative for the pound, bearish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.18028
+      "base_w": 0.179157
     },
     {
       "title": "UK Weighs Scrapping Its Largest Untapped Oilfield With Oil Over $100",
@@ -315,7 +291,7 @@
       "driver": "energy",
       "reason": "Energy prices rising or supply tightening: negative for the pound, bearish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.128516
+      "base_w": 0.127715
     },
     {
       "title": "Beijing Pushes Domestic Oil Production as Iranian Supply Dries Up",
@@ -329,7 +305,7 @@
       "driver": "energy",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.114494
+      "base_w": 0.113781
     },
     {
       "title": "Alleged Russian Funding Prompts Executive Exodus at U.S. LNG Firm",
@@ -343,7 +319,7 @@
       "driver": "rates",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.102003
+      "base_w": 0.101368
     },
     {
       "title": "Iran War Pushes Trump's Average Gasoline Prices Above Biden's",
@@ -357,7 +333,7 @@
       "driver": "inflation",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.08096
+      "base_w": 0.080455
     },
     {
       "title": "Federal Reserve is likely to hold interest rates steady in October. Here's what that means for consumers",
@@ -371,7 +347,7 @@
       "driver": "rates",
       "reason": "US news reads strong, which is bearish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.085128
+      "base_w": 0.084598
     },
     {
       "title": "FTC and 20 states sue Dollar General, alleging retailer overcharged shoppers",
@@ -385,7 +361,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.082806
+      "base_w": 0.08229
     },
     {
       "title": "Bookies fear budget hit but gaming machine self-harm killed off the old-fashioned shops",
@@ -399,7 +375,7 @@
       "driver": "politics",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.096334
+      "base_w": 0.095734
     },
     {
       "title": "The Iran War Just Added $39 Billion to the World's LNG Bill",
@@ -413,7 +389,7 @@
       "driver": "energy",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.064258
+      "base_w": 0.063858
     },
     {
       "title": "Kazakhstan Faces $12 Billion Oil Setback as New Investment Plans Take Shape",
@@ -427,7 +403,7 @@
       "driver": "energy",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.057247
+      "base_w": 0.056891
     },
     {
       "title": "Audi boss under fire in Germany for Trump rally appearance",
@@ -441,7 +417,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.061498
+      "base_w": 0.061115
     },
     {
       "title": "Here are Monday's biggest analyst calls: Tesla, Nvidia, SpaceX, Apple, Ross, Dollar General, Lockheed Martin & more",
@@ -455,7 +431,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.03973
+      "base_w": 0.039483
     },
     {
       "title": "Caregiving for adult relatives can cost thousands. AARP survey finds support could matter to midterm voters",
@@ -469,7 +445,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.039686
+      "base_w": 0.039438
     },
     {
       "title": "Trump says he'll soon decide whether to \u2018make a deal\u2019 with Iran or \u2018finish it off'",
@@ -483,10 +459,10 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.037767
+      "base_w": 0.037532
     }
   ],
-  "neutral_stories_24h": 27,
+  "neutral_stories_24h": 25,
   "headlines_note": "Same-story duplicates are merged and counted once. Each headline is shown with its source, link and our own reason; headline text belongs to its publisher.",
   "feeds": {
     "ok": 12,
