@@ -222,6 +222,38 @@ def _wealth_leaving_uk(text):
     return None
 
 
+# Firms holding back on hiring (owner flag 2026-10-25: "Firms 'holding back' on new jobs ahead of Budget" = -1, BBC
+# Business, so a UK story). Weak hiring is weak news for that country's currency.
+_HIRING_WEAK = (r"\b(holding back|hold(s|ing)? back|hold(s|ing)? off|freez\w+|cut\w* back|pull\w* back|paus\w+|slow\w*)"
+                r"\b.{0,15}\b(new )?(jobs|hiring|recruit\w*)\b"
+                r"|\bhiring (freeze|slows?|slowdown|slumps?|falls?|fell|drops?)\b")
+
+
+def _hiring_weak(text):
+    if not re.search(_HIRING_WEAK, text):
+        return None
+    uk, us = bool(re.search(UK_MARKERS, text)), bool(re.search(US_MARKERS, text))
+    if uk == us:
+        return None
+    return dict(direction=-1 if uk else 1, confidence=0.5, driver="jobs",
+                reason=f"Firms holding back on hiring in the {'UK' if uk else 'US'} (owner ruling): "
+                       f"{'bearish' if uk else 'bullish'} for GBP/USD.")
+
+
+# UK government money committed to investment (owner flag 2026-10-25: "Budget to include £1bn for social and affordable
+# housing" = +1). A sterling sum going FOR / INTO a productive area; anything that is a cut is left alone.
+_UK_SPENDING = (r"£\s?\d[\d,.]*\s?(bn|billion|m|million)\b.{0,40}\b(for|on|into|to)\b.{0,40}"
+                r"\b(housing|homes|infrastructure|rail\w*|roads?|hospitals?|schools?|nhs|energy|investment|growth|"
+                r"research|defence|ai)\b")
+
+
+def _uk_spending(text):
+    if re.search(_UK_SPENDING, text) and not re.search(r"\b(cuts?|cutting|slash\w*|scrap\w*|axe\w*)\b", text):
+        return dict(direction=1, confidence=0.5, driver="growth",
+                    reason="UK money committed to investment (owner ruling): positive for the pound, bullish for GBP/USD.")
+    return None
+
+
 def _policy(text):
     if re.search(US_ACTOR, text) and re.search(US_REVERSAL, text):
         return dict(direction=1, confidence=0.4, driver="politics",
@@ -433,7 +465,7 @@ def _special(text, hinted=False):
     results = [r for r in (_energy(text), _policy(text), _uncertainty(text), _investment(text, hinted),
                            _uk_energy_supply(text), _jobs_and_tax(text), _uk_inflation(text),
                            _ftse(text), _us_ukraine_rift(text), _uk_policy_reversal(text),
-                           _wealth_leaving_uk(text)) if r]
+                           _wealth_leaving_uk(text), _hiring_weak(text), _uk_spending(text)) if r]
     if not results:
         return None
     if len({r["direction"] for r in results}) > 1:
