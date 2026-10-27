@@ -1,26 +1,26 @@
 {
   "pair": "GBP/USD",
-  "generated_ts": 1793101328,
+  "generated_ts": 1793101535,
   "scale": "-1 = strongly bearish for GBP/USD, +1 = strongly bullish",
   "windows": {
     "1h": {
-      "score": 0.099,
-      "label": "neutral",
-      "articles": 2
+      "score": 1.0,
+      "label": "strongly bullish",
+      "articles": 1
     },
     "6h": {
-      "score": 0.049,
+      "score": 0.052,
       "label": "neutral",
-      "articles": 4
+      "articles": 3
     },
     "24h": {
-      "score": -0.182,
+      "score": -0.239,
       "label": "mildly bearish",
-      "articles": 7
+      "articles": 6
     }
   },
   "scorers_24h": {
-    "rules": 54
+    "rules": 33
   },
   "headlines": [
     {
@@ -35,35 +35,7 @@
       "driver": "politics",
       "reason": "UK news reads strong, which is bullish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.687277
-    },
-    {
-      "title": "Diesel Drives India's Fuel Export Windfall as Earnings Reach $12.6 Billion",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Diesel-Drives-Indias-Fuel-Export-Windfall-as-Earnings-Reach-126-Billion.html",
-      "title_withheld": false,
-      "source": "OilPrice.com",
-      "also_reported_by": [],
-      "published_ts": 1793100600.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.488445
-    },
-    {
-      "title": "Buy Palantir ahead of earnings, says Rosenblatt",
-      "url": "https://www.cnbc.com/2026/10/27/palantir-rosenblatt-price-target-earnings.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1793100008.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.575104
+      "base_w": 0.682726
     },
     {
       "title": "Melania Trump-brokered local ceasefire begins as Russia continues attacks on Ukraine",
@@ -77,7 +49,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.573317
+      "base_w": 0.56952
     },
     {
       "title": "Truce begins in Ukraine city where residents ate weeds to survive",
@@ -91,7 +63,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.476784
+      "base_w": 0.473627
     },
     {
       "title": "Chancellor to cut tariffs on some food and freeze fuel duty to give families 'breathing space'",
@@ -105,7 +77,7 @@
       "driver": "rates",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.475348
+      "base_w": 0.4722
     },
     {
       "title": "Chancellor to cut tariffs on some food and freeze fuel duty to give families 'breathing space'",
@@ -119,23 +91,7 @@
       "driver": "rates",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.665487
-    },
-    {
-      "title": "Fed rate hikes are coming, but not this week: CNBC survey",
-      "url": "https://www.cnbc.com/2026/10/27/federal-reserve-rate-hike-timing-expectations.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [
-        "CNBC Economy"
-      ],
-      "published_ts": 1793099401.0,
-      "direction": -1,
-      "confidence": 0.55,
-      "driver": "rates",
-      "reason": "US news reads strong, which is bearish for GBP/USD.",
-      "in_24h": true,
-      "base_w": 0.56401
+      "base_w": 0.66108
     },
     {
       "title": "What is the Budget and what could be in it?",
@@ -149,7 +105,7 @@
       "driver": "politics",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.654054
+      "base_w": 0.649723
     },
     {
       "title": "Oil prices seesaw amid renewed diplomatic efforts to end Mideast conflict",
@@ -163,7 +119,7 @@
       "driver": "inflation",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.533381
+      "base_w": 0.529849
     },
     {
       "title": "India Rejects Claims of U.S. Pressure Over Russian Oil Purchases",
@@ -177,49 +133,7 @@
       "driver": "energy",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.435155
-    },
-    {
-      "title": "Why won't MPs tax the rich? We asked them \u2013 and their answers gave us hope | Faiza Shaheen",
-      "url": "https://www.theguardian.com/commentisfree/2026/oct/27/mps-tax-super-rich-wealthy-voters-reform-budget-burnham",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1793095209.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.575191
-    },
-    {
-      "title": "Defund Elon Musk | Robert Reich",
-      "url": "https://www.theguardian.com/commentisfree/2026/oct/27/defund-elon-musk",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1793095208.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.575172
-    },
-    {
-      "title": "UK officials discussing options including free movement with EU ahead of summit",
-      "url": "https://www.theguardian.com/politics/2026/oct/27/uk-eu-relationship-talks-summit-free-movement-jonathan-reynolds",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1793094075.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.554636
+      "base_w": 0.432274
     },
     {
       "title": "Trump Moves to Ease Methane Regulations for U.S. Oil Producers",
@@ -233,35 +147,7 @@
       "driver": "energy",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.391429
-    },
-    {
-      "title": "Number of UK businesses in financial distress \u2018at two-decade high\u2019",
-      "url": "https://www.theguardian.com/business/2026/oct/27/number-of-uk-businesses-in-financial-distress-at-two-decade-high-budget",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1793091667.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.513391
-    },
-    {
-      "title": "IEA Warns of Dangerous Concentration in Global Clean Energy Supply Chains",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/IEA-Warns-of-Dangerous-Concentration-in-Global-Clean-Energy-Supply-Chains.html",
-      "title_withheld": false,
-      "source": "OilPrice.com",
-      "also_reported_by": [],
-      "published_ts": 1793089800.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "energy",
-      "reason": "No clear strong/weak signal in headline.",
-      "in_24h": true,
-      "base_w": 0.345383
+      "base_w": 0.388837
     },
     {
       "title": "India\u2019s Oil Buyers Squeezed by $123 Crude and Weak Rupee",
@@ -275,35 +161,7 @@
       "driver": "energy",
       "reason": "Energy prices rising or supply tightening: negative for the pound, bearish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.307701
-    },
-    {
-      "title": "I'm a single mum on \u00a341,000 and limit my weekly shop to \u00a340 - it's hard",
-      "url": "https://www.bbc.co.uk/news/articles/cmx235r9wr3yo?at_medium=RSS&at_campaign=rss",
-      "title_withheld": false,
-      "source": "BBC Top Stories",
-      "also_reported_by": [],
-      "published_ts": 1793083730.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.284254
-    },
-    {
-      "title": "I'm a single mum on \u00a341,000 and limit my weekly shop to \u00a340 - it's hard",
-      "url": "https://www.bbc.co.uk/news/articles/cmx235r9wr3yo?at_medium=RSS&at_campaign=rss",
-      "title_withheld": false,
-      "source": "BBC Business",
-      "also_reported_by": [],
-      "published_ts": 1793083730.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.397955
+      "base_w": 0.305664
     },
     {
       "title": "Another major lender profits in billions as higher bank tax expected in budget",
@@ -317,7 +175,7 @@
       "driver": "politics",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.38974
+      "base_w": 0.387159
     },
     {
       "title": "Will the Budget pass Burnham's Makerfield test?",
@@ -331,7 +189,7 @@
       "driver": "politics",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.374825
+      "base_w": 0.372343
     },
     {
       "title": "First-time buyers hoping for help from the Budget",
@@ -345,7 +203,7 @@
       "driver": "politics",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.373672
+      "base_w": 0.371197
     },
     {
       "title": "Oil Prices Drop Despite Threat of New U.S. Strikes on Iran",
@@ -354,12 +212,12 @@
       "source": "OilPrice.com",
       "also_reported_by": [],
       "published_ts": 1793081757.0,
-      "direction": 1,
-      "confidence": 0.5,
+      "direction": -1,
+      "confidence": 0.7,
       "driver": "energy",
-      "reason": "Energy prices falling or supply easing: positive for the pound, bullish for GBP/USD.",
+      "reason": "Attack on Middle East oil supply (owner ruling: outweighs a falling price): negative for the pound, bearish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.266814
+      "base_w": 0.265047
     },
     {
       "title": "Budget 2026: 'Surrey is a lovely place - but it can be stressful'",
@@ -373,7 +231,7 @@
       "driver": "politics",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.371293
+      "base_w": 0.368834
     },
     {
       "title": "Donald Trump's biggest economic problem looks strangely familiar",
@@ -387,7 +245,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.259335
+      "base_w": 0.257618
     },
     {
       "title": "Donald Trump's biggest economic problem looks strangely familiar",
@@ -401,7 +259,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.363069
+      "base_w": 0.360665
     },
     {
       "title": "My advice for Burnham\u2019s first budget? Hit the banks \u2013 and hit them hard | Polly Toynbee",
@@ -415,21 +273,7 @@
       "driver": "politics",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.362278
-    },
-    {
-      "title": "DOJ charges ex-FBI Director James Comey in new case",
-      "url": "https://www.cnbc.com/2026/10/26/james-comey-indictment-national-defense-doj-trump.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1793071804.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.232637
+      "base_w": 0.359879
     },
     {
       "title": "Bessent dines at Cheesecake Factory, slams Obama over Trump joke",
@@ -443,7 +287,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.210251
+      "base_w": 0.208858
     },
     {
       "title": "UK shop price inflation \u2018highest since 2024\u2019 as retailers struggle to limit price rises",
@@ -457,7 +301,7 @@
       "driver": "inflation",
       "reason": "UK inflation rising (owner ruling: very bad for the UK, weighted most): negative for the pound, bearish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.181482
+      "base_w": 0.18028
     },
     {
       "title": "UK Weighs Scrapping Its Largest Untapped Oilfield With Oil Over $100",
@@ -471,21 +315,7 @@
       "driver": "energy",
       "reason": "Energy prices rising or supply tightening: negative for the pound, bearish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.129372
-    },
-    {
-      "title": "Chris Mason: Burnham faces crunch decisions in his next 100 days",
-      "url": "https://www.bbc.co.uk/news/articles/c317k85r5lglo?at_medium=RSS&at_campaign=rss",
-      "title_withheld": false,
-      "source": "BBC Top Stories",
-      "also_reported_by": [],
-      "published_ts": 1793055794.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.115977
+      "base_w": 0.128516
     },
     {
       "title": "Beijing Pushes Domestic Oil Production as Iranian Supply Dries Up",
@@ -499,21 +329,7 @@
       "driver": "energy",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.115258
-    },
-    {
-      "title": "Everyday fixes to make life easier for millions of Britons",
-      "url": "https://www.gov.uk/government/news/everyday-fixes-to-make-life-easier-for-millions-of-britons",
-      "title_withheld": false,
-      "source": "HM Treasury",
-      "also_reported_by": [],
-      "published_ts": 1793053869.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.21806
+      "base_w": 0.114494
     },
     {
       "title": "Alleged Russian Funding Prompts Executive Exodus at U.S. LNG Firm",
@@ -527,21 +343,7 @@
       "driver": "rates",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.102683
-    },
-    {
-      "title": "Asia Needs $1 Trillion a Year to Avoid the Next Energy Shock",
-      "url": "https://oilprice.com/Energy/Energy-General/Asia-Needs-1-Trillion-a-Year-to-Avoid-the-Next-Energy-Shock.html",
-      "title_withheld": false,
-      "source": "OilPrice.com",
-      "also_reported_by": [],
-      "published_ts": 1793048400.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "energy",
-      "reason": "No clear strong/weak signal in headline.",
-      "in_24h": true,
-      "base_w": 0.09148
+      "base_w": 0.102003
     },
     {
       "title": "Iran War Pushes Trump's Average Gasoline Prices Above Biden's",
@@ -555,7 +357,7 @@
       "driver": "inflation",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.0815
+      "base_w": 0.08096
     },
     {
       "title": "Federal Reserve is likely to hold interest rates steady in October. Here's what that means for consumers",
@@ -569,7 +371,7 @@
       "driver": "rates",
       "reason": "US news reads strong, which is bearish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.085696
+      "base_w": 0.085128
     },
     {
       "title": "FTC and 20 states sue Dollar General, alleging retailer overcharged shoppers",
@@ -583,7 +385,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.083358
+      "base_w": 0.082806
     },
     {
       "title": "Bookies fear budget hit but gaming machine self-harm killed off the old-fashioned shops",
@@ -597,7 +399,7 @@
       "driver": "politics",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.096976
+      "base_w": 0.096334
     },
     {
       "title": "The Iran War Just Added $39 Billion to the World's LNG Bill",
@@ -611,63 +413,7 @@
       "driver": "energy",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.064686
-    },
-    {
-      "title": "Ben Jennings on Andy Burnham\u2019s plans for young people \u2013 cartoon",
-      "url": "https://www.theguardian.com/commentisfree/picture/2026/oct/26/ben-jennings-andy-burnham-budget-young-people",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1793037223.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.089472
-    },
-    {
-      "title": "What makes Andy Burnham think we can rejoin the EU? | Politics Weekly",
-      "url": "https://www.theguardian.com/politics/video/2026/oct/26/what-makes-andy-burnham-think-we-can-rejoin-the-eu-politics-weekly",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1793037039.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.088945
-    },
-    {
-      "title": "The regime change we need for Thames Water | Letters",
-      "url": "https://www.theguardian.com/business/2026/oct/26/the-regime-change-we-need-for-thames-water",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1793036381.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.087087
-    },
-    {
-      "title": "Egypt Votes to Defend Saudi Arabia, Risking Houthi Fire",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Egypt-Votes-to-Defend-Saudi-Arabia-Risking-Houthi-Fire.html",
-      "title_withheld": false,
-      "source": "OilPrice.com",
-      "also_reported_by": [],
-      "published_ts": 1793035800.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.061056
+      "base_w": 0.064258
     },
     {
       "title": "Kazakhstan Faces $12 Billion Oil Setback as New Investment Plans Take Shape",
@@ -681,7 +427,7 @@
       "driver": "energy",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.057629
+      "base_w": 0.057247
     },
     {
       "title": "Audi boss under fire in Germany for Trump rally appearance",
@@ -695,35 +441,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.061908
-    },
-    {
-      "title": "Healey is expected to shield low-income pensioners from income tax \u2013 but how will it work?",
-      "url": "https://www.theguardian.com/money/2026/oct/26/healey-pensioners-low-income-tax-budget-how-will-it-work",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1793021103.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.053337
-    },
-    {
-      "title": "Lions sponsor Howden lines up ex-Goldman partner for board amid fundraising",
-      "url": "https://news.sky.com/story/lions-sponsor-howden-lines-up-ex-goldman-partner-for-board-amid-fundraising-13604010",
-      "title_withheld": false,
-      "source": "Sky News Business",
-      "also_reported_by": [],
-      "published_ts": 1793020500.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.052315
+      "base_w": 0.061498
     },
     {
       "title": "Here are Monday's biggest analyst calls: Tesla, Nvidia, SpaceX, Apple, Ross, Dollar General, Lockheed Martin & more",
@@ -737,7 +455,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.039995
+      "base_w": 0.03973
     },
     {
       "title": "Caregiving for adult relatives can cost thousands. AARP survey finds support could matter to midterm voters",
@@ -751,7 +469,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.03995
+      "base_w": 0.039686
     },
     {
       "title": "Trump says he'll soon decide whether to \u2018make a deal\u2019 with Iran or \u2018finish it off'",
@@ -765,24 +483,10 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.038019
-    },
-    {
-      "title": "Meta announces $95bn fundraising drive to pay for AI expansion \u2013 business live",
-      "url": "https://www.theguardian.com/business/live/2026/oct/26/ai-cloud-computing-companies-guppy-level-death-elon-musk-stock-markets-dollar-oil-bond-yieds-latest-news-updates",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1793015352.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.044348
+      "base_w": 0.037767
     }
   ],
-  "neutral_stories_24h": 47,
+  "neutral_stories_24h": 27,
   "headlines_note": "Same-story duplicates are merged and counted once. Each headline is shown with its source, link and our own reason; headline text belongs to its publisher.",
   "feeds": {
     "ok": 12,
