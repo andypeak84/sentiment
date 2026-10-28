@@ -254,38 +254,6 @@ def _uk_spending(text):
     return None
 
 
-# Banks (owner ruling 2026-10-28): "Any stories about huge profit for banks make bullish any stories for taxing banks make
-# bearish. if they are in the same head line make it neutral". Rated after "HSBC profits surge 32%, sparking fresh calls
-# for bank taxes in the budget" (+1 by the generic words) and "My advice for Burnham's first budget? Hit the banks -- and
-# hit them hard" (0). Applies whatever country the bank is in, as ruled. The Bank of England is not a commercial bank.
-_BANK = (r"\b(banks?|banking|bankers?|lenders?|hsbc|barclays|lloyds|natwest|santander|standard chartered|nationwide|"
-         r"jpmorgan|jp morgan|goldman sachs|morgan stanley|citigroup|citi|wells fargo|bank of america)\b")
-_BANK_PROFIT = (r"\b(record|bumper|huge|soaring|surging|booming|blowout|big|bigger|higher|stellar)\b.{0,20}\b(profits?|earnings)\b"
-                r"|\b(profits?|earnings)\b.{0,20}\b(surge\w*|soar\w*|jump\w*|leap\w*|rocket\w*|boom\w*|beat\w*|"
-                r"rise|rises|rising|rose|climb\w*|up \d+%|top|tops|topped|hit (a )?record|record)\b")
-_TAX_WORD = r"(tax|taxes|taxed|taxing|taxation|levy|levies|surcharge)"
-_BANK_TAX = (r"\b(banks?|banking|bankers?|lenders?|windfall)\b.{0,40}\b" + _TAX_WORD + r"\b"
-             r"|\b" + _TAX_WORD + r"\b.{0,40}\b(banks?|banking|bankers?|lenders?)\b"
-             r"|\b(hit|raid\w*|squeez\w*|target\w*) (on )?(the )?banks\b")
-
-
-def _banks(text):
-    text = re.sub(r"\bbank of england\b", "boe", text)
-    if not re.search(_BANK, text):
-        return None
-    profit, tax = bool(re.search(_BANK_PROFIT, text)), bool(re.search(_BANK_TAX, text))
-    if profit and tax:
-        return dict(direction=0, confidence=0.0, driver="growth",
-                    reason="Bank profits and bank taxes in one headline (owner ruling): they cancel out, neutral.")
-    if profit:
-        return dict(direction=1, confidence=0.5, driver="growth",
-                    reason="Big bank profits (owner ruling): positive for the pound, bullish for GBP/USD.")
-    if tax:
-        return dict(direction=-1, confidence=0.5, driver="growth",
-                    reason="Taxing the banks (owner ruling): negative for the pound, bearish for GBP/USD.")
-    return None
-
-
 def _policy(text):
     if re.search(US_ACTOR, text) and re.search(US_REVERSAL, text):
         return dict(direction=1, confidence=0.4, driver="politics",
@@ -494,10 +462,7 @@ def _special(text, hinted=False):
     weak = _us_weakness(text)
     if weak:
         return weak
-    banks = _banks(text)
-    if banks and banks["direction"] == 0:
-        return banks  # owner: profits + tax in one headline is neutral, whatever else it says
-    results = [r for r in (banks, _energy(text), _policy(text), _uncertainty(text), _investment(text, hinted),
+    results = [r for r in (_energy(text), _policy(text), _uncertainty(text), _investment(text, hinted),
                            _uk_energy_supply(text), _jobs_and_tax(text), _uk_inflation(text),
                            _ftse(text), _us_ukraine_rift(text), _uk_policy_reversal(text),
                            _wealth_leaving_uk(text), _hiring_weak(text), _uk_spending(text)) if r]
