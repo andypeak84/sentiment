@@ -385,6 +385,24 @@ def _jobs_and_tax(text):
                        f"{'dollar' if us else 'pound'}, {'bullish' if us else 'bearish'} for GBP/USD.")
 
 
+# UK tax rises on their own (owner, 2026-10-29: Budgets "will only ever introduce stealth taxes which puts off investment in
+# the UK. Its always negative"). Low confidence: it is a view about investment over time, not a measured effect. A headline
+# that denies or reverses a rise ("rules out tax rises", "scraps the tax increase") is not a rise, so it is left alone; a US
+# marker leaves it alone too (the mirror was never rated).
+_NO_TAX_RISE = (r"\b(rules? out|ruled out|no (new |further )?tax|won'?t|will not|not (to )?(raise|increase)|scrap\w*|"
+                r"avoid\w*|reject\w*|u-?turn\w*|abandon\w*|drop(s|ped)? (the )?plans?|freez\w+)\b")
+
+
+def _uk_tax_rise(text):
+    uk = re.search(UK_MARKERS, text) or re.search(r"\b(chancellor|hmrc|budget)\b", text)
+    if (re.search(TAX_RISES, text) and uk and not re.search(US_MARKERS, text)
+            and not re.search(_NO_TAX_RISE, text)):
+        return dict(direction=-1, confidence=0.3, driver="politics",
+                    reason="UK tax rise (owner ruling): stealth taxes put off UK investment, slightly negative for the "
+                           "pound, bearish for GBP/USD.")
+    return None
+
+
 # UK inflation (owner, "Will UK Inflation Rise to 3.5% This Week?" -> -1): "This is very bad
 # inflation data for the UK ... far above our target. If this type of article appears often gbp
 # will surely fall ... It should be weighted on the most." This REVERSES the textbook reading
@@ -521,7 +539,7 @@ def _special(text, hinted=False):
                            _uk_energy_supply(text), _jobs_and_tax(text), _uk_inflation(text),
                            _ftse(text), _us_ukraine_rift(text), _uk_policy_reversal(text),
                            _wealth_leaving_uk(text), _hiring_weak(text), _uk_spending(text),
-                           _uk_energy_saving(text), _uk_budget_preview(text)) if r]
+                           _uk_energy_saving(text), _uk_budget_preview(text), _uk_tax_rise(text)) if r]
     if not results:
         return None
     if len({r["direction"] for r in results}) > 1:
