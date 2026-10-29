@@ -448,9 +448,64 @@ def _us_ukraine_rift(text):
     return None
 
 
+# A central-bank decision that is already expected is priced in (owner, 2026-10-29: "Federal Reserve is likely to hold
+# interest rates steady in October" -- "it says expected"), so it carries no news of its own. The scorer used to read it
+# as strong US data (-1). The actual decision ("Fed holds rates", "BoE raises rates") is untouched. The owner flagged that
+# one story +1 for the week because the BoE was expected to hike while the Fed held (a divergence); a headline alone can't
+# show that, so it stays a manual flag.
+_EXPECTED_HOLD = (r"\b(likely|expected|set|seen|tipped|poised|predicted|widely expected|bets?|odds)\b.{0,25}"
+                  r"\b(to )?(hold|keep|leave|maintain|stand pat|pause|no change)\b"
+                  r"|\bno (hike|cut|change|move)s? (is |are )?(expected|likely|seen)\b")
+
+
+def _expected_hold(text):
+    if re.search(CENTRAL_BANK + r"|\b(fed|boe|ecb)\b", text) and re.search(_EXPECTED_HOLD, text):
+        return dict(direction=0, confidence=0.3, driver="rates",
+                    reason="Central-bank decision already expected (owner ruling): priced in, neutral for GBP/USD.")
+    return None
+
+
+# UK schemes that cut household energy use (owner flag 2026-10-29: "Homes across UK to get low- or no-interest loans to
+# fund solar panels and heat pumps" = +1 -- an energy-saving scheme, energy is why inflation is high, and high UK inflation
+# is bad for the pound). Owner: "only slightly", so low confidence.
+_ENERGY_SAVING = r"\b(solar|heat pumps?|insulation|retrofit\w*|energy[- ]sav\w+|energy[- ]efficien\w+)\b"
+_SCHEME_WORDS = r"\b(loans?|grants?|scheme|subsid\w+|funding|vouchers?|support|help|boost|rollout|roll-out|free)\b"
+
+
+def _uk_energy_saving(text):
+    if (re.search(_ENERGY_SAVING, text) and re.search(_SCHEME_WORDS, text)
+            and re.search(UK_MARKERS, text) and not re.search(US_MARKERS, text)):
+        return dict(direction=1, confidence=0.3, driver="energy",
+                    reason="UK energy-saving scheme (owner ruling): eases energy costs and inflation, slightly "
+                           "positive for the pound, bullish for GBP/USD.")
+    return None
+
+
+# UK Budget previews and doubt (owner flags 2026-10-28: "What could be in the Budget?", "Former Conservative chancellor
+# unsure Budget will 'fix big problems'", "What do you want from the Budget?" = all -1). Owner's reasoning: nobody can price
+# a Budget in advance, recent ones have been risky (the 2022 mini-budget took the pound near parity), and they tend to
+# bring stealth taxes that put off UK investment. Event risk rather than anything in the headline, so low confidence.
+# A headline reporting an actual measure (e.g. "Budget to include GBP1bn for housing") is not matched here.
+_BUDGET_PREVIEW = (r"\bwhat (could|might|will|should|do you want|to expect)\b.{0,40}\bbudget\b"
+                   r"|\bbudget (preview|predictions?|speculation|wish ?list|what to expect)\b"
+                   r"|\b(unsure|doubts?|doubtful|fears?|worr\w+|sceptic\w*|skeptic\w*)\b.{0,50}\bbudget\b"
+                   r"|\bbudget\b.{0,50}\b(unsure|doubts?|doubtful|fears?|worr\w+|sceptic\w*|skeptic\w*)\b")
+
+
+def _uk_budget_preview(text):
+    if re.search(_BUDGET_PREVIEW, text) and not re.search(US_MARKERS, text):
+        return dict(direction=-1, confidence=0.3, driver="politics",
+                    reason="UK Budget still to come (owner ruling): event risk and stealth-tax worries, slightly "
+                           "negative for the pound, bearish for GBP/USD.")
+    return None
+
+
 def _special(text, hinted=False):
     """Owner's channels (energy, war, policy). Agreeing channels add confidence; conflicting
     channels leave the headline neutral with low confidence."""
+    held = _expected_hold(text)
+    if held:
+        return held
     war = _war(text)
     if war:
         # Owner: a Ukrainian assault on Russia is positive for the pound even when it hits oil
@@ -465,7 +520,8 @@ def _special(text, hinted=False):
     results = [r for r in (_energy(text), _policy(text), _uncertainty(text), _investment(text, hinted),
                            _uk_energy_supply(text), _jobs_and_tax(text), _uk_inflation(text),
                            _ftse(text), _us_ukraine_rift(text), _uk_policy_reversal(text),
-                           _wealth_leaving_uk(text), _hiring_weak(text), _uk_spending(text)) if r]
+                           _wealth_leaving_uk(text), _hiring_weak(text), _uk_spending(text),
+                           _uk_energy_saving(text), _uk_budget_preview(text)) if r]
     if not results:
         return None
     if len({r["direction"] for r in results}) > 1:
