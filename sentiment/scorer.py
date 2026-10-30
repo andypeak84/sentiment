@@ -549,7 +549,24 @@ def _uk_energy_saving(text):
     return None
 
 
-# (UK Budget-preview rule removed 2026-10-30: the owner was wrong to treat Budget news as bad; see RATING_GUIDE.md.)
+# UK Budget previews and doubt (owner flags 2026-10-28: "What could be in the Budget?", "Former Conservative chancellor unsure
+# Budget will 'fix big problems'", "What do you want from the Budget?" = -1). Restored 2026-10-30 after a brief retraction: the
+# owner's view is that the LEAD-UP to a Budget is a bit bearish (nobody can price it in advance; event risk), while the outcome is
+# judged on its own merits (see _uk_budget_welcomed above). It matches previews and doubt only, never a reported measure or a
+# reaction, and carries low confidence. The UK tax-rise rule stays removed: it assumed all Budget news was bad.
+_BUDGET_PREVIEW = (r"\bwhat (could|might|will|should|do you want|to expect)\b.{0,40}\bbudget\b"
+                   r"|\bbudget (preview|predictions?|speculation|wish ?list|what to expect)\b"
+                   r"|\b(unsure|doubts?|doubtful|fears?|worr\w+|sceptic\w*|skeptic\w*)\b.{0,50}\bbudget\b"
+                   r"|\bbudget\b.{0,50}\b(unsure|doubts?|doubtful|fears?|worr\w+|sceptic\w*|skeptic\w*)\b")
+
+
+def _uk_budget_preview(text):
+    if re.search(_BUDGET_PREVIEW, text) and not re.search(US_MARKERS, text):
+        return dict(direction=-1, confidence=0.3, driver="politics",
+                    reason="UK Budget still to come (owner ruling): lead-up event risk, slightly negative for the pound, "
+                           "bearish for GBP/USD.")
+    return None
+
 
 
 def _special(text, hinted=False):
@@ -578,7 +595,7 @@ def _special(text, hinted=False):
                            _uk_energy_supply(text), _jobs_and_tax(text), _uk_inflation(text),
                            _ftse(text), _us_ukraine_rift(text), _uk_policy_reversal(text),
                            _wealth_leaving_uk(text), _hiring_weak(text), _uk_spending(text),
-                           _uk_energy_saving(text),
+                           _uk_energy_saving(text), _uk_budget_preview(text),
                            _uk_budget_welcomed(text), _uk_ukraine_support(text)) if r]
     if not results:
         return None
