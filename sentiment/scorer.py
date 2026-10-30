@@ -385,21 +385,71 @@ def _jobs_and_tax(text):
                        f"{'dollar' if us else 'pound'}, {'bullish' if us else 'bearish'} for GBP/USD.")
 
 
-# UK tax rises on their own (owner, 2026-10-29: Budgets "will only ever introduce stealth taxes which puts off investment in
-# the UK. Its always negative"). Low confidence: it is a view about investment over time, not a measured effect. A headline
-# that denies or reverses a rise ("rules out tax rises", "scraps the tax increase") is not a rise, so it is left alone; a US
-# marker leaves it alone too (the mirror was never rated).
-_NO_TAX_RISE = (r"\b(rules? out|ruled out|no (new |further )?tax|won'?t|will not|not (to )?(raise|increase)|scrap\w*|"
-                r"avoid\w*|reject\w*|u-?turn\w*|abandon\w*|drop(s|ped)? (the )?plans?|freez\w+)\b")
+# (UK tax-rise rule removed 2026-10-30 for the same reason; the owner's job-cuts-blamed-on-tax rule above is unchanged.)
 
 
-def _uk_tax_rise(text):
-    uk = re.search(UK_MARKERS, text) or re.search(r"\b(chancellor|hmrc|budget)\b", text)
-    if (re.search(TAX_RISES, text) and uk and not re.search(US_MARKERS, text)
-            and not re.search(_NO_TAX_RISE, text)):
-        return dict(direction=-1, confidence=0.3, driver="politics",
-                    reason="UK tax rise (owner ruling): stealth taxes put off UK investment, slightly negative for the "
-                           "pound, bearish for GBP/USD.")
+# The Budget landed better than the owner had feared (owner flags 2026-10-28/29, all +1): "UK government borrowing costs fall as
+# City welcomes 'no harm' budget", "Budget 2026: Breathing space for today, hope for the future", "The UK cuts energy bills,
+# taxes banks and boosts defense in high-stakes budget", "Lloyds executive criticises Healey for linking bank tax rises to energy
+# bill support", "UK boosts support to Ukraine with GBP10 billion package", "Shell profits double to $10.8bn as Iran war pushes
+# up margin on oil". Each rule is narrow and low confidence.
+def _uk_context(text):
+    return bool(re.search(UK_MARKERS, text) or re.search(r"\b(chancellor|hmrc|budget|healey)\b", text)) \
+        and not re.search(US_MARKERS, text)
+
+
+# Markets or commentators welcoming the Budget, or UK borrowing costs easing: the Budget was received well.
+_BUDGET_WELCOMED = (r"\b(welcome[sd]?|relie\w+|cheer\w*|breath(?:e|ing) space|no harm|well received|goes down well)\b.{0,60}\bbudget\b"
+                    r"|\bbudget\b.{0,60}\b(welcomed|relief|no harm|breathing space|well received|goes down well|cheered)\b"
+                    r"|\bborrowing costs?\b.{0,15}\b(fall\w*|fell|drop\w*|eas(e|es|ed|ing)|declin\w+)\b")
+
+
+def _uk_budget_welcomed(text):
+    if re.search(_BUDGET_WELCOMED, text) and _uk_context(text):
+        return dict(direction=1, confidence=0.4, driver="politics",
+                    reason="UK Budget well received / borrowing costs easing (owner ruling): positive for the pound, "
+                           "bullish for GBP/USD.")
+    return None
+
+
+# UK government help with energy bills (owner: energy is why UK inflation is high; relief on bills is good for the pound). It is
+# about bills, not the oil price, so it overrides the energy rule, which would read "bill" / "rises" in the same headline as
+# rising energy prices.
+_ENERGY_BILL_RELIEF = (r"\b(cuts?|cutting|slash\w*|lower\w*|reduc\w*|freez\w*)\b.{0,20}\benergy (bills?|costs?)\b"
+                       r"|\benergy[- ]bills? (support|help|relief|cuts?)\b")
+
+
+def _uk_energy_bill_relief(text):
+    if re.search(_ENERGY_BILL_RELIEF, text) and _uk_context(text):
+        return dict(direction=1, confidence=0.4, driver="energy",
+                    reason="UK help with energy bills (owner ruling): eases inflation pressure, positive for the pound, "
+                           "bullish for GBP/USD. Overrides the energy rule.")
+    return None
+
+
+# UK support for Ukraine (owner flag 2026-10-28: "UK boosts support to Ukraine with GBP10 billion package" = +1).
+_UK_UKRAINE_SUPPORT = (r"\b(uk|britain|british)\b.{0,40}\b(boosts?|backs?|pledges?|gives?|support(s|ed)?|aid|package)\b.{0,40}"
+                       r"\bukrain\w*\b")
+
+
+def _uk_ukraine_support(text):
+    if re.search(_UK_UKRAINE_SUPPORT, text) and not re.search(US_MARKERS, text):
+        return dict(direction=1, confidence=0.35, driver="politics",
+                    reason="UK support for Ukraine (owner ruling): positive for the pound, bullish for GBP/USD.")
+    return None
+
+
+# UK-listed energy majors' profits rising (owner flag 2026-10-29: "Shell profits double to $10.8bn as Iran war pushes up margin
+# on oil" = +1). A company-results story, not the oil price level, so it overrides the energy rule.
+_UK_ENERGY_PROFITS = (r"\b(shell|bp)\b.{0,40}\b(profits?|earnings)\b.{0,30}"
+                      r"\b(doubl\w*|jump\w*|surg\w*|soar\w*|ris\w*|rose|climb\w*|beat\w*|record)\b")
+
+
+def _uk_energy_profits(text):
+    if re.search(_UK_ENERGY_PROFITS, text):
+        return dict(direction=1, confidence=0.35, driver="energy",
+                    reason="UK-listed energy major's profits up (owner ruling): positive for the pound, bullish for GBP/USD. "
+                           "Overrides the energy rule.")
     return None
 
 
@@ -499,23 +549,7 @@ def _uk_energy_saving(text):
     return None
 
 
-# UK Budget previews and doubt (owner flags 2026-10-28: "What could be in the Budget?", "Former Conservative chancellor
-# unsure Budget will 'fix big problems'", "What do you want from the Budget?" = all -1). Owner's reasoning: nobody can price
-# a Budget in advance, recent ones have been risky (the 2022 mini-budget took the pound near parity), and they tend to
-# bring stealth taxes that put off UK investment. Event risk rather than anything in the headline, so low confidence.
-# A headline reporting an actual measure (e.g. "Budget to include GBP1bn for housing") is not matched here.
-_BUDGET_PREVIEW = (r"\bwhat (could|might|will|should|do you want|to expect)\b.{0,40}\bbudget\b"
-                   r"|\bbudget (preview|predictions?|speculation|wish ?list|what to expect)\b"
-                   r"|\b(unsure|doubts?|doubtful|fears?|worr\w+|sceptic\w*|skeptic\w*)\b.{0,50}\bbudget\b"
-                   r"|\bbudget\b.{0,50}\b(unsure|doubts?|doubtful|fears?|worr\w+|sceptic\w*|skeptic\w*)\b")
-
-
-def _uk_budget_preview(text):
-    if re.search(_BUDGET_PREVIEW, text) and not re.search(US_MARKERS, text):
-        return dict(direction=-1, confidence=0.3, driver="politics",
-                    reason="UK Budget still to come (owner ruling): event risk and stealth-tax worries, slightly "
-                           "negative for the pound, bearish for GBP/USD.")
-    return None
+# (UK Budget-preview rule removed 2026-10-30: the owner was wrong to treat Budget news as bad; see RATING_GUIDE.md.)
 
 
 def _special(text, hinted=False):
@@ -524,6 +558,11 @@ def _special(text, hinted=False):
     held = _expected_hold(text)
     if held:
         return held
+    # Company results and household bill help are not the oil price level: they win over the energy rule.
+    for override in (_uk_energy_bill_relief, _uk_energy_profits):
+        hit = override(text)
+        if hit:
+            return hit
     war = _war(text)
     if war:
         # Owner: a Ukrainian assault on Russia is positive for the pound even when it hits oil
@@ -539,7 +578,8 @@ def _special(text, hinted=False):
                            _uk_energy_supply(text), _jobs_and_tax(text), _uk_inflation(text),
                            _ftse(text), _us_ukraine_rift(text), _uk_policy_reversal(text),
                            _wealth_leaving_uk(text), _hiring_weak(text), _uk_spending(text),
-                           _uk_energy_saving(text), _uk_budget_preview(text), _uk_tax_rise(text)) if r]
+                           _uk_energy_saving(text),
+                           _uk_budget_welcomed(text), _uk_ukraine_support(text)) if r]
     if not results:
         return None
     if len({r["direction"] for r in results}) > 1:

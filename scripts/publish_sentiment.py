@@ -48,6 +48,7 @@ sys.path.insert(0, str(ROOT / "sentiment"))
 os.environ.setdefault("GBPUSD_DB", str(ROOT / "state" / "sentiment.db"))
 
 import aggregate  # noqa: E402
+import audit  # noqa: E402
 import config  # noqa: E402
 import db  # noqa: E402
 import ingest  # noqa: E402
@@ -56,6 +57,7 @@ import scorer  # noqa: E402
 DATA_DIR = Path(os.environ.get("SENTIMENT_DATA_DIR") or ROOT / "data")
 SIGNAL_FILE = DATA_DIR / "sentiment.json"
 HISTORY_FILE = DATA_DIR / "sentiment-history.json"
+AUDIT_FILE = DATA_DIR / "source-audit.json"  # counts only, no headline text: which feeds repeat or contradict
 
 HISTORY_MAX_POINTS = 24 * 60  # one point per run -> far more than the weeks of history needed
 KEEP_STORIES_HOURS = 72       # stored stories older than this are deleted
@@ -191,6 +193,15 @@ def main() -> None:
 
     print(f"Scored {scored_fresh} new headline(s). Windows: "
           + ", ".join(f"{k}={v['score']:+.3f} ({v['articles']} article(s))" for k, v in w.items()))
+
+    # Source audit (report only; changes no score and removes no feed). A failure here must never lose the signal above.
+    try:
+        raw = [dict(r) for r in db.scored_since(conn, now - KEEP_STORIES_HOURS * 3600)]
+        result = audit.source_audit(raw, now=now, window_hours=KEEP_STORIES_HOURS)
+        AUDIT_FILE.write_text(json.dumps(result, indent=2) + "\n")
+        print("Source audit (last %dh):\n%s" % (KEEP_STORIES_HOURS, audit.format_table(result)))
+    except Exception as exc:  # noqa: BLE001
+        print(f"Source audit skipped: {exc}", file=sys.stderr)
 
 
 if __name__ == "__main__":
