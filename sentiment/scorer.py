@@ -463,6 +463,21 @@ def _house_prices_neutral(text):
     return None
 
 
+# Oil supply recovering as a conflict eases (owner flag 2026-10-30: "Oil flows are up as Iran war turmoil eases. Why do prices keep
+# rising?" = +1; it was scored as an Iran-linked disruption because of "Iran" and "rising"). Flows or supply coming back, or turmoil
+# easing, is supply easing: bullish for the pound under the owner's energy rule, and it wins over the Iran-disruption reading.
+_ENERGY_SUPPLY_EASING = (r"\b(turmoil|tensions?|disruptions?|war|conflict|blockade)\b.{0,25}\b(eases?|eased|easing|calms?|calmed|subsides?)\b"
+                         r"|\b(oil|crude|gas|energy) (flows?|exports?|supply|supplies|shipments|output)\b.{0,15}\b(are up|is up|rebound\w*|resum\w*|recover\w*)\b")
+
+
+def _energy_supply_easing(text):
+    if re.search(_ENERGY_SUPPLY_EASING, text) and re.search(ENERGY, text):
+        return dict(direction=1, confidence=0.5, driver="energy",
+                    reason="Oil supply recovering as the conflict eases (owner ruling): positive for the pound, bullish for "
+                           "GBP/USD. Overrides the Iran-disruption reading.")
+    return None
+
+
 def _uk_energy_profits(text):
     if re.search(_UK_ENERGY_PROFITS, text):
         return dict(direction=1, confidence=0.35, driver="energy",
@@ -594,7 +609,7 @@ def _special(text, hinted=False):
     if held:
         return held
     # Company results and household bill help are not the oil price level: they win over the energy rule.
-    for override in (_uk_energy_bill_relief, _uk_energy_profits, _house_prices_neutral):
+    for override in (_uk_energy_bill_relief, _uk_energy_profits, _house_prices_neutral, _energy_supply_easing):
         hit = override(text)
         if hit:
             return hit
