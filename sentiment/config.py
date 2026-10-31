@@ -26,8 +26,9 @@ FEEDS = [
     {"name": "Sky News Business", "url": "https://feeds.skynews.com/feeds/rss/business.xml", "weight": 0.7, "region": "UK", "republish": True},
     {"name": "CNBC Economy", "url": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=20910258", "weight": 0.6, "republish": True},
     {"name": "CNBC World Markets", "url": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114", "weight": 0.6, "republish": True},
-    {"name": "OilPrice.com", "url": "https://oilprice.com/rss/main", "weight": 0.5, "republish": True},
     {"name": "Al Jazeera", "url": "https://www.aljazeera.com/xml/rss/all.xml", "weight": 0.4, "republish": True},
+    # Dropped 2026-10-30 (owner): OilPrice.com -- posts around the clock, mixes market news with long analysis pieces, and its energy
+    # stories contradicted each other within a day (audit.py: 3 of 3 directional stories self-conflicting).
     # Tried and rejected 2026-10-22: OBR (HTTP 403), Telegraph (paywalled, 402), Independent (malformed
     # XML), Yahoo Finance (404), FXStreet (timeout), ECB press (feed works, but nothing relevant to GBP/USD).
 ]

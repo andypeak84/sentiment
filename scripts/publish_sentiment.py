@@ -114,6 +114,19 @@ def main() -> None:
         conn.commit()
 
     conn.execute("DELETE FROM articles WHERE published_ts < ?", (now - KEEP_STORIES_HOURS * 3600,))
+    # A feed dropped from config.FEEDS (owner decision: audit first, then drop whole sites) must also vanish from the stored window, or
+    # its stories would keep counting for up to KEEP_STORIES_HOURS. Derived stories ("surprise" data-release events) have no feed, so
+    # only rows from a named news source that is no longer configured are removed.
+    configured = [f["name"] for f in config.FEEDS]
+    dropped = conn.execute(
+        "SELECT source, count(*) n FROM articles WHERE scorer IS NOT 'surprise' AND source NOT IN (%s) GROUP BY source"
+        % ",".join("?" * len(configured)), configured).fetchall()
+    for row in dropped:
+        print(f"Purging {row['n']} stored story(ies) from {row['source']}: no longer a configured feed.")
+    if dropped:
+        conn.execute("DELETE FROM articles WHERE scorer IS NOT 'surprise' AND source NOT IN (%s)" % ",".join("?" * len(configured)),
+                     configured)
+        conn.commit()
     conn.commit()
 
     # Only stories inside the longest published window can affect the output; each is scored once
