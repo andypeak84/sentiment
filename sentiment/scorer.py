@@ -179,6 +179,11 @@ WAR_UA_ATTACK = (r"\bukrain\w*\b" + _NOT_BY + r"{0,50}\b(strike|strikes|struck|a
                  r"offensive|raid|raids)\b" + _NOT_BY + r"{0,60}\b(russia|russian|moscow|kremlin|crimea|kursk|"
                  r"belgorod)\b")
 
+# The same rule when Russia is the grammatical subject (owner flag 2026-10-30: "Russian oil refinery struck as Ukraine renews drone
+# attacks" = +1; it was scored bearish as an oil disruption). Only a named Russian target struck, with Ukraine as the agent that follows.
+WAR_UA_PASSIVE = (r"\b(russia|russian)\b\s+(?:\w+\s+){0,2}(refiner\w*|depot|terminal|pipeline|airbase|base|plant|facility|port|"
+                  r"warship|bridge)\b.{0,25}\b(struck|hit|attacked|bombed|ablaze|targeted)\b.{0,40}\bukrain\w*\b")
+
 # Policy channel (owner's rule): serious US policy U-turns are negative for the dollar. A headline
 # cannot show how serious a reversal is, so confidence stays low.
 US_ACTOR = r"\b(trump|white house|the administration|us administration|washington)\b"
@@ -187,7 +192,7 @@ US_REVERSAL = (r"\b(u-?turns?|reverses|reversed|reversal|backtracks?|backtracked
 
 
 def _war(text):
-    if re.search(WAR_UA_ATTACK, text):
+    if re.search(WAR_UA_ATTACK, text) or re.search(WAR_UA_PASSIVE, text):
         return dict(direction=1, confidence=0.45, driver="war",
                     reason="Ukrainian assault on Russia: positive for the pound, bullish for GBP/USD.")
     return None
@@ -442,7 +447,20 @@ def _uk_ukraine_support(text):
 # UK-listed energy majors' profits rising (owner flag 2026-10-29: "Shell profits double to $10.8bn as Iran war pushes up margin
 # on oil" = +1). A company-results story, not the oil price level, so it overrides the energy rule.
 _UK_ENERGY_PROFITS = (r"\b(shell|bp)\b.{0,40}\b(profits?|earnings)\b.{0,30}"
-                      r"\b(doubl\w*|jump\w*|surg\w*|soar\w*|ris\w*|rose|climb\w*|beat\w*|record)\b")
+                      r"\b(doubl\w*|jump\w*|surg\w*|soar\w*|ris\w*|rose|climb\w*|beat\w*|record|hit\b.{0,25}\bhigh(?:est)?)\b")
+
+
+# UK house prices (owner flag 2026-10-30: "UK house prices grow at slowest pace in two years as mortgage rates rise" = 0; the generic
+# rule read "grow ... rise" as strong UK news). Not a currency driver. A headline that is really about inflation or a central bank
+# keeps its own reading.
+_HOUSE_PRICES = r"\b(house|home|property) prices?\b"
+
+
+def _house_prices_neutral(text):
+    if re.search(_HOUSE_PRICES, text) and not re.search(INFLATION, text) and not re.search(CENTRAL_BANK, text):
+        return dict(direction=0, confidence=0.3, driver="housing",
+                    reason="House prices (owner ruling): not a currency driver, neutral for GBP/USD.")
+    return None
 
 
 def _uk_energy_profits(text):
@@ -576,7 +594,7 @@ def _special(text, hinted=False):
     if held:
         return held
     # Company results and household bill help are not the oil price level: they win over the energy rule.
-    for override in (_uk_energy_bill_relief, _uk_energy_profits):
+    for override in (_uk_energy_bill_relief, _uk_energy_profits, _house_prices_neutral):
         hit = override(text)
         if hit:
             return hit
