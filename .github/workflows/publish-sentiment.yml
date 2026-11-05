@@ -23,6 +23,8 @@ jobs:
     env:
       # Optional repo secret. Unset -> empty string -> the offline rule scorer is used.
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      # Optional repo VARIABLE, not a secret: a published, public-readable CSV link with no key in it. Unset -> flags are skipped.
+      FLAGS_CSV_URL: ${{ vars.FLAGS_CSV_URL }}
     steps:
       - uses: actions/checkout@v4
 
@@ -54,6 +56,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/sentiment.json data/sentiment-history.json
+          # Counts only (no headline text, no raw flags). Each exists only if the run produced it.
+          for f in data/source-audit.json data/flag-summary.json; do [ -f "$f" ] && git add "$f"; done; true
           git diff --cached --quiet && exit 0
           git commit -m "Update GBP/USD sentiment $(date -u +%Y-%m-%dT%H:%MZ)"
           # Rebase and retry on a non-fast-forward rather than fail

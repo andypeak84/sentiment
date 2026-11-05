@@ -51,6 +51,7 @@ import aggregate  # noqa: E402
 import audit  # noqa: E402
 import config  # noqa: E402
 import db  # noqa: E402
+import flags_ingest  # noqa: E402
 import ingest  # noqa: E402
 import scorer  # noqa: E402
 
@@ -58,6 +59,7 @@ DATA_DIR = Path(os.environ.get("SENTIMENT_DATA_DIR") or ROOT / "data")
 SIGNAL_FILE = DATA_DIR / "sentiment.json"
 HISTORY_FILE = DATA_DIR / "sentiment-history.json"
 AUDIT_FILE = DATA_DIR / "source-audit.json"  # counts only, no headline text: which feeds repeat or contradict
+FLAGS_FILE = DATA_DIR / "flag-summary.json"  # readers' flags (Google Form): counts per source / driver only; raw rows never published
 
 HISTORY_MAX_POINTS = 24 * 60  # one point per run -> far more than the weeks of history needed
 KEEP_STORIES_HOURS = 72       # stored stories older than this are deleted
@@ -215,6 +217,18 @@ def main() -> None:
         print("Source audit (last %dh):\n%s" % (KEEP_STORIES_HOURS, audit.format_table(result)))
     except Exception as exc:  # noqa: BLE001
         print(f"Source audit skipped: {exc}", file=sys.stderr)
+
+    # Readers' flags: pull the Google Form's published responses CSV (repo variable FLAGS_CSV_URL; unset -> skipped). Report only;
+    # changes no score. A failure here must never lose the signal above.
+    flags_url = os.environ.get("FLAGS_CSV_URL", "").strip()
+    if flags_url:
+        try:
+            summary = flags_ingest.build_summary(flags_url, now)
+            FLAGS_FILE.write_text(json.dumps(summary, indent=2) + "\n")
+            print(f"Reader flags: {summary['flags']} flag(s) on {summary['stories']} stories; "
+                  f"{len(summary['by_source'])} source group(s) and {len(summary['by_driver'])} driver group(s) with enough support.")
+        except Exception as exc:  # noqa: BLE001
+            print(f"Reader flags skipped: {exc}", file=sys.stderr)
 
 
 if __name__ == "__main__":
