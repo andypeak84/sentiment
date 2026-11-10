@@ -1,28 +1,508 @@
 {
   "pair": "GBP/USD",
-  "generated_ts": 1794237853,
+  "generated_ts": 1794283563,
   "scale": "-1 = strongly bearish for GBP/USD, +1 = strongly bullish",
   "windows": {
     "1h": {
-      "score": 1.0,
-      "label": "strongly bullish",
-      "articles": 1
+      "score": 0.0,
+      "label": "neutral",
+      "articles": 0
     },
     "6h": {
-      "score": 1.0,
-      "label": "strongly bullish",
-      "articles": 1
+      "score": 0.353,
+      "label": "mildly bullish",
+      "articles": 3
     },
     "24h": {
-      "score": 0.971,
+      "score": 0.499,
       "label": "strongly bullish",
-      "articles": 3
+      "articles": 5
     }
   },
   "scorers_24h": {
-    "rules": 15
+    "rules": 46
   },
   "headlines": [
+    {
+      "title": "SoftBank Group shares surge 13% as Asian tech stocks track Wall Street rebound",
+      "url": "https://www.cnbc.com/2026/11/10/ai-softbank-sk-hynix-samsung-wall-street-tech-stocks.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
+      "published_ts": 1794283126.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.591643
+    },
+    {
+      "title": "FBI investigating Nvidia boss's affair with alleged Chinese spy, Trump says",
+      "url": "https://www.bbc.co.uk/news/articles/cqg7x7dpvym8o?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Top Stories",
+      "also_reported_by": [
+        "BBC Business"
+      ],
+      "published_ts": 1794283093.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.492514
+    },
+    {
+      "title": "S&P 500 futures are little changed as traders brace for crucial consumer inflation report: Live updates",
+      "url": "https://www.cnbc.com/2026/11/09/stock-market-today-live-updates.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
+      "published_ts": 1794281607.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "inflation",
+      "reason": "No clear strong/weak signal in headline.",
+      "in_24h": true,
+      "base_w": 0.563495
+    },
+    {
+      "title": "Russia, Ukraine and US to meet as Zelenskyy claims battlefield successes",
+      "url": "https://www.aljazeera.com/news/2026/11/10/russia-ukraine-and-us-to-meet-as-zelenskyy-claims-battlefield-successes?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1794278714.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.342358
+    },
+    {
+      "title": "Trump says Iran war is 'effectively over' militarily with further strikes unlikely",
+      "url": "https://www.bbc.co.uk/news/articles/cq5yny4nl2d3o?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Top Stories",
+      "also_reported_by": [],
+      "published_ts": 1794278280.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.422029
+    },
+    {
+      "title": "FBI investigating Nvidia CEO over affair with alleged Chinese spy",
+      "url": "https://news.sky.com/story/fbi-to-investigate-nvidia-ceo-over-affair-with-alleged-chinese-spy-trump-says-13610382",
+      "title_withheld": false,
+      "source": "Sky News Business",
+      "also_reported_by": [],
+      "published_ts": 1794276360.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.555535
+    },
+    {
+      "title": "Poll finds Americans less likely to back pro-war candidates by 3-1 margin",
+      "url": "https://www.aljazeera.com/news/2026/11/10/poll-finds-voters-preferred-candidates-who-opposed-iran-war-by-3-1-margin?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1794275807.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.311865
+    },
+    {
+      "title": "Trump says Jensen Huang told him Monday he didn't know paramour 'was a spy'",
+      "url": "https://www.cnbc.com/2026/11/09/trump-jensen-huang-nvidia-chinese-spy.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
+      "published_ts": 1794275027.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.456234
+    },
+    {
+      "title": "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
+      "url": "https://www.bbc.co.uk/news/articles/cwr5y58jjp8ro?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Top Stories",
+      "also_reported_by": [],
+      "published_ts": 1794274729.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.376576
+    },
+    {
+      "title": "Trump signals \u2018positive momentum\u2019 with Iran after meeting Qatari PM",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/10/trump-signals-positive-momentum-with-iran-after-meeting-qatari-pm?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1794272400.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.279566
+    },
+    {
+      "title": "Trump says FBI probing Nvidia CEO Huang\u2019s affair with alleged spy",
+      "url": "https://www.aljazeera.com/economy/2026/11/10/trump-says-fbi-probing-nvidia-ceos-affair-with-alleged-spy?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1794271468.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.271329
+    },
+    {
+      "title": "Ukraine peace talks resume with 'some flexibility' by warring sides, US officials say",
+      "url": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Top Stories",
+      "also_reported_by": [],
+      "published_ts": 1794269389.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.317272
+    },
+    {
+      "title": "Iran war live: Iran demands US \u2018surrender\u2019 to its conditions",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/11/9/iran-war-live-trump-says-war-effectively-over-iran-demands-surrender?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1794268523.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.246861
+    },
+    {
+      "title": "Nvidia\u2019s Trump ties draw scrutiny after reports Huang was targeted by Chinese intelligence",
+      "url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-china-spy-trump-lobbying.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
+      "published_ts": 1794268461.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.369556
+    },
+    {
+      "title": "Trump, Rubio defend Hegseth as impeachment bid nears",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/9/trump-rubio-defend-hegseth-as-impeachment-bid-nears?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1794268031.0,
+      "direction": 1,
+      "confidence": 0.45,
+      "driver": "politics",
+      "reason": "US political uncertainty: negative for that currency, bullish for GBP/USD.",
+      "in_24h": true,
+      "base_w": 0.242994
+    },
+    {
+      "title": "Silicon Valley and Trump rally behind Nvidia CEO after his affair with alleged Chinese spy",
+      "url": "https://www.theguardian.com/technology/2026/nov/09/nvidia-jensen-huang-affair-trump-musk",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1794267037.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.41189
+    },
+    {
+      "title": "Trump defends Nvidia\u2019s Huang after calling about spy scandal",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/9/trump-defends-nvidias-huang-after-calling-about-spy-scandal?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1794266024.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.227837
+    },
+    {
+      "title": "CNBC's The China Connection newsletter: Wall Street dips in again. What needs to go right",
+      "url": "https://www.cnbc.com/2026/11/09/cnbcs-the-china-connection-newsletter-wall-street-dips-in-again.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
+      "published_ts": 1794265202.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.332859
+    },
+    {
+      "title": "Trump questions midterm election results, revives voting-machine conspiracy",
+      "url": "https://www.cnbc.com/2026/11/09/trump-election-results-democrats.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
+      "published_ts": 1794264009.0,
+      "direction": 1,
+      "confidence": 0.45,
+      "driver": "politics",
+      "reason": "US political uncertainty: negative for that currency, bullish for GBP/USD.",
+      "in_24h": true,
+      "base_w": 0.320357
+    },
+    {
+      "title": "After meeting Qatar PM, Trump calls Iran war \u2018effectively over\u2019 militarily",
+      "url": "https://www.aljazeera.com/news/2026/11/9/trump-calls-iran-war-effectively-over-after-talks-with-qatar-pm?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1794263479.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.20997
+    },
+    {
+      "title": "Saudi Arabia reports new attack on key East-West pipeline",
+      "url": "https://www.aljazeera.com/news/2026/11/9/saudi-arabia-reports-new-attack-on-key-east-west-pipeline?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1794262252.0,
+      "direction": -1,
+      "confidence": 0.6,
+      "driver": "energy",
+      "reason": "Middle East oil disruption (owner: generally negative for the pound): negative for the pound, bearish for GBP/USD.",
+      "in_24h": true,
+      "base_w": 0.201863
+    },
+    {
+      "title": "A key report for where inflation stood in October comes out Tuesday. Here's what to expect",
+      "url": "https://www.cnbc.com/2026/11/09/october-cpi-report-2026-inflation.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [
+        "CNBC Economy"
+      ],
+      "published_ts": 1794258235.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "inflation",
+      "reason": "No clear strong/weak signal in headline.",
+      "in_24h": true,
+      "base_w": 0.266173
+    },
+    {
+      "title": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261109a.htm",
+      "title_withheld": false,
+      "source": "Federal Reserve",
+      "also_reported_by": [],
+      "published_ts": 1794258000.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.440289
+    },
+    {
+      "title": "Trump administration proposes stricter work-search rules for unemployment benefits",
+      "url": "https://www.cnbc.com/2026/11/09/trump-unemployment-work-search-rule.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
+      "published_ts": 1794254395.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "jobs",
+      "reason": "No clear strong/weak signal in headline.",
+      "in_24h": true,
+      "base_w": 0.235314
+    },
+    {
+      "title": "This beaten-down data center stock could be worth a look, says Mike Khouw",
+      "url": "https://www.cnbc.com/2026/11/09/this-beaten-down-data-center-stock-could-be-worth-a-look-says-mike-khouw.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
+      "published_ts": 1794252237.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.21957
+    },
+    {
+      "title": "The Guardian view on Jensen Huang\u2019s affair: why did Trump ignore the warnings? | Editorial",
+      "url": "https://www.theguardian.com/commentisfree/2026/nov/09/the-guardian-view-on-jensen-huangs-affair-why-did-trump-ignore-the-warnings",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1794250270.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.240495
+    },
+    {
+      "title": "Russia's leading independent newspaper closes after eviction",
+      "url": "https://www.bbc.co.uk/news/videos/cvrlylj9r11go?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Top Stories",
+      "also_reported_by": [],
+      "published_ts": 1794247687.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.158118
+    },
+    {
+      "title": "High fossil fuel prices spread inflation \u2018like a cancer\u2019, UN climate chief tells Cop31",
+      "url": "https://www.theguardian.com/environment/2026/nov/09/high-fossil-fuel-prices-spread-inflation-like-cancer-cop31egotiator-tells-cop31",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1794246424.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "inflation",
+      "reason": "No clear strong/weak signal in headline.",
+      "in_24h": true,
+      "base_w": 0.212572
+    },
+    {
+      "title": "Nvidia\u2019s board needs to do some succession planning \u2013 sharpish | Nils Pratley",
+      "url": "https://www.theguardian.com/technology/2026/nov/09/nvidia-board-jensen-huang",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1794243983.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.196556
+    },
+    {
+      "title": "I wrote Labour\u2019s Brexit red lines. This is why it\u2019s time to scrap them | Chris Ward",
+      "url": "https://www.theguardian.com/commentisfree/2026/nov/09/labour-brexit-red-lines-scrap-europe",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1794243614.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.194243
+    },
+    {
+      "title": "Labour\u2019s Brexit red lines ready for \u2018dignified retirement\u2019, says their co-author",
+      "url": "https://www.theguardian.com/politics/2026/nov/09/labour-mp-brexit-red-lines-dignified-retirement",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1794243614.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.194243
+    },
+    {
+      "title": "Elon Musk and the tech bros banked on Trump and lost. Humbled, humiliated: what will they do next? | Jonathan Liew",
+      "url": "https://www.theguardian.com/commentisfree/2026/nov/09/elon-musk-tech-bros-donald-trump",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1794242898.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.18983
+    },
+    {
+      "title": "Cop31: will Andy Burnham choose climate or cost of living? \u2013 podcast",
+      "url": "https://www.theguardian.com/politics/audio/2026/nov/09/cop31-will-andy-burnham-choose-climate-or-cost-of-living-podcast",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1794240739.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.177124
+    },
+    {
+      "title": "Retail sector charity refuses to back Poundland owner's boss",
+      "url": "https://news.sky.com/story/retail-sector-charity-refuses-to-back-poundland-owners-boss-13610268",
+      "title_withheld": false,
+      "source": "Sky News Business",
+      "also_reported_by": [],
+      "published_ts": 1794238260.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.163579
+    },
     {
       "title": "Dow rallies 800 points as oil slides, tech stocks outside of Nvidia gain: Live updates",
       "url": "https://www.cnbc.com/2026/11/08/stock-market-today-live-updates.html",
@@ -35,7 +515,7 @@
       "driver": "energy",
       "reason": "Energy prices falling or supply easing: positive for the pound, bullish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.579793
+      "base_w": 0.133733
     },
     {
       "title": "\u2018No concession\u2019: What to expect from Russia-US-Ukraine talks in Abu Dhabi",
@@ -49,7 +529,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.356559
+      "base_w": 0.082243
     },
     {
       "title": "Why is Nvidia\u2019s Jensen Huang at the centre of a US-China row?",
@@ -63,7 +543,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.539937
+      "base_w": 0.12454
     },
     {
       "title": "Anti-AI populism is the future of American politics | Garrison Lovely",
@@ -77,7 +557,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.420983
+      "base_w": 0.097103
     },
     {
       "title": "Economic relief is on the way, Democrats say. But what, how and when?",
@@ -91,7 +571,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.42097
+      "base_w": 0.0971
     },
     {
       "title": "At least four people killed as Russia and Ukraine trade strikes overnight",
@@ -105,7 +585,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.217902
+      "base_w": 0.05026
     },
     {
       "title": "Qatar PM to meet Trump: What\u2019s the latest on US-Iran negotiations?",
@@ -119,7 +599,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.201297
+      "base_w": 0.04643
     },
     {
       "title": "UK households face rush to find green energy installer to beat April VAT hike",
@@ -133,7 +613,7 @@
       "driver": "rates",
       "reason": "UK news reads strong, which is bullish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.334103
+      "base_w": 0.077063
     },
     {
       "title": "Trump says his immigration policy \u2018too tough\u2019 for voters",
@@ -147,7 +627,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.181944
+      "base_w": 0.041967
     },
     {
       "title": "Trump \u2018only kidding\u2019 about Dana White press secretary role",
@@ -161,7 +641,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.176056
+      "base_w": 0.040609
     },
     {
       "title": "Rare call for more electricity supplies as wind power drops across Europe",
@@ -175,7 +655,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.304726
+      "base_w": 0.070287
     },
     {
       "title": "Fixing UK\u2019s youth jobs crisis demands much more investment, TUC boss warns",
@@ -189,52 +669,10 @@
       "driver": "jobs",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.236231
-    },
-    {
-      "title": "China wholesale inflation hits highest in more than four years as consumer measure slows",
-      "url": "https://www.cnbc.com/2026/11/09/china-wholesale-inflation-rises-consumer.html",
-      "title_withheld": false,
-      "source": "CNBC Economy",
-      "also_reported_by": [],
-      "published_ts": 1794192622.0,
-      "direction": 0,
-      "confidence": 0.1,
-      "driver": "inflation",
-      "reason": "Could not tell whether this is UK or US news.",
-      "in_24h": true,
-      "base_w": 0.140533
-    },
-    {
-      "title": "Democrats amp up Trump investigation threats, Blanche counters he may probe lawmakers",
-      "url": "https://www.cnbc.com/2026/11/08/democrats-trump-oversight-blanche-doj-investigations.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1794164276.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.056589
-    },
-    {
-      "title": "How Democrats will try to end Trump's tariffs",
-      "url": "https://www.cnbc.com/2026/11/08/trump-tariffs-democrats-congress-canada.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1794152199.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "politics",
-      "reason": "No clear strong/weak signal in headline.",
-      "in_24h": true,
-      "base_w": 0.038408
+      "base_w": 0.054488
     }
   ],
-  "neutral_stories_24h": 13,
+  "neutral_stories_24h": 41,
   "headlines_note": "Same-story duplicates are merged and counted once. Each headline is shown with its source, link and our own reason; headline text belongs to its publisher.",
   "feeds": {
     "ok": 11,
