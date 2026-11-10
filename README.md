@@ -2,7 +2,7 @@
 
 Daily GBP/USD news-sentiment feed for the GBP/USD Predictor Android app.
 
-A GitHub Actions workflow (`.github/workflows/publish-sentiment.yml`) runs once a day at 06:00 UTC.
+A GitHub Actions workflow (`.github/workflows/publish-sentiment.yml`) runs four times a day (05:17, 11:17, 17:17 and 23:17 UTC; GitHub often starts it a few hours late).
 It reads the Bank of England, Federal Reserve and BBC Business RSS feeds, keeps the headlines that
 matter for GBP/USD, scores each one (-1 bearish, 0 neutral, +1 bullish for GBP/USD) with a set of
 hand-written rules, merges the same story reported by several feeds, and writes:
