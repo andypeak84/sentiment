@@ -2,12 +2,13 @@ name: Publish GBP/USD sentiment
 
 on:
   schedule:
-    # Once a day, 06:00 UTC (07:00 UK in BST, 06:00 in winter) -- after the overnight news and
-    # before the UK market opens. The Android app fetches the result at 08:00 UTC, leaving a
-    # 2-hour buffer because GitHub's `schedule` is best-effort and has been seen firing hours
-    # late. A late or skipped run just means a staler reading:
-    # the app shows the file's age and ignores it once it is older than a day and a bit.
-    - cron: '0 6 * * *'
+    # Four times a day, at 05:17, 11:17, 17:17 and 23:17 UTC. It used to be one run at 06:00 UTC, but GitHub's `schedule` is
+    # best-effort and delays runs set for the top of the hour: on 7-9 Nov 2026 the 06:00 run actually fired at 12:33, 12:51 and 15:24 UTC,
+    # so the app (which reads the file at 08:00 UTC and whenever it is opened) was always a day behind. An off-minute avoids the
+    # busiest slot, and four runs a day mean one late or skipped run costs about six hours of freshness instead of a whole day. Each run
+    # adds a point to sentiment-history.json, so the 1h and 6h windows also get readings. A late run just means a staler reading: the app
+    # shows the file's age and ignores it once it is older than a day and a bit.
+    - cron: '17 5,11,17,23 * * *'
   workflow_dispatch: {}  # manual "Run workflow" button, for testing
 
 permissions:
