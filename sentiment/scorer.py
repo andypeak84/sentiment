@@ -285,6 +285,37 @@ def _us_weakness(text):
                        "bullish for GBP/USD. Overrides the energy rule (owner ruling).")
 
 
+# US jobs report (owner, 2026-11-12: the 6 Nov October report, "US employers added a surprising 165,000 jobs in October; unemployment rate
+# dipped to 4.1%", scored neutral because the generic strong/weak words missed AP-style wording). Strong US jobs data is hawkish for the
+# Fed and good for the dollar, so bearish for GBP/USD; weak US jobs data is bullish. Needs a US marker and no UK one (UK jobs news has its
+# own rules), a jobs-report context, and strong words OR weak words, not both: a mixed headline is left to the other rules.
+_US_JOBS_CTX = (r"\b(payrolls?|non-?farm|jobs (report|data|numbers|growth|gains?|figures)|employment (report|data|figures)|"
+                r"employers (added|hired|cut|shed)|(adds?|added|creates?|created|gains?|gained|loses|lost|sheds?|shed|cuts?) [\d,.]+k? (new )?jobs|"
+                r"unemployment( rate)?|jobless claims|initial claims)\b")
+_US_JOBS_STRONG = (r"\b(surpris\w+|unexpected\w*|more than (expected|forecast\w*)|stronger than (expected|forecast\w*)|"
+                   r"better than (expected|forecast\w*)|above (forecasts?|expectations?|estimates)|beat(s|ing)?|tops?|topped|"
+                   r"exceed\w*|blow(s|n)? past|robust|strong(er)?|solid|hot|accelerat\w+|rebound\w*)\b"
+                   r"|\b(unemployment( rate)?|jobless claims|initial claims)\b.{0,40}\b(dips?|dipped|falls?|fell|drops?|dropped|"
+                   r"declines?|declined|eases?|eased|lower|down|improv\w+)\b")
+_US_JOBS_WEAK = (r"\b(fewer than expected|weaker than (expected|forecast\w*)|worse than (expected|forecast\w*)|"
+                 r"below (forecasts?|expectations?|estimates)|miss(es|ed)?|slow(s|ed|down|ing)?|weak(er|ens|ness)?|disappoint\w+|stall\w*|"
+                 r"shed|sheds|lost|loses|losing|plunge\w*|slump\w*)\b"
+                 r"|\b(unemployment( rate)?|jobless claims|initial claims)\b.{0,40}\b(rises?|rose|climbs?|climbed|jumps?|jumped|"
+                 r"increases?|increased|up|higher|worsen\w*)\b")
+
+
+def _us_jobs_report(text):
+    if not (re.search(US_MARKERS, text) and not re.search(UK_MARKERS, text) and re.search(_US_JOBS_CTX, text)):
+        return None
+    strong = bool(re.search(_US_JOBS_STRONG, text, re.S))
+    weak = bool(re.search(_US_JOBS_WEAK, text, re.S))
+    if strong == weak:
+        return None
+    return dict(direction=-1 if strong else 1, confidence=0.55, driver="jobs",
+                reason=f"US jobs data reads {'strong' if strong else 'weak'}: {'good' if strong else 'bad'} for the dollar, "
+                       f"{'bearish' if strong else 'bullish'} for GBP/USD (owner rule).")
+
+
 # Political-uncertainty channel (owner's rule): any political uncertainty (elections, leadership
 # challenges, hung parliaments, shutdowns...) is negative for that country's currency. UK
 # uncertainty = bearish GBP/USD, US uncertainty = bullish. Needs exactly one region named.
@@ -628,7 +659,7 @@ def _special(text, hinted=False):
                            _uk_energy_supply(text), _jobs_and_tax(text), _uk_inflation(text),
                            _ftse(text), _us_ukraine_rift(text), _uk_policy_reversal(text),
                            _wealth_leaving_uk(text), _hiring_weak(text), _uk_spending(text),
-                           _uk_energy_saving(text), _uk_budget_preview(text),
+                           _uk_energy_saving(text), _us_jobs_report(text), _uk_budget_preview(text),
                            _uk_budget_welcomed(text), _uk_ukraine_support(text)) if r]
     if not results:
         return None
