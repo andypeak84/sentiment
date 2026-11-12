@@ -1,5 +1,5 @@
 {
-  "generated_ts": 1794491266,
+  "generated_ts": 1794523462,
   "window_hours": 72,
   "note": "Report only. Nothing is removed or re-weighted by this file; the owner decides which sites to drop.",
   "thresholds": {
@@ -10,22 +10,35 @@
   },
   "sources": {
     "Al Jazeera": {
-      "stories": 9,
-      "directional": 2,
-      "kept": 9,
+      "stories": 15,
+      "directional": 3,
+      "kept": 15,
       "absorbed": 0,
-      "weight_share_24h": 0.223,
+      "weight_share_24h": 0.278,
       "self_conflicts": 0,
       "cross_conflicts": 0,
       "cross_checked": 0,
       "kinds": {},
-      "self_conflict_rate": null,
+      "self_conflict_rate": 0.0,
       "cross_conflict_rate": null
     },
     "CNBC World Markets": {
-      "stories": 6,
+      "stories": 11,
+      "directional": 1,
+      "kept": 11,
+      "absorbed": 0,
+      "weight_share_24h": 0.393,
+      "self_conflicts": 0,
+      "cross_conflicts": 1,
+      "cross_checked": 1,
+      "kinds": {},
+      "self_conflict_rate": null,
+      "cross_conflict_rate": null
+    },
+    "Guardian Business": {
+      "stories": 7,
       "directional": 0,
-      "kept": 6,
+      "kept": 7,
       "absorbed": 0,
       "weight_share_24h": 0.0,
       "self_conflicts": 0,
@@ -36,9 +49,22 @@
       "cross_conflict_rate": null
     },
     "BBC Top Stories": {
-      "stories": 4,
+      "stories": 5,
       "directional": 0,
-      "kept": 4,
+      "kept": 5,
+      "absorbed": 0,
+      "weight_share_24h": 0.0,
+      "self_conflicts": 0,
+      "cross_conflicts": 0,
+      "cross_checked": 0,
+      "kinds": {},
+      "self_conflict_rate": null,
+      "cross_conflict_rate": null
+    },
+    "Federal Reserve": {
+      "stories": 3,
+      "directional": 0,
+      "kept": 3,
       "absorbed": 0,
       "weight_share_24h": 0.0,
       "self_conflicts": 0,
@@ -53,18 +79,18 @@
       "directional": 2,
       "kept": 2,
       "absorbed": 1,
-      "weight_share_24h": 0.569,
+      "weight_share_24h": 0.241,
       "self_conflicts": 0,
-      "cross_conflicts": 0,
-      "cross_checked": 0,
+      "cross_conflicts": 1,
+      "cross_checked": 1,
       "kinds": {},
       "self_conflict_rate": null,
       "cross_conflict_rate": null
     },
-    "Guardian Business": {
-      "stories": 3,
+    "HM Treasury": {
+      "stories": 2,
       "directional": 0,
-      "kept": 3,
+      "kept": 2,
       "absorbed": 0,
       "weight_share_24h": 0.0,
       "self_conflicts": 0,
@@ -92,20 +118,7 @@
       "directional": 1,
       "kept": 1,
       "absorbed": 0,
-      "weight_share_24h": 0.207,
-      "self_conflicts": 0,
-      "cross_conflicts": 0,
-      "cross_checked": 0,
-      "kinds": {},
-      "self_conflict_rate": null,
-      "cross_conflict_rate": null
-    },
-    "HM Treasury": {
-      "stories": 1,
-      "directional": 0,
-      "kept": 1,
-      "absorbed": 0,
-      "weight_share_24h": 0.0,
+      "weight_share_24h": 0.088,
       "self_conflicts": 0,
       "cross_conflicts": 0,
       "cross_checked": 0,
@@ -114,9 +127,5 @@
       "cross_conflict_rate": null
     }
   },
-  "flags": {
-    "BBC Business": [
-      "supplies 57% of the 24h directional signal"
-    ]
-  }
+  "flags": {}
 }
