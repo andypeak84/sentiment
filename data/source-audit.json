@@ -1,5 +1,5 @@
 {
-  "generated_ts": 1794523462,
+  "generated_ts": 1794540352,
   "window_hours": 72,
   "note": "Report only. Nothing is removed or re-weighted by this file; the owner decides which sites to drop.",
   "thresholds": {
@@ -10,11 +10,11 @@
   },
   "sources": {
     "Al Jazeera": {
-      "stories": 15,
-      "directional": 3,
-      "kept": 15,
+      "stories": 19,
+      "directional": 4,
+      "kept": 19,
       "absorbed": 0,
-      "weight_share_24h": 0.278,
+      "weight_share_24h": 0.487,
       "self_conflicts": 0,
       "cross_conflicts": 0,
       "cross_checked": 0,
@@ -27,7 +27,7 @@
       "directional": 1,
       "kept": 11,
       "absorbed": 0,
-      "weight_share_24h": 0.393,
+      "weight_share_24h": 0.279,
       "self_conflicts": 0,
       "cross_conflicts": 1,
       "cross_checked": 1,
@@ -49,9 +49,9 @@
       "cross_conflict_rate": null
     },
     "BBC Top Stories": {
-      "stories": 5,
+      "stories": 6,
       "directional": 0,
-      "kept": 5,
+      "kept": 6,
       "absorbed": 0,
       "weight_share_24h": 0.0,
       "self_conflicts": 0,
@@ -79,7 +79,7 @@
       "directional": 2,
       "kept": 2,
       "absorbed": 1,
-      "weight_share_24h": 0.241,
+      "weight_share_24h": 0.171,
       "self_conflicts": 0,
       "cross_conflicts": 1,
       "cross_checked": 1,
@@ -118,7 +118,7 @@
       "directional": 1,
       "kept": 1,
       "absorbed": 0,
-      "weight_share_24h": 0.088,
+      "weight_share_24h": 0.062,
       "self_conflicts": 0,
       "cross_conflicts": 0,
       "cross_checked": 0,
@@ -127,5 +127,9 @@
       "cross_conflict_rate": null
     }
   },
-  "flags": {}
+  "flags": {
+    "Al Jazeera": [
+      "supplies 49% of the 24h directional signal"
+    ]
+  }
 }

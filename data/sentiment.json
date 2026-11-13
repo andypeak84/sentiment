@@ -1,28 +1,98 @@
 {
   "pair": "GBP/USD",
-  "generated_ts": 1794523462,
+  "generated_ts": 1794540352,
   "scale": "-1 = strongly bearish for GBP/USD, +1 = strongly bullish",
   "windows": {
     "1h": {
-      "score": 0.0,
-      "label": "neutral",
-      "articles": 0
+      "score": 1.0,
+      "label": "strongly bullish",
+      "articles": 1
     },
     "6h": {
-      "score": -0.299,
-      "label": "mildly bearish",
-      "articles": 3
+      "score": 0.843,
+      "label": "strongly bullish",
+      "articles": 2
     },
     "24h": {
-      "score": 0.03,
-      "label": "neutral",
-      "articles": 7
+      "score": 0.296,
+      "label": "mildly bullish",
+      "articles": 8
     }
   },
   "scorers_24h": {
-    "rules": 35
+    "rules": 40
   },
   "headlines": [
+    {
+      "title": "Trump moots toppling Cuba authorities before leaving office",
+      "url": "https://www.aljazeera.com/news/2026/11/13/trump-moots-toppling-cuba-authorities-before-leaving-office?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1794537208.0,
+      "direction": 1,
+      "confidence": 0.45,
+      "driver": "politics",
+      "reason": "US political uncertainty: negative for that currency, bullish for GBP/USD.",
+      "in_24h": true,
+      "base_w": 0.361602
+    },
+    {
+      "title": "Zelensky welcomes US bringing Europe into Russia-Ukraine peace talks",
+      "url": "https://www.bbc.co.uk/news/articles/ckn80j9jv3jxo?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Top Stories",
+      "also_reported_by": [],
+      "published_ts": 1794535295.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.425089
+    },
+    {
+      "title": "Iran war live: Trump says Gulf allies urged pause in Iran strikes",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/11/13/iran-war-live-riyadh-china-discuss-houthis-as-group-claims-aramco-attacks?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1794528026.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.269318
+    },
+    {
+      "title": "Yemen\u2019s Houthis renew strikes on Saudi Arabia as UNSC extends sanctions",
+      "url": "https://www.aljazeera.com/news/2026/11/12/yemens-houthis-renew-strikes-on-saudi-arabia-as-unsc-extends-sanctions?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1794527558.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.265303
+    },
+    {
+      "title": "Russian court jails rights lawyer for 12 years on treason charge",
+      "url": "https://www.aljazeera.com/news/2026/11/12/russian-court-jails-rights-lawyer-for-12-years-on-treason-charge?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1794525530.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.248588
+    },
     {
       "title": "Nvidia live updates: Trump calls Huang saga a 'horrible thing' and 'so sad to see'",
       "url": "https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-ceo-live-updates.html",
@@ -35,7 +105,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.593388
+      "base_w": 0.345097
     },
     {
       "title": "Nasdaq Composite slides as Nvidia shares tumble on Jensen Huang\u2019s exit; oil prices jump",
@@ -49,7 +119,7 @@
       "driver": "inflation",
       "reason": "Could not tell whether this is UK or US news.",
       "in_24h": true,
-      "base_w": 0.520184
+      "base_w": 0.302524
     },
     {
       "title": "US envoys meet Zelensky in Dublin after talks with Putin in Moscow",
@@ -63,7 +133,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.409525
+      "base_w": 0.238168
     },
     {
       "title": "Stocks could be in for a rude awakening if the Fed hikes rates more than expected",
@@ -77,7 +147,7 @@
       "driver": "rates",
       "reason": "US news reads strong, which is bearish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.490925
+      "base_w": 0.285508
     },
     {
       "title": "US releases report on $12bn from Venezuelan oil, mineral resources",
@@ -91,7 +161,7 @@
       "driver": "energy",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.320692
+      "base_w": 0.186505
     },
     {
       "title": "What\u2019s at stake in the renewed tensions over the Falkland Islands?",
@@ -105,7 +175,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.306063
+      "base_w": 0.177997
     },
     {
       "title": "Qatar Under-17 World Cup is on despite US pull out",
@@ -119,7 +189,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.300477
+      "base_w": 0.174749
     },
     {
       "title": "Regional security dominates European talks in Dublin amid hybrid attacks",
@@ -133,7 +203,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.298497
+      "base_w": 0.173597
     },
     {
       "title": "Democrats gather in Denver to debate party\u2019s future after US midterm wins",
@@ -147,7 +217,7 @@
       "driver": "politics",
       "reason": "US political uncertainty: negative for that currency, bullish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.297445
+      "base_w": 0.172986
     },
     {
       "title": "Donald Trump Jr. exits advisory role at Kalshi prediction market",
@@ -161,7 +231,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.440562
+      "base_w": 0.256218
     },
     {
       "title": "In a policy switch, the Fed says its October 2027 meeting will not see a vote on interest rates",
@@ -175,7 +245,7 @@
       "driver": "rates",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.393606
+      "base_w": 0.22891
     },
     {
       "title": "The Guardian view on venture capitalism: investor profits are no industrial strategy | Editorial",
@@ -189,7 +259,7 @@
       "driver": "rates",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.448532
+      "base_w": 0.260853
     },
     {
       "title": "Federal Reserve Board announces pricing, effective January 1, 2027, for payment services the Federal Reserve Banks provide to banks and credit unions, and changes to streamline and adjust their check services",
@@ -203,7 +273,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.612767
+      "base_w": 0.356368
     },
     {
       "title": "What to know about the Logan Circle shooting in Washington, DC",
@@ -217,7 +287,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.241391
+      "base_w": 0.140386
     },
     {
       "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
@@ -231,7 +301,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.56191
+      "base_w": 0.326791
     },
     {
       "title": "Home sales hit 16-year low in October amid record-high mortgage rates",
@@ -245,7 +315,7 @@
       "driver": "rates",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.379293
+      "base_w": 0.220586
     },
     {
       "title": "Ukraine\u2019s drone pioneers bring battle-tested tech and high-skilled jobs to Britain",
@@ -259,7 +329,7 @@
       "driver": "jobs",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.522886
+      "base_w": 0.304096
     },
     {
       "title": "UK car industry to press EU for two-year delay to Brexit EV tariffs",
@@ -273,7 +343,7 @@
       "driver": "politics",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.340743
+      "base_w": 0.198166
     },
     {
       "title": "Federal Reserve Board issues enforcement action with former employee of United Community Bank",
@@ -287,7 +357,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.459057
+      "base_w": 0.266974
     },
     {
       "title": "Poundland owner secures two extra weeks to ensure retail chain\u2019s survival",
@@ -301,7 +371,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.248535
+      "base_w": 0.144541
     },
     {
       "title": "Stock futures decline as Nvidia shares fall, Trump says no deal needed with Iran: Live updates",
@@ -315,7 +385,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.212232
+      "base_w": 0.123428
     },
     {
       "title": "Trump says \u2018we don\u2019t need a deal with Iran\u2019",
@@ -329,7 +399,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.212144
+      "base_w": 0.123377
     },
     {
       "title": "Faisal Islam: Why the UK economy is surprisingly resilient",
@@ -345,7 +415,7 @@
       "driver": "growth",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.171011
+      "base_w": 0.099455
     },
     {
       "title": "'We've got to run': Inside ruined Ukraine power plant under constant drone threat",
@@ -359,7 +429,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.163168
+      "base_w": 0.094894
     },
     {
       "title": "Europe views US with \u2018much less horror\u2019 after Trump\u2019s midterms defeat",
@@ -373,7 +443,7 @@
       "driver": "politics",
       "reason": "US political uncertainty: negative for that currency, bullish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.127787
+      "base_w": 0.074317
     },
     {
       "title": "Ukraine says military Starlink disrupted again as US envoys meet Putin in Moscow",
@@ -387,7 +457,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.148788
+      "base_w": 0.086531
     },
     {
       "title": "Ukraine warns of fresh Starshield disruptions as U.S. envoys arrive in Moscow for talks with Putin",
@@ -401,7 +471,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.161602
+      "base_w": 0.093983
     },
     {
       "title": "UK economy grows at fastest rate for more than two years",
@@ -415,7 +485,7 @@
       "driver": "rates",
       "reason": "UK news reads strong, which is bullish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.187577
+      "base_w": 0.109089
     },
     {
       "title": "Business Investment in the UK: July to September 2026 provisional results",
@@ -429,7 +499,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.216646
+      "base_w": 0.125995
     },
     {
       "title": "AI helps UK economy grow at fastest pace for more than two years",
@@ -443,7 +513,7 @@
       "driver": "growth",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.146731
+      "base_w": 0.085335
     },
     {
       "title": "Argentina threatens UK oil firm CEO with jail over Falklands drilling",
@@ -457,7 +527,7 @@
       "driver": "energy",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.146247
+      "base_w": 0.085053
     },
     {
       "title": "US envoys meet Putin in Moscow to discuss Russia-Ukraine war",
@@ -471,7 +541,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.082015
+      "base_w": 0.047698
     },
     {
       "title": "UK economy expands 0.7% in third quarter as AI provides 'extra engine of growth'",
@@ -485,7 +555,7 @@
       "driver": "growth",
       "reason": "UK news reads strong, which is bullish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.109781
+      "base_w": 0.063845
     },
     {
       "title": "Treasury yields edge higher as investors await fresh inflation and housing data",
@@ -499,7 +569,7 @@
       "driver": "inflation",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.104924
+      "base_w": 0.061021
     },
     {
       "title": "Gas bills to rise as Middle East turmoil persists",
@@ -513,10 +583,10 @@
       "driver": "energy",
       "reason": "Middle East oil disruption (owner: generally negative for the pound): negative for the pound, bearish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.104302
+      "base_w": 0.060659
     }
   ],
-  "neutral_stories_24h": 29,
+  "neutral_stories_24h": 33,
   "headlines_note": "Same-story duplicates are merged and counted once. Each headline is shown with its source, link and our own reason; headline text belongs to its publisher.",
   "feeds": {
     "ok": 11,
