@@ -1,6 +1,6 @@
 {
   "pair": "GBP/USD",
-  "generated_ts": 1794609585,
+  "generated_ts": 1794626265,
   "scale": "-1 = strongly bearish for GBP/USD, +1 = strongly bullish",
   "windows": {
     "1h": {
@@ -14,15 +14,85 @@
       "articles": 0
     },
     "24h": {
-      "score": -0.233,
+      "score": -0.303,
       "label": "mildly bearish",
-      "articles": 4
+      "articles": 3
     }
   },
   "scorers_24h": {
-    "rules": 36
+    "rules": 35
   },
   "headlines": [
+    {
+      "title": "US flight outage: FAA lifts nationwide ground stop; Trump officials suggest new tech overwhelmed old equipment \u2013 as it happened",
+      "url": "https://www.theguardian.com/us-news/live/2026/nov/13/us-politics-latest-news-updates-democrats-republicans-donald-trump-van-hollen-chuck-schumer",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1794625895.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.691729
+    },
+    {
+      "title": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
+      "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Top Stories",
+      "also_reported_by": [],
+      "published_ts": 1794624444.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.471613
+    },
+    {
+      "title": "Trump doesn\u2019t plan to raise Nvidia, spy issue during China trip: U.S. officials",
+      "url": "https://www.cnbc.com/2026/11/13/trump-nvidia-huang-china.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
+      "published_ts": 1794620051.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.491523
+    },
+    {
+      "title": "Former FAA official says \u2018nobody really knows what is going on\u2019",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/former-faa-official-says-nobody-really-knows-what-is-going?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1794619726.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.324282
+    },
+    {
+      "title": "What to know about the rare nationwide ground stop issued by the FAA",
+      "url": "https://www.theguardian.com/world/2026/nov/13/faa-ground-stop-flights-explained",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1794614168.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.47479
+    },
     {
       "title": "Rip out ugly clutter to help revive UK high streets, says thinktank",
       "url": "https://www.theguardian.com/society/2026/nov/13/rip-out-clutter-to-retail-revive-high-streets-thinktank",
@@ -35,7 +105,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.617595
+      "base_w": 0.361618
     },
     {
       "title": "Nasdaq falls on Friday as Nvidia sells off, but index notches best week since August: Live updates",
@@ -49,7 +119,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.529113
+      "base_w": 0.309809
     },
     {
       "title": "Supreme Court agrees to hear Robinhood challenge to IPO information omission lawsuit",
@@ -63,7 +133,21 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.484032
+      "base_w": 0.283413
+    },
+    {
+      "title": "Nvidia scandal fallout widens as Trump's treasury secretary blames colleague's cabinet",
+      "url": "https://www.bbc.co.uk/news/articles/cqvg2d1eg7zro?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Top Stories",
+      "also_reported_by": [],
+      "published_ts": 1794599637.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.212746
     },
     {
       "title": "Pressure grows on Trump's Commerce Secretary Lutnick in fallout from Nvidia scandal",
@@ -77,7 +161,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.508679
+      "base_w": 0.297844
     },
     {
       "title": "IRGC says tanker caught fire after hitting mines in Strait of Hormuz",
@@ -91,7 +175,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.273902
+      "base_w": 0.160377
     },
     {
       "title": "Trump bought Nvidia stock as he helped chipmaker with change to export rule",
@@ -105,7 +189,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.46658
+      "base_w": 0.273195
     },
     {
       "title": "The fight over Canadian steelworker jobs",
@@ -119,7 +203,7 @@
       "driver": "jobs",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.212281
+      "base_w": 0.124296
     },
     {
       "title": "Why the data center slowdown concern is overblown. Two stocks to buy amid the fear",
@@ -133,7 +217,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.308732
+      "base_w": 0.18077
     },
     {
       "title": "Car bombings in Russia kill military officer, injure ex-Ukraine PM adviser",
@@ -147,7 +231,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.202
+      "base_w": 0.118276
     },
     {
       "title": "Rosenberg: Uncompromising Putin ups demands for peace with Ukraine",
@@ -161,7 +245,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.250362
+      "base_w": 0.146593
     },
     {
       "title": "US Treasury warns against rate hikes during US-Iran war energy \u2018shock\u2019",
@@ -175,7 +259,7 @@
       "driver": "rates",
       "reason": "US news reads strong, which is bearish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.193479
+      "base_w": 0.113287
     },
     {
       "title": "Jaguar Land Rover reports \u00a3451m quarterly loss after cutting 4,000 jobs",
@@ -189,7 +273,7 @@
       "driver": "rates",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.338404
+      "base_w": 0.198144
     },
     {
       "title": "EU agrees on five countries to represent Europe in Ukraine peace talks",
@@ -203,7 +287,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.179517
+      "base_w": 0.105112
     },
     {
       "title": "Chicago Fed's Goolsbee says central bank 'has definitely got work to do' on inflation",
@@ -217,7 +301,7 @@
       "driver": "inflation",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.230155
+      "base_w": 0.134761
     },
     {
       "title": "Global oil supply returns to surplus for first time since start of Iran war, says IEA",
@@ -231,7 +315,7 @@
       "driver": "energy",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.245581
+      "base_w": 0.143794
     },
     {
       "title": "The Fed expected rate cuts this year. Now it\u2019s bracing for another inflation fight",
@@ -247,7 +331,7 @@
       "driver": "inflation",
       "reason": "US news reads weak, which is bullish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.198066
+      "base_w": 0.115973
     },
     {
       "title": "Trump says he wants to \u2018get Cuba done\u2019 before leaving office, would consider military force",
@@ -261,7 +345,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.198015
+      "base_w": 0.115943
     },
     {
       "title": "The datacenter industry is using propaganda to fight opposition | Samuel Woolley, Dean Jackson and Maia Woluchem",
@@ -275,7 +359,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.229378
+      "base_w": 0.134307
     },
     {
       "title": "Why is Ukraine attacking Russian warships in the Baltic Sea amid talks?",
@@ -289,7 +373,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.118274
+      "base_w": 0.069252
     },
     {
       "title": "Russian crude production rebounds after Trump diesel deal, IEA says as oil markets return to surplus",
@@ -303,7 +387,7 @@
       "driver": "energy",
       "reason": "US news reads strong, which is bearish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.176876
+      "base_w": 0.103566
     },
     {
       "title": "Why the Nvidia cheating scandal is bad for Trump | Politics Weekly America",
@@ -317,7 +401,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.204353
+      "base_w": 0.119654
     },
     {
       "title": "Why is Trump saying \u2018no deal necessary\u2019 with Iran as he sidelines JD Vance?",
@@ -331,7 +415,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.097453
+      "base_w": 0.057061
     },
     {
       "title": "Russia and Ukraine report overnight attacks amid US diplomatic push",
@@ -345,7 +429,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.094727
+      "base_w": 0.055465
     },
     {
       "title": "Elliott spreads out with interest in KKR-backed Flora Food Group",
@@ -359,7 +443,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.15901
+      "base_w": 0.093104
     },
     {
       "title": "\u2018We will sue them\u2019: Canada threatens Stellantis as Trump trade war reshapes Jeep production plans",
@@ -373,7 +457,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.135006
+      "base_w": 0.079049
     },
     {
       "title": "Nvidia scandal: Howard Lutnick under pressure over alleged lack of action",
@@ -387,7 +471,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.156388
+      "base_w": 0.091569
     },
     {
       "title": "The Bank of England, the Monetary Authority of Singapore, and the Bank of Thailand: Project Meridian FX APAC",
@@ -401,7 +485,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.206308
+      "base_w": 0.120799
     },
     {
       "title": "The Gulf must build security that can outlast this war",
@@ -415,7 +499,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.066518
+      "base_w": 0.038948
     },
     {
       "title": "World is now in \u2018age of electricity\u2019, energy agency chief says",
@@ -429,105 +513,7 @@
       "driver": "energy",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.091008
-    },
-    {
-      "title": "How the Jensen Huang affair changes the outlook for U.S.-China relations",
-      "url": "https://www.cnbc.com/2026/11/13/jensen-huang-nvidia-us-china-relations.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1794538595.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.061487
-    },
-    {
-      "title": "Trump moots toppling Cuba authorities before leaving office",
-      "url": "https://www.aljazeera.com/news/2026/11/13/trump-moots-toppling-cuba-authorities-before-leaving-office?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1794537208.0,
-      "direction": 1,
-      "confidence": 0.45,
-      "driver": "politics",
-      "reason": "US political uncertainty: negative for that currency, bullish for GBP/USD.",
-      "in_24h": true,
-      "base_w": 0.039207
-    },
-    {
-      "title": "Zelensky welcomes US bringing Europe into Russia-Ukraine peace talks",
-      "url": "https://www.bbc.co.uk/news/articles/ckn80j9jv3jxo?at_medium=RSS&at_campaign=rss",
-      "title_withheld": false,
-      "source": "BBC Top Stories",
-      "also_reported_by": [],
-      "published_ts": 1794535295.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.04609
-    },
-    {
-      "title": "Iran war live: Trump says Gulf allies urged pause in Iran strikes",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/11/13/iran-war-live-riyadh-china-discuss-houthis-as-group-claims-aramco-attacks?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1794528026.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.029201
-    },
-    {
-      "title": "Yemen\u2019s Houthis renew strikes on Saudi Arabia as UNSC extends sanctions",
-      "url": "https://www.aljazeera.com/news/2026/11/12/yemens-houthis-renew-strikes-on-saudi-arabia-as-unsc-extends-sanctions?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1794527558.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.028765
-    },
-    {
-      "title": "Family Dollar to pay $63m to settle overcharging allegations",
-      "url": "https://www.theguardian.com/us-news/2026/nov/12/family-dollar-overcharging-allegations-settlement",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1794526106.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.048048
-    },
-    {
-      "title": "Russian court jails rights lawyer for 12 years on treason charge",
-      "url": "https://www.aljazeera.com/news/2026/11/12/russian-court-jails-rights-lawyer-for-12-years-on-treason-charge?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1794525530.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.026953
+      "base_w": 0.053288
     }
   ],
   "neutral_stories_24h": 32,
