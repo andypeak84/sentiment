@@ -1,5 +1,5 @@
 {
-  "generated_ts": 1794691870,
+  "generated_ts": 1794710439,
   "window_hours": 72,
   "note": "Report only. Nothing is removed or re-weighted by this file; the owner decides which sites to drop.",
   "thresholds": {
@@ -10,9 +10,9 @@
   },
   "sources": {
     "Al Jazeera": {
-      "stories": 33,
+      "stories": 35,
       "directional": 5,
-      "kept": 32,
+      "kept": 34,
       "absorbed": 1,
       "weight_share_24h": 0.083,
       "self_conflicts": 0,
@@ -23,9 +23,9 @@
       "cross_conflict_rate": null
     },
     "CNBC World Markets": {
-      "stories": 28,
+      "stories": 27,
       "directional": 4,
-      "kept": 28,
+      "kept": 27,
       "absorbed": 0,
       "weight_share_24h": 0.239,
       "self_conflicts": 0,
@@ -49,10 +49,10 @@
       "cross_conflict_rate": null
     },
     "BBC Top Stories": {
-      "stories": 11,
+      "stories": 12,
       "directional": 0,
       "kept": 11,
-      "absorbed": 0,
+      "absorbed": 1,
       "weight_share_24h": 0.0,
       "self_conflicts": 0,
       "cross_conflicts": 0,

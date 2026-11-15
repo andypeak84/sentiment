@@ -1,6 +1,6 @@
 {
   "pair": "GBP/USD",
-  "generated_ts": 1794691870,
+  "generated_ts": 1794710439,
   "scale": "-1 = strongly bearish for GBP/USD, +1 = strongly bullish",
   "windows": {
     "1h": {
@@ -9,9 +9,9 @@
       "articles": 0
     },
     "6h": {
-      "score": 1.0,
-      "label": "strongly bullish",
-      "articles": 1
+      "score": 0.0,
+      "label": "neutral",
+      "articles": 0
     },
     "24h": {
       "score": 0.523,
@@ -20,9 +20,51 @@
     }
   },
   "scorers_24h": {
-    "rules": 35
+    "rules": 33
   },
   "headlines": [
+    {
+      "title": "Iraq PM sacks nine officials over oil smuggling in pro-Iran stronghold",
+      "url": "https://www.aljazeera.com/news/2026/11/15/iraq-pm-sacks-nine-officials-over-oil-smuggling-in-pro-iran-stronghold?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1794707695.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "energy",
+      "reason": "No clear strong/weak signal in headline.",
+      "in_24h": true,
+      "base_w": 0.366274
+    },
+    {
+      "title": "Iraq PM targets powerful militia stronghold in $30m oil smuggling probe",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/aje-onl-nf_iraq-pm-targets-militia-stronghold-in-oil-smuggling-141126?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1794699277.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "energy",
+      "reason": "No clear strong/weak signal in headline.",
+      "in_24h": true,
+      "base_w": 0.279568
+    },
+    {
+      "title": "How Mississippi's new senator won in Trump's heartland - and what he will do next",
+      "url": "https://www.bbc.co.uk/news/videos/crpdwve24398o?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Top Stories",
+      "also_reported_by": [],
+      "published_ts": 1794694633.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "inflation",
+      "reason": "No clear strong/weak signal in headline.",
+      "in_24h": true,
+      "base_w": 0.301076
+    },
     {
       "title": "UK ethics watchdog chief steps back from role over sexual misconduct claims",
       "url": "https://www.bbc.co.uk/news/articles/cmewv2kzq2e5o?at_medium=RSS&at_campaign=rss",
@@ -35,21 +77,21 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.48454
+      "base_w": 0.267017
     },
     {
-      "title": "How Mississippi's new senator won in Trump's heartland and what he will do next",
-      "url": "https://www.bbc.co.uk/news/videos/crpdwve24398o?at_medium=RSS&at_campaign=rss",
+      "title": "US envoy Kushner says he aims to broker Europe-Russia talks on Ukraine",
+      "url": "https://www.aljazeera.com/news/2026/11/14/us-envoy-kushner-says-he-aims-to-broker-europe-russia-talks-on-ukraine?traffic_source=rss",
       "title_withheld": false,
-      "source": "BBC Top Stories",
+      "source": "Al Jazeera",
       "also_reported_by": [],
-      "published_ts": 1794682290.0,
+      "published_ts": 1794690626.0,
       "direction": 0,
       "confidence": 0.0,
-      "driver": "inflation",
-      "reason": "No clear strong/weak signal in headline.",
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.367661
+      "base_w": 0.211798
     },
     {
       "title": "US officials say flight stoppage stemmed from \u2018routine maintenance\u2019 as travel chaos continues",
@@ -63,7 +105,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.424413
+      "base_w": 0.233883
     },
     {
       "title": "US suggested Ukraine cede parts of Donbas to Russia to become part of NATO",
@@ -77,7 +119,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.234418
+      "base_w": 0.129182
     },
     {
       "title": "A rapid interest rate rise seems inevitable \u2013 and households are expected to pick up the tab",
@@ -91,7 +133,7 @@
       "driver": "rates",
       "reason": "UK news reads strong, which is bullish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.370541
+      "base_w": 0.204196
     },
     {
       "title": "Rising rents draw Wall Street money to industrial outdoor storage lot investments across the U.S.",
@@ -105,7 +147,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.29077
+      "base_w": 0.160236
     },
     {
       "title": "Canada\u2019s Stelco to recall 175 workers after government pressure",
@@ -119,7 +161,7 @@
       "driver": "politics",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.190853
+      "base_w": 0.105174
     },
     {
       "title": "Interest rate rises likely in coming months, Bank of England\u2019s chief economist says",
@@ -133,7 +175,7 @@
       "driver": "rates",
       "reason": "UK news reads strong, which is bullish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.318655
+      "base_w": 0.175603
     },
     {
       "title": "Heating oil prices are up 59% from last winter. The spike is 'crushing folks,' Maine nonprofit says",
@@ -147,7 +189,7 @@
       "driver": "energy",
       "reason": "Energy prices rising or supply tightening: negative for the pound, bearish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.266672
+      "base_w": 0.146956
     },
     {
       "title": "How Canadian stocks could be big winners of U.S. midterms",
@@ -161,7 +203,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.257481
+      "base_w": 0.141891
     },
     {
       "title": "Juice your growth and save on taxes in this workplace investment account",
@@ -175,7 +217,7 @@
       "driver": "growth",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.255743
+      "base_w": 0.140933
     },
     {
       "title": "How does Iran view shift in US approach after JD Vance ordered away?",
@@ -189,7 +231,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.156782
+      "base_w": 0.086399
     },
     {
       "title": "Russian casualties \u2018reach 450,000\u2019: What that means for the Ukraine war",
@@ -203,7 +245,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.148802
+      "base_w": 0.082001
     },
     {
       "title": "U.S. floated idea of Ukraine ceding Donbas for NATO membership, Zelenskyy says",
@@ -217,7 +259,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.217622
+      "base_w": 0.119926
     },
     {
       "title": "Eric Trump-backed robot soldier startup can't pay staff after founder borrowed $4.6 million from company to buy home",
@@ -231,7 +273,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.199778
+      "base_w": 0.110093
     },
     {
       "title": "Three killed in Russia as Ukraine claims US floated NATO membership option",
@@ -245,7 +287,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.128917
+      "base_w": 0.071043
     },
     {
       "title": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
@@ -259,7 +301,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.160599
+      "base_w": 0.088502
     },
     {
       "title": "Zelenskyy accuses SpaceX of lying about Starshield \u2013 and says US floated Donbas-for-Nato deal",
@@ -273,7 +315,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.20987
+      "base_w": 0.115654
     },
     {
       "title": "Greenpeace boulders may delay building of \u00a312bn windfarms in North Sea",
@@ -287,7 +329,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.207926
+      "base_w": 0.114583
     },
     {
       "title": "Ecuadorian fishermen who survived US boat strikes sue Trump administration",
@@ -301,7 +343,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.207919
+      "base_w": 0.114579
     },
     {
       "title": "Ukraine, Russia race to build military satellite networks as war rages on",
@@ -315,7 +357,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.1188
+      "base_w": 0.065467
     },
     {
       "title": "Migrant caravan heads to US from Mexico after Democrats\u2019 midterm win",
@@ -329,7 +371,7 @@
       "driver": "politics",
       "reason": "US political uncertainty: negative for that currency, bullish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.102479
+      "base_w": 0.056474
     },
     {
       "title": "China, US discuss tariffs, farm trade ahead of Xi-Trump meeting",
@@ -343,7 +385,7 @@
       "driver": "politics",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.129969
+      "base_w": 0.071623
     },
     {
       "title": "Thames Water creditors offer \u00a375m social tariff boost to win over Burnham",
@@ -357,7 +399,7 @@
       "driver": "politics",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.142918
+      "base_w": 0.078759
     },
     {
       "title": "Southeast Asian leaders to meet as Trump visit highlights trade disruption",
@@ -371,7 +413,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.073071
+      "base_w": 0.040268
     },
     {
       "title": "Ukraine is running out of options, and Russia knows it",
@@ -385,7 +427,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.071804
+      "base_w": 0.039569
     },
     {
       "title": "Philippine court orders arrest of jailed, US-wanted celebrity preacher",
@@ -399,7 +441,7 @@
       "driver": "inflation",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.069836
+      "base_w": 0.038485
     },
     {
       "title": "Ecuador wants to monetize its biodiversity \u2014 while still drilling for oil",
@@ -413,7 +455,7 @@
       "driver": "energy",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.099889
+      "base_w": 0.055046
     },
     {
       "title": "US flight outage: FAA lifts nationwide ground stop; Trump officials suggest new tech overwhelmed old equipment \u2013 as it happened",
@@ -427,7 +469,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.08426
+      "base_w": 0.046434
     },
     {
       "title": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
@@ -441,80 +483,10 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.057448
-    },
-    {
-      "title": "Trump doesn\u2019t plan to raise Nvidia, spy issue during China trip: U.S. officials",
-      "url": "https://www.cnbc.com/2026/11/13/trump-nvidia-huang-china.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1794620051.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.059873
-    },
-    {
-      "title": "Former FAA official says \u2018nobody really knows what is going on\u2019",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/former-faa-official-says-nobody-really-knows-what-is-going?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1794619726.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.039501
-    },
-    {
-      "title": "What to know about the rare nationwide ground stop issued by the FAA",
-      "url": "https://www.theguardian.com/world/2026/nov/13/faa-ground-stop-flights-explained",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1794614168.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.057835
-    },
-    {
-      "title": "Rip out ugly clutter to help revive UK high streets, says thinktank",
-      "url": "https://www.theguardian.com/society/2026/nov/13/rip-out-clutter-to-retail-revive-high-streets-thinktank",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1794605683.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.044049
-    },
-    {
-      "title": "Nasdaq falls on Friday as Nvidia sells off, but index notches best week since August: Live updates",
-      "url": "https://www.cnbc.com/2026/11/12/stock-market-today-live-updates.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1794605668.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.037738
+      "base_w": 0.031658
     }
   ],
-  "neutral_stories_24h": 31,
+  "neutral_stories_24h": 29,
   "headlines_note": "Same-story duplicates are merged and counted once. Each headline is shown with its source, link and our own reason; headline text belongs to its publisher.",
   "feeds": {
     "ok": 11,
