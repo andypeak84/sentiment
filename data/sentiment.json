@@ -1,28 +1,212 @@
 {
   "pair": "GBP/USD",
-  "generated_ts": 1794797078,
+  "generated_ts": 1794836429,
   "scale": "-1 = strongly bearish for GBP/USD, +1 = strongly bullish",
   "windows": {
     "1h": {
-      "score": 0.0,
-      "label": "neutral",
+      "score": -1.0,
+      "label": "strongly bearish",
       "articles": 1
     },
     "6h": {
-      "score": 0.0,
-      "label": "neutral",
-      "articles": 2
+      "score": -1.0,
+      "label": "strongly bearish",
+      "articles": 1
     },
     "24h": {
-      "score": 0.378,
-      "label": "mildly bullish",
-      "articles": 3
+      "score": -0.319,
+      "label": "mildly bearish",
+      "articles": 4
     }
   },
   "scorers_24h": {
-    "rules": 27
+    "rules": 33
   },
   "headlines": [
+    {
+      "title": "Russian attacks kill three in Ukraine, EU accuses Moscow of prolonging war",
+      "url": "https://www.aljazeera.com/news/2026/11/16/russian-attacks-kill-three-in-ukraine-eu-accuses-moscow-of-prolonging-war?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1794835703.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.390778
+    },
+    {
+      "title": "Beckham firm sues after fragrance found for sale in Poundland",
+      "url": "https://www.theguardian.com/football/2026/nov/16/david-beckham-fragrance-sale-poundland-bargain-bin-gas-station",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1794835595.0,
+      "direction": -1,
+      "confidence": 0.45,
+      "driver": "politics",
+      "reason": "UK political uncertainty: negative for that currency, bearish for GBP/USD.",
+      "in_24h": true,
+      "base_w": 0.681495
+    },
+    {
+      "title": "AI sell-off resumes as Jensen Huang \u2018discusses comeback as Nvidia CEO\u2019 \u2013 business live",
+      "url": "https://www.theguardian.com/business/live/2026/nov/16/ai-sell-off-resumes-jensen-huang-discusses-comeback-nvidia-ceo-dollar-stock-markets-latest-news-updates",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1794835052.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.669723
+    },
+    {
+      "title": "Great Britain\u2019s oldest renewables projects could rake in nearly \u00a39bn next year",
+      "url": "https://www.theguardian.com/business/2026/nov/16/great-britain-renewable-energy-subsidies-wind-solar",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1794830180.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.572791
+    },
+    {
+      "title": "NBA eyes slam dunk with multibillion dollar fund to woo football giants",
+      "url": "https://news.sky.com/story/nba-eyes-slam-dunk-with-multibillion-dollar-fund-to-woo-football-giants-13612771",
+      "title_withheld": false,
+      "source": "Sky News Business",
+      "also_reported_by": [],
+      "published_ts": 1794826920.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.515897
+    },
+    {
+      "title": "NATO member Estonia to close Russia border after attempted 'sabotage' of drone maker",
+      "url": "https://www.cnbc.com/2026/11/16/nato-estonia-russia-border-ukraine-war.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
+      "published_ts": 1794825842.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.427162
+    },
+    {
+      "title": "\u2018NATO will collapse\u2019: Russia stalls Ukraine talks, seeks to divide Europe",
+      "url": "https://www.aljazeera.com/news/2026/11/16/nato-will-collapse-russia-stalls-ukraine-talks-seeks-to-divide-europe?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1794823391.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.263235
+    },
+    {
+      "title": "Third US aircraft carrier arrives in Middle East amid tensions with Iran",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/16/third-us-aircraft-carrier-arrives-in-middle-east-amid-tensions-with-iran?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1794821496.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.247704
+    },
+    {
+      "title": "'You're going to win the war': Harry praises war veterans on surprise Ukraine visit",
+      "url": "https://www.bbc.co.uk/news/articles/c60evn992jq8o?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Top Stories",
+      "also_reported_by": [],
+      "published_ts": 1794820891.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.303677
+    },
+    {
+      "title": "China confirms Xi-Trump-Putin historic summit. What will be on the agenda?",
+      "url": "https://www.cnbc.com/2026/11/16/trump-xi-putin-ukraine-nuclear-tariffs-russia-iran-.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
+      "published_ts": 1794818296.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.335295
+    },
+    {
+      "title": "Russia out of junior ice hockey worlds after Canada\u2019s entry refusal",
+      "url": "https://www.aljazeera.com/sports/2026/11/16/russia-out-of-iihf-world-junior-ice-hockey-as-canada-refuses-entry?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1794817217.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.215923
+    },
+    {
+      "title": "Why is China resisting a nuclear treaty with the US and Russia?",
+      "url": "https://www.aljazeera.com/news/2026/11/16/why-is-china-not-keen-on-a-nuclear-treaty-with-us-and-russia?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1794815649.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.205327
+    },
+    {
+      "title": "Gas starts flowing from Jackdaw after government green light",
+      "url": "https://www.bbc.co.uk/news/articles/c9x2elzm047po?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Business",
+      "also_reported_by": [
+        "BBC Top Stories"
+      ],
+      "published_ts": 1794810248.0,
+      "direction": 1,
+      "confidence": 0.5,
+      "driver": "energy",
+      "reason": "UK developing its own gas/oil (owner ruling): easing energy supply, positive for the pound, bullish for GBP/USD.",
+      "in_24h": true,
+      "base_w": 0.302143
+    },
     {
       "title": "China\u2019s slowdown deepens in October as industrial output, retail sales, investment miss estimates",
       "url": "https://www.cnbc.com/2026/11/16/china-retail-sales-october-industrial-output-investment.html",
@@ -35,7 +219,7 @@
       "driver": "growth",
       "reason": "Could not tell whether this is UK or US news.",
       "in_24h": true,
-      "base_w": 0.565686
+      "base_w": 0.16001
     },
     {
       "title": "Japan's economy unexpectedly contracts in third-quarter as elevated energy costs bite",
@@ -51,7 +235,7 @@
       "driver": "growth",
       "reason": "Could not tell whether this is UK or US news.",
       "in_24h": true,
-      "base_w": 0.49317
+      "base_w": 0.139498
     },
     {
       "title": "After a nationwide ground stop, US faces aviation infrastructure questions",
@@ -65,7 +249,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.318193
+      "base_w": 0.090004
     },
     {
       "title": "Russia's mega-rich are already imagining a future after Putin",
@@ -79,7 +263,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.373567
+      "base_w": 0.105667
     },
     {
       "title": "Zambia\u2019s copper boom attracts billions in investment, but who benefits?",
@@ -93,7 +277,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.293851
+      "base_w": 0.083119
     },
     {
       "title": "Prince Harry praises war veterans on surprise visit to Ukraine",
@@ -107,7 +291,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.289161
+      "base_w": 0.081792
     },
     {
       "title": "Estonia to close border crossings with Russia after alleged arson attack",
@@ -121,7 +305,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.19493
+      "base_w": 0.055138
     },
     {
       "title": "Zelensky urges US and Musk to lift Starlink restrictions and be on 'right side of history'",
@@ -135,7 +319,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.217644
+      "base_w": 0.061563
     },
     {
       "title": "Anti-Houthi forces retreat in Yemen as Iran strikes Bahrain in attack on U.S. base",
@@ -149,7 +333,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.250694
+      "base_w": 0.070911
     },
     {
       "title": "Fed 'has some work to do on inflation,' Kansas City Fed chief says",
@@ -163,7 +347,7 @@
       "driver": "inflation",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.247203
+      "base_w": 0.069924
     },
     {
       "title": "Prince Harry in Ukraine meeting Invictus 2027 hopefuls",
@@ -177,7 +361,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.154885
+      "base_w": 0.043811
     },
     {
       "title": "Bessent calls for \u2018dramatic shakeup\u2019 at Nvidia, urges outside CEO",
@@ -191,7 +375,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.222878
+      "base_w": 0.063043
     },
     {
       "title": "Estonia to close border crossings with Russia after attack on drone maker",
@@ -205,7 +389,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.147653
+      "base_w": 0.041765
     },
     {
       "title": "The Guardian view on Cop31: the green transition must not be derailed | Editorial",
@@ -219,7 +403,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.240757
+      "base_w": 0.068101
     },
     {
       "title": "The crisis facing Britain\u2019s young people is politicians\u2019 fault. To fix it, we need a generational response | Andy Burnham",
@@ -233,7 +417,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.227237
+      "base_w": 0.064276
     },
     {
       "title": "Trump breaks silence about FAA nationwide ground stop, blames Biden administration",
@@ -247,7 +431,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.193417
+      "base_w": 0.05471
     },
     {
       "title": "Two planes collide on taxiway at Miami airport one day after national grounding",
@@ -261,7 +445,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.19471
+      "base_w": 0.055076
     },
     {
       "title": "Will Iraq\u2019s oil smuggling crackdown disarm militias without a conflict?",
@@ -275,7 +459,7 @@
       "driver": "energy",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.107325
+      "base_w": 0.030358
     },
     {
       "title": "Social Security and the blue wave: What could happen to payroll taxes and senior tax breaks",
@@ -289,7 +473,7 @@
       "driver": "jobs",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.145837
+      "base_w": 0.041251
     },
     {
       "title": "Judge temporarily blocks Trump from moving ahead on Washington public golf course redevelopment",
@@ -303,108 +487,10 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.137144
-    },
-    {
-      "title": "\u2018Shameless venality\u2019: how a flurry of lawsuits has thwarted Trump\u2019s self-enrichment schemes",
-      "url": "https://www.theguardian.com/us-news/2026/nov/15/trump-self-enrichment-lawsuits",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1794747615.0,
-      "direction": 1,
-      "confidence": 0.45,
-      "driver": "politics",
-      "reason": "US political uncertainty: negative for that currency, bullish for GBP/USD.",
-      "in_24h": true,
-      "base_w": 0.143137
-    },
-    {
-      "title": "Rivian, Lucid, Scout CEOs aren\u2019t counting on Democrats to restore EV federal support after midterm wins",
-      "url": "https://www.cnbc.com/2026/11/15/rivian-lucid-scout-arent-counting-on-dems-to-restore-ev-incentives.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1794747602.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.122637
-    },
-    {
-      "title": "Is Burnham\u2019s plan for a housing revolution anything more than a pipedream? | John Harris",
-      "url": "https://www.theguardian.com/commentisfree/2026/nov/15/burnham-housing-crisis-revolution-pipedream-children-hope",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1794744013.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.127512
-    },
-    {
-      "title": "Give Donbas, take NATO seat: Could new US pitch work for Ukraine, Russia?",
-      "url": "https://www.aljazeera.com/news/2026/11/15/give-donbas-take-nato-seat-could-new-us-pitch-work-for-ukraine-russia?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1794740316.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.064713
-    },
-    {
-      "title": "AFC Wimbledon, a failed \u00a387m investment bid and the challenge for fan ownership",
-      "url": "https://www.theguardian.com/football/2026/nov/15/afc-wimbledon-a-failed-87m-investment-bid-and-the-challenge-for-fan-ownership",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1794729609.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.080317
-    },
-    {
-      "title": "\u2018Jensen Huang lost his mind\u2019: how AI\u2019s smartest man fell for the world\u2019s oldest trick",
-      "url": "https://www.theguardian.com/technology/2026/nov/14/jensen-huang-affair-nvidia-nightmare",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1794722406.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.063742
-    },
-    {
-      "title": "World leaders head to Asia for back-to-back diplomatic summits",
-      "url": "https://www.theguardian.com/world/2026/nov/15/asia-diplomatic-summits-trump-xi-putin-apec-asean",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1794715202.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.050585
+      "base_w": 0.038793
     }
   ],
-  "neutral_stories_24h": 26,
+  "neutral_stories_24h": 31,
   "headlines_note": "Same-story duplicates are merged and counted once. Each headline is shown with its source, link and our own reason; headline text belongs to its publisher.",
   "feeds": {
     "ok": 11,
