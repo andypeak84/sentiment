@@ -1,5 +1,5 @@
 {
-  "generated_ts": 1794779430,
+  "generated_ts": 1794797078,
   "window_hours": 72,
   "note": "Report only. Nothing is removed or re-weighted by this file; the owner decides which sites to drop.",
   "thresholds": {
@@ -10,22 +10,22 @@
   },
   "sources": {
     "Al Jazeera": {
-      "stories": 32,
-      "directional": 3,
-      "kept": 32,
+      "stories": 30,
+      "directional": 2,
+      "kept": 30,
       "absorbed": 0,
       "weight_share_24h": 0.0,
       "self_conflicts": 0,
       "cross_conflicts": 0,
       "cross_checked": 0,
       "kinds": {},
-      "self_conflict_rate": 0.0,
+      "self_conflict_rate": null,
       "cross_conflict_rate": null
     },
     "CNBC World Markets": {
-      "stories": 26,
+      "stories": 27,
       "directional": 3,
-      "kept": 26,
+      "kept": 27,
       "absorbed": 0,
       "weight_share_24h": 0.0,
       "self_conflicts": 0,
@@ -36,9 +36,9 @@
       "cross_conflict_rate": null
     },
     "Guardian Business": {
-      "stories": 26,
+      "stories": 24,
       "directional": 3,
-      "kept": 26,
+      "kept": 24,
       "absorbed": 0,
       "weight_share_24h": 1.0,
       "self_conflicts": 0,
@@ -49,10 +49,23 @@
       "cross_conflict_rate": null
     },
     "BBC Top Stories": {
-      "stories": 9,
+      "stories": 10,
       "directional": 0,
-      "kept": 8,
+      "kept": 9,
       "absorbed": 1,
+      "weight_share_24h": 0.0,
+      "self_conflicts": 0,
+      "cross_conflicts": 0,
+      "cross_checked": 0,
+      "kinds": {},
+      "self_conflict_rate": null,
+      "cross_conflict_rate": null
+    },
+    "CNBC Economy": {
+      "stories": 2,
+      "directional": 1,
+      "kept": 0,
+      "absorbed": 2,
       "weight_share_24h": 0.0,
       "self_conflicts": 0,
       "cross_conflicts": 0,
@@ -79,19 +92,6 @@
       "directional": 0,
       "kept": 1,
       "absorbed": 0,
-      "weight_share_24h": 0.0,
-      "self_conflicts": 0,
-      "cross_conflicts": 0,
-      "cross_checked": 0,
-      "kinds": {},
-      "self_conflict_rate": null,
-      "cross_conflict_rate": null
-    },
-    "CNBC Economy": {
-      "stories": 1,
-      "directional": 1,
-      "kept": 0,
-      "absorbed": 1,
       "weight_share_24h": 0.0,
       "self_conflicts": 0,
       "cross_conflicts": 0,

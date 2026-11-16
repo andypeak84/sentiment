@@ -1,28 +1,114 @@
 {
   "pair": "GBP/USD",
-  "generated_ts": 1794779430,
+  "generated_ts": 1794797078,
   "scale": "-1 = strongly bearish for GBP/USD, +1 = strongly bullish",
   "windows": {
     "1h": {
       "score": 0.0,
       "label": "neutral",
-      "articles": 0
+      "articles": 1
     },
     "6h": {
       "score": 0.0,
       "label": "neutral",
-      "articles": 0
+      "articles": 2
     },
     "24h": {
-      "score": 1.0,
-      "label": "strongly bullish",
-      "articles": 1
+      "score": 0.378,
+      "label": "mildly bullish",
+      "articles": 3
     }
   },
   "scorers_24h": {
-    "rules": 24
+    "rules": 27
   },
   "headlines": [
+    {
+      "title": "China\u2019s slowdown deepens in October as industrial output, retail sales, investment miss estimates",
+      "url": "https://www.cnbc.com/2026/11/16/china-retail-sales-october-industrial-output-investment.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
+      "published_ts": 1794795243.0,
+      "direction": 0,
+      "confidence": 0.1,
+      "driver": "growth",
+      "reason": "Could not tell whether this is UK or US news.",
+      "in_24h": true,
+      "base_w": 0.565686
+    },
+    {
+      "title": "Japan's economy unexpectedly contracts in third-quarter as elevated energy costs bite",
+      "url": "https://www.cnbc.com/2026/11/16/japan-q3-gdp-energy-oil-prices.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [
+        "CNBC Economy"
+      ],
+      "published_ts": 1794790968.0,
+      "direction": 0,
+      "confidence": 0.1,
+      "driver": "growth",
+      "reason": "Could not tell whether this is UK or US news.",
+      "in_24h": true,
+      "base_w": 0.49317
+    },
+    {
+      "title": "After a nationwide ground stop, US faces aviation infrastructure questions",
+      "url": "https://www.aljazeera.com/news/2026/11/16/after-a-nationwide-ground-stop-us-faces-aviation-infrastructure-questions?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1794789948.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.318193
+    },
+    {
+      "title": "Russia's mega-rich are already imagining a future after Putin",
+      "url": "https://www.bbc.co.uk/news/articles/c60733mxm0x0o?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Top Stories",
+      "also_reported_by": [],
+      "published_ts": 1794787994.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.373567
+    },
+    {
+      "title": "Zambia\u2019s copper boom attracts billions in investment, but who benefits?",
+      "url": "https://www.aljazeera.com/news/2026/11/16/zambias-copper-boom-attracts-billions-in-investment-but-who-benefits?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1794787468.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.293851
+    },
+    {
+      "title": "Prince Harry praises war veterans on surprise visit to Ukraine",
+      "url": "https://www.bbc.co.uk/news/articles/c60evn992jq8o?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Top Stories",
+      "also_reported_by": [],
+      "published_ts": 1794780013.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.289161
+    },
     {
       "title": "Estonia to close border crossings with Russia after alleged arson attack",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/estonia-to-close-border-crossings-with-russia-after-alleged-arson-attack?traffic_source=rss",
@@ -35,7 +121,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.343425
+      "base_w": 0.19493
     },
     {
       "title": "Zelensky urges US and Musk to lift Starlink restrictions and be on 'right side of history'",
@@ -49,7 +135,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.383442
+      "base_w": 0.217644
     },
     {
       "title": "Anti-Houthi forces retreat in Yemen as Iran strikes Bahrain in attack on U.S. base",
@@ -63,7 +149,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.441669
+      "base_w": 0.250694
     },
     {
       "title": "Fed 'has some work to do on inflation,' Kansas City Fed chief says",
@@ -77,7 +163,7 @@
       "driver": "inflation",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.435519
+      "base_w": 0.247203
     },
     {
       "title": "Prince Harry in Ukraine meeting Invictus 2027 hopefuls",
@@ -91,7 +177,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.272874
+      "base_w": 0.154885
     },
     {
       "title": "Bessent calls for \u2018dramatic shakeup\u2019 at Nvidia, urges outside CEO",
@@ -105,7 +191,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.392663
+      "base_w": 0.222878
     },
     {
       "title": "Estonia to close border crossings with Russia after attack on drone maker",
@@ -119,7 +205,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.260134
+      "base_w": 0.147653
     },
     {
       "title": "The Guardian view on Cop31: the green transition must not be derailed | Editorial",
@@ -133,7 +219,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.424163
+      "base_w": 0.240757
     },
     {
       "title": "The crisis facing Britain\u2019s young people is politicians\u2019 fault. To fix it, we need a generational response | Andy Burnham",
@@ -147,7 +233,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.400344
+      "base_w": 0.227237
     },
     {
       "title": "Trump breaks silence about FAA nationwide ground stop, blames Biden administration",
@@ -161,7 +247,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.34076
+      "base_w": 0.193417
     },
     {
       "title": "Two planes collide on taxiway at Miami airport one day after national grounding",
@@ -175,7 +261,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.343038
+      "base_w": 0.19471
     },
     {
       "title": "Will Iraq\u2019s oil smuggling crackdown disarm militias without a conflict?",
@@ -189,7 +275,7 @@
       "driver": "energy",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.189083
+      "base_w": 0.107325
     },
     {
       "title": "Social Security and the blue wave: What could happen to payroll taxes and senior tax breaks",
@@ -203,7 +289,7 @@
       "driver": "jobs",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.256933
+      "base_w": 0.145837
     },
     {
       "title": "Judge temporarily blocks Trump from moving ahead on Washington public golf course redevelopment",
@@ -217,7 +303,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.241619
+      "base_w": 0.137144
     },
     {
       "title": "\u2018Shameless venality\u2019: how a flurry of lawsuits has thwarted Trump\u2019s self-enrichment schemes",
@@ -231,7 +317,7 @@
       "driver": "politics",
       "reason": "US political uncertainty: negative for that currency, bullish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.252176
+      "base_w": 0.143137
     },
     {
       "title": "Rivian, Lucid, Scout CEOs aren\u2019t counting on Democrats to restore EV federal support after midterm wins",
@@ -245,7 +331,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.216061
+      "base_w": 0.122637
     },
     {
       "title": "Is Burnham\u2019s plan for a housing revolution anything more than a pipedream? | John Harris",
@@ -259,7 +345,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.224649
+      "base_w": 0.127512
     },
     {
       "title": "Give Donbas, take NATO seat: Could new US pitch work for Ukraine, Russia?",
@@ -273,7 +359,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.11401
+      "base_w": 0.064713
     },
     {
       "title": "AFC Wimbledon, a failed \u00a387m investment bid and the challenge for fan ownership",
@@ -287,7 +373,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.141502
+      "base_w": 0.080317
     },
     {
       "title": "\u2018Jensen Huang lost his mind\u2019: how AI\u2019s smartest man fell for the world\u2019s oldest trick",
@@ -301,7 +387,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.112299
+      "base_w": 0.063742
     },
     {
       "title": "World leaders head to Asia for back-to-back diplomatic summits",
@@ -315,52 +401,10 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.089121
-    },
-    {
-      "title": "Iraq PM sacks nine officials over oil smuggling in pro-Iran stronghold",
-      "url": "https://www.aljazeera.com/news/2026/11/15/iraq-pm-sacks-nine-officials-over-oil-smuggling-in-pro-iran-stronghold?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1794707695.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "energy",
-      "reason": "No clear strong/weak signal in headline.",
-      "in_24h": true,
-      "base_w": 0.040024
-    },
-    {
-      "title": "Iraq PM targets powerful militia stronghold in $30m oil smuggling probe",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/aje-onl-nf_iraq-pm-targets-militia-stronghold-in-oil-smuggling-141126?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1794699277.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "energy",
-      "reason": "No clear strong/weak signal in headline.",
-      "in_24h": true,
-      "base_w": 0.030549
-    },
-    {
-      "title": "How Mississippi's new senator won in Trump's heartland - and what he will do next",
-      "url": "https://www.bbc.co.uk/news/videos/crpdwve24398o?at_medium=RSS&at_campaign=rss",
-      "title_withheld": false,
-      "source": "BBC Top Stories",
-      "also_reported_by": [],
-      "published_ts": 1794694633.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "inflation",
-      "reason": "No clear strong/weak signal in headline.",
-      "in_24h": true,
-      "base_w": 0.032899
+      "base_w": 0.050585
     }
   ],
-  "neutral_stories_24h": 23,
+  "neutral_stories_24h": 26,
   "headlines_note": "Same-story duplicates are merged and counted once. Each headline is shown with its source, link and our own reason; headline text belongs to its publisher.",
   "feeds": {
     "ok": 11,
