@@ -1,5 +1,5 @@
 {
-  "generated_ts": 1794836429,
+  "generated_ts": 1794876554,
   "window_hours": 72,
   "note": "Report only. Nothing is removed or re-weighted by this file; the owner decides which sites to drop.",
   "thresholds": {
@@ -10,24 +10,11 @@
   },
   "sources": {
     "Al Jazeera": {
-      "stories": 31,
+      "stories": 29,
       "directional": 2,
-      "kept": 31,
+      "kept": 29,
       "absorbed": 0,
-      "weight_share_24h": 0.0,
-      "self_conflicts": 0,
-      "cross_conflicts": 0,
-      "cross_checked": 0,
-      "kinds": {},
-      "self_conflict_rate": null,
-      "cross_conflict_rate": null
-    },
-    "CNBC World Markets": {
-      "stories": 24,
-      "directional": 1,
-      "kept": 24,
-      "absorbed": 0,
-      "weight_share_24h": 0.0,
+      "weight_share_24h": 0.587,
       "self_conflicts": 0,
       "cross_conflicts": 0,
       "cross_checked": 0,
@@ -36,16 +23,29 @@
       "cross_conflict_rate": null
     },
     "Guardian Business": {
-      "stories": 22,
-      "directional": 4,
-      "kept": 22,
-      "absorbed": 0,
-      "weight_share_24h": 0.67,
+      "stories": 26,
+      "directional": 5,
+      "kept": 25,
+      "absorbed": 1,
+      "weight_share_24h": 0.317,
       "self_conflicts": 0,
       "cross_conflicts": 0,
       "cross_checked": 0,
       "kinds": {},
       "self_conflict_rate": 0.0,
+      "cross_conflict_rate": null
+    },
+    "CNBC World Markets": {
+      "stories": 25,
+      "directional": 1,
+      "kept": 25,
+      "absorbed": 0,
+      "weight_share_24h": 0.0,
+      "self_conflicts": 0,
+      "cross_conflicts": 0,
+      "cross_checked": 0,
+      "kinds": {},
+      "self_conflict_rate": null,
       "cross_conflict_rate": null
     },
     "BBC Top Stories": {
@@ -62,9 +62,9 @@
       "cross_conflict_rate": null
     },
     "Sky News Business": {
-      "stories": 2,
+      "stories": 3,
       "directional": 0,
-      "kept": 2,
+      "kept": 3,
       "absorbed": 0,
       "weight_share_24h": 0.0,
       "self_conflicts": 0,
@@ -77,9 +77,9 @@
     "BBC Business": {
       "stories": 2,
       "directional": 1,
-      "kept": 2,
-      "absorbed": 0,
-      "weight_share_24h": 0.33,
+      "kept": 1,
+      "absorbed": 1,
+      "weight_share_24h": 0.096,
       "self_conflicts": 0,
       "cross_conflicts": 0,
       "cross_checked": 0,
@@ -102,8 +102,8 @@
     }
   },
   "flags": {
-    "Guardian Business": [
-      "supplies 67% of the 24h directional signal"
+    "Al Jazeera": [
+      "supplies 59% of the 24h directional signal"
     ]
   }
 }
