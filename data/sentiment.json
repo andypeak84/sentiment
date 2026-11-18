@@ -1,28 +1,322 @@
 {
   "pair": "GBP/USD",
-  "generated_ts": 1795010391,
+  "generated_ts": 1795044247,
   "scale": "-1 = strongly bearish for GBP/USD, +1 = strongly bullish",
   "windows": {
     "1h": {
-      "score": -1.0,
-      "label": "strongly bearish",
-      "articles": 3
+      "score": 0.0,
+      "label": "neutral",
+      "articles": 0
     },
     "6h": {
-      "score": -0.617,
-      "label": "strongly bearish",
-      "articles": 9
+      "score": 0.0,
+      "label": "neutral",
+      "articles": 0
     },
     "24h": {
-      "score": -0.595,
+      "score": -0.659,
       "label": "strongly bearish",
-      "articles": 13
+      "articles": 10
     }
   },
   "scorers_24h": {
-    "rules": 64
+    "rules": 61
   },
   "headlines": [
+    {
+      "title": "Dealbook Summit 2026 live updates: Musk says he feels \u2018pretty foolish\u2019 for having spent so much on midterms",
+      "url": "https://www.cnbc.com/2026/11/18/dealbook-summit-2026-live-updates.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
+      "published_ts": 1795043998.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.595223
+    },
+    {
+      "title": "Prince Harry says he would rejoin army as he warns of Russia threat",
+      "url": "https://www.bbc.co.uk/news/articles/cm0qjw3edzkko?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Top Stories",
+      "also_reported_by": [],
+      "published_ts": 1795035315.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.375394
+    },
+    {
+      "title": "Trump and Putin to meet one-on-one in China Thursday",
+      "url": "https://www.aljazeera.com/news/2026/11/18/trump-and-putin-to-meet-one-on-one-in-china-thursday?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1795032740.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.276497
+    },
+    {
+      "title": "I watched Trump, Xi and Putin gather in China. Here are my top takeaways",
+      "url": "https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
+      "published_ts": 1795031225.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.395064
+    },
+    {
+      "title": "How high is UK inflation and how will you be affected?",
+      "url": "https://www.bbc.co.uk/news/videos/cxp80q5pv4q5o?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Business",
+      "also_reported_by": [],
+      "published_ts": 1795030647.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "inflation",
+      "reason": "No clear strong/weak signal in headline.",
+      "in_24h": true,
+      "base_w": 0.452438
+    },
+    {
+      "title": "Four killed as Russian strikes hit Ukraine\u2019s Odesa",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/18/four-killed-as-russian-strikes-hit-ukraines-odesa?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1795030291.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.255599
+    },
+    {
+      "title": "Anthropic share price revealed ahead of stock market debut",
+      "url": "https://news.sky.com/story/ai-giant-anthropic-raises-more-money-than-any-other-company-when-going-public-13613708",
+      "title_withheld": false,
+      "source": "Sky News Business",
+      "also_reported_by": [],
+      "published_ts": 1795030200.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.445995
+    },
+    {
+      "title": "Vance scraps schedule to address tech outages as Trump admin insists incidents aren't linked",
+      "url": "https://www.cnbc.com/2026/11/18/trump-tech-outages-nsa-faa-microsoft.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
+      "published_ts": 1795029447.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.373154
+    },
+    {
+      "title": "More gas storage is at risk. What\u2019s the government plan for secure supplies?",
+      "url": "https://www.theguardian.com/business/nils-pratley-on-finance/2026/nov/18/more-gas-storage-is-at-risk-whats-the-government-plan-for-secure-supplies",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795025835.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "politics",
+      "reason": "No clear strong/weak signal in headline.",
+      "in_24h": true,
+      "base_w": 0.387701
+    },
+    {
+      "title": "Donald Trump meets \u2018longtime friend\u2019 Imelda Marcos during Philippines visit",
+      "url": "https://www.aljazeera.com/news/2026/11/18/donald-trump-meets-longtime-friend-imelda-marcos-during-philippines-visit?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1795025397.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "inflation",
+      "reason": "No clear strong/weak signal in headline.",
+      "in_24h": true,
+      "base_w": 0.218451
+    },
+    {
+      "title": "What has happened to the $18bn pledged to Trump\u2019s Board of Peace for Gaza?",
+      "url": "https://www.aljazeera.com/news/2026/11/18/what-has-happened-to-the-18bn-pledged-to-trumps-board-of-peace-for-gaza?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1795023909.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.208265
+    },
+    {
+      "title": "US senators urge White House AI chief to fix vulnerabilities after mass outages",
+      "url": "https://www.theguardian.com/us-news/2026/nov/18/jay-clayton-ai-tech-outages-infrastructure",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795022700.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.350595
+    },
+    {
+      "title": "Inside the old gas pipeline where Ukraine is fighting an underground war with Russia",
+      "url": "https://www.bbc.co.uk/news/videos/c8p3vw4q6nzzo?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Top Stories",
+      "also_reported_by": [],
+      "published_ts": 1795021240.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "energy",
+      "reason": "No clear strong/weak signal in headline.",
+      "in_24h": true,
+      "base_w": 0.238963
+    },
+    {
+      "title": "'The drones don't fly here' - BBC reports from Ukraine's new front line",
+      "url": "https://www.bbc.co.uk/news/articles/c32l507ev4v4o?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Top Stories",
+      "also_reported_by": [],
+      "published_ts": 1795021204.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.238687
+    },
+    {
+      "title": "Democrats demand answers from Howard Lutnick about Nvidia and his family\u2019s business",
+      "url": "https://www.theguardian.com/us-news/2026/nov/18/howard-lutnick-nvidia-cantor-fitzgerald",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795020509.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.326791
+    },
+    {
+      "title": "Crowds gather as Trump arrives in China ahead of talks with Xi and Putin",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/18/crowds-gather-as-trump-arrives-in-china-ahead-of-talks-with-xi-and-putin?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1795020003.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.18373
+    },
+    {
+      "title": "Labour faces double blow over UK fossil fuel projects",
+      "url": "https://www.theguardian.com/business/2026/nov/18/sse-threatens-to-close-yorkshire-gas-storage-site-unless-ministers-intervene",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795018781.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.309163
+    },
+    {
+      "title": "Canada\u2019s PM calls out \u2018lying\u2019 Putin for downplaying sanctions",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/18/canadas-pm-calls-out-lying-putin-for-downplaying-sanctions?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1795018608.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.175687
+    },
+    {
+      "title": "The reboot of poor Jensen Huang almost worked. But who can explain away 30 leather jackets? | Emma Brockes",
+      "url": "https://www.theguardian.com/commentisfree/2026/nov/18/jensen-huang-leather-jacket-tech-titan-share-collapse",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795015705.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.280104
+    },
+    {
+      "title": "Two new housing reports point to bleak winter ahead, with record low sales",
+      "url": "https://www.cnbc.com/2026/11/18/two-new-housing-reports-point-to-bleak-winter-ahead.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
+      "published_ts": 1795014585.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.231613
+    },
+    {
+      "title": "UK energy bills are rising. Tell us: are you shopping around for a better deal?",
+      "url": "https://www.theguardian.com/money/2026/nov/18/uk-energy-bills-are-rising-tell-us-are-you-shopping-around-for-a-better-deal",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795010629.0,
+      "direction": -1,
+      "confidence": 0.5,
+      "driver": "energy",
+      "reason": "Energy prices rising or supply tightening: negative for the pound, bearish for GBP/USD.",
+      "in_24h": true,
+      "base_w": 0.238
+    },
     {
       "title": "U.S. soldier taken into military custody over suspected spying for Russia",
       "url": "https://www.cnbc.com/2026/11/18/us-soldier-military-custody-spy-russia.html",
@@ -35,7 +329,21 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.598879
+      "base_w": 0.202071
+    },
+    {
+      "title": "Ministers to drop foie gras imports ban to help seal EU food trade deal",
+      "url": "https://www.theguardian.com/politics/2026/nov/18/labour-drops-foie-gras-import-ban-eu-food-trade-deal",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795009624.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.230447
     },
     {
       "title": "Fed\u2019s Waller says central bank may need to \u2018shock people\u2019 with half-point rate hike",
@@ -49,7 +357,7 @@
       "driver": "rates",
       "reason": "US news reads strong, which is bearish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.569271
+      "base_w": 0.192081
     },
     {
       "title": "How the US House of Representatives chooses its leaders: A visual guide",
@@ -63,7 +371,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.373581
+      "base_w": 0.126052
     },
     {
       "title": "Typical energy bill forecast to go up by \u00a3443 a year from January as inflation rate rises again",
@@ -79,7 +387,7 @@
       "driver": "energy",
       "reason": "Energy prices rising or supply tightening: negative for the pound, bearish for GBP/USD. UK inflation rising (owner ruling: very bad for the UK, weighted most): negative for the pound, bearish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.644684
+      "base_w": 0.217527
     },
     {
       "title": "Southeast Asia\u2019s data center boom leaned on Chinese demand. New U.S. rules put that pipeline at risk",
@@ -93,7 +401,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.551152
+      "base_w": 0.185967
     },
     {
       "title": "Heating bills, chocolate and cat food: What the inflation figures mean for you",
@@ -109,7 +417,7 @@
       "driver": "inflation",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.454251
+      "base_w": 0.153272
     },
     {
       "title": "Republicans could expedite bill to make big oil immune to lawsuits, warn experts",
@@ -123,7 +431,7 @@
       "driver": "politics",
       "reason": "UK political uncertainty: negative for that currency, bearish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.623884
+      "base_w": 0.210508
     },
     {
       "title": "Energy price cap rise: how to switch providers",
@@ -137,7 +445,7 @@
       "driver": "energy",
       "reason": "Energy prices rising or supply tightening: negative for the pound, bearish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.614367
+      "base_w": 0.207297
     },
     {
       "title": "Trump shakes hands with Putin and Xi ahead of landmark talks in China",
@@ -151,7 +459,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.428247
+      "base_w": 0.144497
     },
     {
       "title": "Mortgage demand turns lower, as interest rates shoot back up to the highest level in three weeks.",
@@ -165,7 +473,7 @@
       "driver": "rates",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.508744
+      "base_w": 0.171658
     },
     {
       "title": "Ukraine mourns mother, athlete and drone operator killed in Russian strike",
@@ -179,7 +487,7 @@
       "driver": "war",
       "reason": "Ukrainian assault on Russia: positive for the pound, bullish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.334945
+      "base_w": 0.113016
     },
     {
       "title": "Trump arrives in China for historic meeting with Xi, Putin",
@@ -193,21 +501,23 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.499267
+      "base_w": 0.168461
     },
     {
       "title": "UK inflation rises to highest level in a year on back of higher petrol and diesel prices \u2013 business live",
       "url": "https://www.theguardian.com/business/live/2026/nov/18/uk-inflation-rises-higher-petrol-prices-nvidia-live-updates",
       "title_withheld": false,
       "source": "Guardian Business",
-      "also_reported_by": [],
+      "also_reported_by": [
+        "CNBC World Markets"
+      ],
       "published_ts": 1795004561.0,
       "direction": -1,
       "confidence": 0.9,
       "driver": "inflation",
       "reason": "UK inflation rising (owner ruling: very bad for the UK, weighted most): negative for the pound, bearish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.580556
+      "base_w": 0.195889
     },
     {
       "title": "Minister criticises media for 'amplifying' Russell Brand's prison message",
@@ -221,7 +531,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.405966
+      "base_w": 0.13698
     },
     {
       "title": "Trump arrives in China ahead of trilateral summit with Xi, Putin",
@@ -235,7 +545,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.304095
+      "base_w": 0.102607
     },
     {
       "title": "David Beckham's perfume, Poundland \u2013 and a mighty, mighty stink | Arwa Mahdawi",
@@ -249,7 +559,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.496004
+      "base_w": 0.16736
     },
     {
       "title": "Steve Rosenberg: Historic talks with Xi and Trump are a coup for Putin",
@@ -263,7 +573,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.349153
+      "base_w": 0.11781
     },
     {
       "title": "Ukraine allies reject U.S. criticism of deep strikes inside Russia ahead of Trump-Putin-Xi summit",
@@ -277,7 +587,7 @@
       "driver": "war",
       "reason": "Ukrainian assault on Russia: positive for the pound, bullish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.415983
+      "base_w": 0.140359
     },
     {
       "title": "SSE threatens to close Yorkshire gas storage site unless ministers intervene",
@@ -291,7 +601,7 @@
       "driver": "energy",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.466755
+      "base_w": 0.157491
     },
     {
       "title": "Smoke spews from landfill in California after gas release \u2013 video",
@@ -305,7 +615,7 @@
       "driver": "energy",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.446307
+      "base_w": 0.150591
     },
     {
       "title": "Official Statistics: Forecasts for the UK economy: November 2026",
@@ -319,7 +629,7 @@
       "driver": "growth",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.630218
+      "base_w": 0.212646
     },
     {
       "title": "Cantor Fitzgerald's Nvidia business interests targeted in Democrats' Lutnick probe",
@@ -333,7 +643,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.367331
+      "base_w": 0.123943
     },
     {
       "title": "What do Deutsche Bank leaks reveal about Trump, Epstein and Russia?",
@@ -347,7 +657,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.243672
+      "base_w": 0.082219
     },
     {
       "title": "As Trump arrives in China, low expectations for breakthroughs in rivalry",
@@ -361,7 +671,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.237916
+      "base_w": 0.080277
     },
     {
       "title": "Private rent and house prices, UK: November 2026",
@@ -375,7 +685,7 @@
       "driver": "housing",
       "reason": "House prices (owner ruling): not a currency driver, neutral for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.59477
+      "base_w": 0.200685
     },
     {
       "title": "Contributions to the 12-month rate of CPI(H) by import intensity: October 2026",
@@ -389,7 +699,7 @@
       "driver": "inflation",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.59477
+      "base_w": 0.200685
     },
     {
       "title": "Sandpapergate: Cricket Australia to open forum for players, rules out probe",
@@ -403,7 +713,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.23275
+      "base_w": 0.078534
     },
     {
       "title": "MP urges council to speed up heating oil payments",
@@ -417,7 +727,7 @@
       "driver": "energy",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.384317
+      "base_w": 0.129675
     },
     {
       "title": "Energy bills in Great Britain forecast to rise by 26% to \u00a32,166 from January",
@@ -431,7 +741,7 @@
       "driver": "energy",
       "reason": "Energy prices rising or supply tightening: negative for the pound, bearish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.366962
+      "base_w": 0.123819
     },
     {
       "title": "Burnham considering cuts to national insurance to create more youth jobs",
@@ -445,7 +755,7 @@
       "driver": "rates",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.352488
+      "base_w": 0.118935
     },
     {
       "title": "Record diesel prices drive UK inflation to 1-year high of 3.6%",
@@ -459,7 +769,7 @@
       "driver": "inflation",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.29871
+      "base_w": 0.10079
     },
     {
       "title": "Producer price inflation, UK: October 2026 time series",
@@ -473,7 +783,7 @@
       "driver": "inflation",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.445574
+      "base_w": 0.150344
     },
     {
       "title": "Consumer price inflation, UK: October 2026 time series",
@@ -487,7 +797,7 @@
       "driver": "inflation",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.445574
+      "base_w": 0.150344
     },
     {
       "title": "Consumer price inflation, UK: October 2026",
@@ -501,7 +811,7 @@
       "driver": "inflation",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.445574
+      "base_w": 0.150344
     },
     {
       "title": "Producer price inflation, UK: October 2026",
@@ -515,7 +825,7 @@
       "driver": "inflation",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.445574
+      "base_w": 0.150344
     },
     {
       "title": "How important are Nvidia and Jensen Huang to the US economy?",
@@ -529,7 +839,7 @@
       "driver": "growth",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.28021
+      "base_w": 0.094547
     },
     {
       "title": "Trump withdraws Heidi Overton as nominee to lead Food and Drug Administration, sources say",
@@ -543,7 +853,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.171558
+      "base_w": 0.057887
     },
     {
       "title": "A potato war has been simmering for decades between the US and Japan. It\u2019s about to reach boiling point",
@@ -557,374 +867,24 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.150518
+      "base_w": 0.050787
     },
     {
-      "title": "As Trump and Xi meet, China's AI dreams face an unexpected hurdle: the Nvidia spy scandal",
-      "url": "https://www.bbc.co.uk/news/articles/c5vg23g92rj4o?at_medium=RSS&at_campaign=rss",
-      "title_withheld": false,
-      "source": "BBC Business",
-      "also_reported_by": [],
-      "published_ts": 1794956532.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.124304
-    },
-    {
-      "title": "Russian military plane crash in Siberia kills 19",
-      "url": "https://www.aljazeera.com/news/2026/11/17/russian-military-plane-crash-in-siberia-kills-19?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1794954076.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.065647
-    },
-    {
-      "title": "US Fed\u2019s Lisa Cook refuses to attend White House hearing",
-      "url": "https://www.aljazeera.com/economy/2026/11/17/us-feds-lisa-cook-refuses-to-attend-white-house-hearing?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1794952887.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.06319
-    },
-    {
-      "title": "Caribbean nations fear economic impact of shuttering citizenship program after EU threats",
-      "url": "https://www.theguardian.com/world/2026/nov/17/st-kitts-nevis-citizenship-investment",
+      "title": "Brexit work travel rules need urgent improvement, say UK business leaders",
+      "url": "https://www.theguardian.com/world/2026/nov/18/brexit-work-travel-rules-urgent-improvement-cbi",
       "title_withheld": false,
       "source": "Guardian Business",
       "also_reported_by": [],
-      "published_ts": 1794952169.0,
+      "published_ts": 1794960085.0,
       "direction": 0,
       "confidence": 0.0,
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.108063
-    },
-    {
-      "title": "Judge extends deadline for Trump\u2019s deposition in $10bn BBC lawsuit",
-      "url": "https://www.theguardian.com/us-news/2026/nov/17/trump-bbc-deposition-delay",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1794951958.0,
-      "direction": 1,
-      "confidence": 0.45,
-      "driver": "politics",
-      "reason": "US political uncertainty: negative for that currency, bullish for GBP/USD.",
-      "in_24h": true,
-      "base_w": 0.107334
-    },
-    {
-      "title": "UK hands NATO-assigned US soldier accused of Russia spying to US military",
-      "url": "https://www.aljazeera.com/news/2026/11/17/uk-hands-nato-assigned-us-soldier-accused-of-russia-spying-to-us-military?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1794951324.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.060099
-    },
-    {
-      "title": "UK sanctions Israeli settlement firms to protect two-state solution",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/aje-onl-nf_uk-sanctions-eight-israeli-settlement-firms-171126?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1794950911.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.059307
-    },
-    {
-      "title": "\u2018Zero transparency\u2019: Inside Trump\u2019s plans for Venezuela\u2019s oil money",
-      "url": "https://www.aljazeera.com/news/2026/11/17/zero-transparency-inside-trumps-plans-for-venezuelas-oil-money?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1794950802.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "energy",
-      "reason": "No clear strong/weak signal in headline.",
-      "in_24h": true,
-      "base_w": 0.0591
-    },
-    {
-      "title": "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
-      "url": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&at_campaign=rss",
-      "title_withheld": false,
-      "source": "BBC Top Stories",
-      "also_reported_by": [],
-      "published_ts": 1794950675.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.073575
-    },
-    {
-      "title": "Russian military plane crashes, killing all 19 on board",
-      "url": "https://www.bbc.co.uk/news/articles/cw8085rykkmgo?at_medium=RSS&at_campaign=rss",
-      "title_withheld": false,
-      "source": "BBC Top Stories",
-      "also_reported_by": [],
-      "published_ts": 1794949571.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.071014
-    },
-    {
-      "title": "Kalshi halts Trump speech bets after CFTC order",
-      "url": "https://www.aljazeera.com/economy/2026/11/17/kalshi-halts-trump-speech-bets-after-cftc-order?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1794946818.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.052008
-    },
-    {
-      "title": "China, Canada expand tariff relief after Carney-Xi meeting",
-      "url": "https://www.aljazeera.com/economy/2026/11/17/china-canada-expand-tariff-relief-after-carney-xi-meeting?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1794946301.0,
-      "direction": 0,
-      "confidence": 0.1,
-      "driver": "politics",
-      "reason": "Could not tell whether this is UK or US news.",
-      "in_24h": true,
-      "base_w": 0.051152
-    },
-    {
-      "title": "Companies get billions in tariff refunds. Consumers are left with the bill.",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/companies-get-billions-in-tariff-refunds-consumers-are-left-with-the-bill?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1794943890.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "politics",
-      "reason": "No clear strong/weak signal in headline.",
-      "in_24h": true,
-      "base_w": 0.047343
-    },
-    {
-      "title": "Kalshi takes down controversial Trump 'mention' markets at CFTC's request",
-      "url": "https://www.cnbc.com/2026/11/17/kalshi-takes-down-trump-mention-markets.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1794943767.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.070735
-    },
-    {
-      "title": "The Guardian view on the Milburn report: a manifesto for youth participation | Editorial",
-      "url": "https://www.theguardian.com/commentisfree/2026/nov/17/the-guardian-view-on-the-milburn-report-a-manifesto-for-youth-participation",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1794942534.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.079323
-    },
-    {
-      "title": "The Guardian view on climate and debt: a vicious cycle the world must break at Cop31 | Editorial",
-      "url": "https://www.theguardian.com/commentisfree/2026/nov/17/the-guardian-view-on-climate-debt-a-vicious-cycle-the-world-must-break-at-cop31",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1794942485.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.079199
-    },
-    {
-      "title": "Bonds are causing trouble again \u2014 here's where to invest now",
-      "url": "https://www.cnbc.com/2026/11/17/bond-yields-where-to-invest.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1794942074.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.066995
-    },
-    {
-      "title": "Inferno engulfs gas tanker in strait of Hormuz after reported strike \u2013 video",
-      "url": "https://www.theguardian.com/world/video/2026/nov/17/inferno-engulfs-gas-tanker-in-strait-of-hormuz-after-reported-strike-video",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1794939659.0,
-      "direction": -1,
-      "confidence": 0.7,
-      "driver": "energy",
-      "reason": "Iran-linked oil disruption (owner: especially negative for the pound): negative for the pound, bearish for GBP/USD.",
-      "in_24h": true,
-      "base_w": 0.072332
-    },
-    {
-      "title": "Trump on Iran's reported DC dirty bomb plan: 'We take it very seriously'",
-      "url": "https://www.cnbc.com/2026/11/17/trump-iran-dirty-bomb-washington.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1794937785.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.058381
-    },
-    {
-      "title": "Trump says US taking 'very seriously' any Iranian plot against Washington",
-      "url": "https://www.bbc.co.uk/news/articles/cq808vzd3nnpo?at_medium=RSS&at_campaign=rss",
-      "title_withheld": false,
-      "source": "BBC Top Stories",
-      "also_reported_by": [],
-      "published_ts": 1794937024.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.047477
-    },
-    {
-      "title": "Lisa Cook lawyer signals Fed governor won't attend Trump committee's hearing",
-      "url": "https://www.cnbc.com/2026/11/17/lisa-cook-trump-fed-committee-hearing.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1794931418.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.047592
-    },
-    {
-      "title": "How the attack on Putin's prized Crimean Bridge unfolded",
-      "url": "https://www.bbc.co.uk/news/articles/crz9dgz28zwdo?at_medium=RSS&at_campaign=rss",
-      "title_withheld": false,
-      "source": "BBC Top Stories",
-      "also_reported_by": [],
-      "published_ts": 1794929890.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.037762
-    },
-    {
-      "title": "Homebuilder sentiment plunges to 14-year low, leading more builders to drop prices",
-      "url": "https://www.cnbc.com/2026/11/17/homebuilder-sentiment-plunges-to-14-year-low-leading-more-builders-to-drop-prices.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1794929803.0,
-      "direction": 0,
-      "confidence": 0.1,
-      "driver": "inflation",
-      "reason": "Could not tell whether this is UK or US news.",
-      "in_24h": true,
-      "base_w": 0.045188
-    },
-    {
-      "title": "Deutsche Bank shares sink as whistleblowers reveal Epstein payments, Trump tax leak, Russia bets",
-      "url": "https://www.cnbc.com/2026/11/17/deutsche-bank-leak-epstein-trump.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1794925450.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.039297
-    },
-    {
-      "title": "China vows to take \u2018necessary measures\u2019 against US AI chip restrictions, as investors brace for Nvidia\u2019s results \u2013 business live",
-      "url": "https://www.theguardian.com/business/live/2026/nov/17/uk-jobs-market-wage-growth-payrolls-unemployment-milburn-china-us-chips-latest-news-updates",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1794924240.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.044101
-    },
-    {
-      "title": "Republicans outspent Democrats for first time in over a decade in record 2026 midterm election political ad blitz",
-      "url": "https://www.cnbc.com/2026/11/17/2026-election-political-ad-spending.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1794924002.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "politics",
-      "reason": "No clear strong/weak signal in headline.",
-      "in_24h": true,
-      "base_w": 0.037513
+      "base_w": 0.047007
     }
   ],
-  "neutral_stories_24h": 54,
+  "neutral_stories_24h": 52,
   "headlines_note": "Same-story duplicates are merged and counted once. Each headline is shown with its source, link and our own reason; headline text belongs to its publisher.",
   "feeds": {
     "ok": 11,
