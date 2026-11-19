@@ -1,5 +1,5 @@
 {
-  "generated_ts": 1795098434,
+  "generated_ts": 1795131346,
   "window_hours": 72,
   "note": "Report only. Nothing is removed or re-weighted by this file; the owner decides which sites to drop.",
   "thresholds": {
@@ -9,50 +9,50 @@
     "min_stories_for_a_rate": 3
   },
   "sources": {
+    "Al Jazeera": {
+      "stories": 40,
+      "directional": 3,
+      "kept": 39,
+      "absorbed": 1,
+      "weight_share_24h": 0.529,
+      "self_conflicts": 0,
+      "cross_conflicts": 1,
+      "cross_checked": 1,
+      "kinds": {},
+      "self_conflict_rate": 0.0,
+      "cross_conflict_rate": null
+    },
     "Guardian Business": {
-      "stories": 44,
-      "directional": 9,
-      "kept": 42,
+      "stories": 40,
+      "directional": 8,
+      "kept": 38,
       "absorbed": 2,
       "weight_share_24h": 0.0,
       "self_conflicts": 2,
       "cross_conflicts": 0,
       "cross_checked": 0,
       "kinds": {},
-      "self_conflict_rate": 0.222,
+      "self_conflict_rate": 0.25,
       "cross_conflict_rate": null
     },
     "CNBC World Markets": {
-      "stories": 34,
-      "directional": 3,
-      "kept": 31,
+      "stories": 32,
+      "directional": 4,
+      "kept": 29,
       "absorbed": 3,
-      "weight_share_24h": 0.0,
+      "weight_share_24h": 0.39,
       "self_conflicts": 0,
-      "cross_conflicts": 0,
-      "cross_checked": 0,
+      "cross_conflicts": 1,
+      "cross_checked": 1,
       "kinds": {},
       "self_conflict_rate": 0.0,
       "cross_conflict_rate": null
     },
-    "Al Jazeera": {
-      "stories": 34,
-      "directional": 2,
-      "kept": 33,
-      "absorbed": 1,
-      "weight_share_24h": 0.0,
-      "self_conflicts": 0,
-      "cross_conflicts": 0,
-      "cross_checked": 0,
-      "kinds": {},
-      "self_conflict_rate": null,
-      "cross_conflict_rate": null
-    },
     "BBC Top Stories": {
-      "stories": 23,
+      "stories": 24,
       "directional": 2,
-      "kept": 19,
-      "absorbed": 4,
+      "kept": 21,
+      "absorbed": 3,
       "weight_share_24h": 0.0,
       "self_conflicts": 0,
       "cross_conflicts": 0,
@@ -64,9 +64,9 @@
     "BBC Business": {
       "stories": 9,
       "directional": 2,
-      "kept": 7,
-      "absorbed": 2,
-      "weight_share_24h": 1.0,
+      "kept": 8,
+      "absorbed": 1,
+      "weight_share_24h": 0.081,
       "self_conflicts": 0,
       "cross_conflicts": 0,
       "cross_checked": 0,
@@ -87,24 +87,11 @@
       "self_conflict_rate": null,
       "cross_conflict_rate": null
     },
-    "Sky News Business": {
-      "stories": 3,
-      "directional": 0,
-      "kept": 3,
-      "absorbed": 0,
-      "weight_share_24h": 0.0,
-      "self_conflicts": 0,
-      "cross_conflicts": 0,
-      "cross_checked": 0,
-      "kinds": {},
-      "self_conflict_rate": null,
-      "cross_conflict_rate": null
-    },
     "CNBC Economy": {
-      "stories": 3,
+      "stories": 4,
       "directional": 0,
       "kept": 3,
-      "absorbed": 0,
+      "absorbed": 1,
       "weight_share_24h": 0.0,
       "self_conflicts": 0,
       "cross_conflicts": 0,
@@ -117,6 +104,32 @@
       "stories": 2,
       "directional": 0,
       "kept": 2,
+      "absorbed": 0,
+      "weight_share_24h": 0.0,
+      "self_conflicts": 0,
+      "cross_conflicts": 0,
+      "cross_checked": 0,
+      "kinds": {},
+      "self_conflict_rate": null,
+      "cross_conflict_rate": null
+    },
+    "Sky News Business": {
+      "stories": 2,
+      "directional": 0,
+      "kept": 2,
+      "absorbed": 0,
+      "weight_share_24h": 0.0,
+      "self_conflicts": 0,
+      "cross_conflicts": 0,
+      "cross_checked": 0,
+      "kinds": {},
+      "self_conflict_rate": null,
+      "cross_conflict_rate": null
+    },
+    "Federal Reserve": {
+      "stories": 1,
+      "directional": 0,
+      "kept": 1,
       "absorbed": 0,
       "weight_share_24h": 0.0,
       "self_conflicts": 0,
@@ -141,8 +154,8 @@
     }
   },
   "flags": {
-    "BBC Business": [
-      "supplies 100% of the 24h directional signal"
+    "Al Jazeera": [
+      "supplies 53% of the 24h directional signal"
     ]
   }
 }
