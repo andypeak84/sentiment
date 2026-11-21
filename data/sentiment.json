@@ -1,28 +1,182 @@
 {
   "pair": "GBP/USD",
-  "generated_ts": 1795233540,
+  "generated_ts": 1795267756,
   "scale": "-1 = strongly bearish for GBP/USD, +1 = strongly bullish",
   "windows": {
     "1h": {
-      "score": 0.0,
-      "label": "neutral",
-      "articles": 0
+      "score": -1.0,
+      "label": "strongly bearish",
+      "articles": 1
     },
     "6h": {
-      "score": 0.0,
-      "label": "neutral",
-      "articles": 0
+      "score": -1.0,
+      "label": "strongly bearish",
+      "articles": 2
     },
     "24h": {
-      "score": 1.0,
-      "label": "strongly bullish",
-      "articles": 1
+      "score": -1.0,
+      "label": "strongly bearish",
+      "articles": 2
     }
   },
   "scorers_24h": {
-    "rules": 40
+    "rules": 37
   },
   "headlines": [
+    {
+      "title": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
+      "url": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Top Stories",
+      "also_reported_by": [],
+      "published_ts": 1795267058.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.488917
+    },
+    {
+      "title": "State and federal battle over prediction markets regulation heats up after midterms",
+      "url": "https://www.cnbc.com/2026/11/21/prediction-market-regulation-kalshi-cftc.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
+      "published_ts": 1795266761.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.581135
+    },
+    {
+      "title": "An early breakdown in the polar vortex is threatening already depleted gas stocks",
+      "url": "https://www.cnbc.com/2026/11/21/polar-vortex-europe-gas-prices.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
+      "published_ts": 1795265245.0,
+      "direction": -1,
+      "confidence": 0.5,
+      "driver": "energy",
+      "reason": "Energy prices rising or supply tightening: negative for the pound, bearish for GBP/USD.",
+      "in_24h": true,
+      "base_w": 0.55354
+    },
+    {
+      "title": "Russia says Kaliningrad-bound ship struck by drones in Gulf of Finland",
+      "url": "https://www.aljazeera.com/news/2026/11/21/russia-says-kaliningrad-bound-ship-struck-by-drones-in-gulf-of-finland?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1795265124.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.367597
+    },
+    {
+      "title": "Trump orders federal contractors to notify White House before giving Congress information",
+      "url": "https://www.cnbc.com/2026/11/21/trump-orders-federal-contractors-to-notify-white-house-before-giving-congress-information.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
+      "published_ts": 1795264031.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.53239
+    },
+    {
+      "title": "Fair-weather Silicon Valley pivots away from the right after blue wave: \u2018I\u2019m not Maga\u2019",
+      "url": "https://www.theguardian.com/us-news/2026/nov/21/silicon-valley-pivot-us-midterms",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795258856.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.526084
+    },
+    {
+      "title": "Iran says it downed US drones over Hormuz as bid to end war remains stalled",
+      "url": "https://www.aljazeera.com/news/2026/11/21/irans-irgc-downs-us-drone-over-hormuz-as-efforts-to-end-war-remain-stalled?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1795253424.0,
+      "direction": -1,
+      "confidence": 0.7,
+      "driver": "energy",
+      "reason": "Attack on Middle East oil supply (owner ruling: outweighs a falling price): negative for the pound, bearish for GBP/USD.",
+      "in_24h": true,
+      "base_w": 0.25253
+    },
+    {
+      "title": "Countries agree to U.N. talks aiming to regulate 'killer robots' by 2028",
+      "url": "https://www.cnbc.com/2026/11/21/countries-agree-to-un-talks-aiming-to-regulate-killer-robots-by-2028.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
+      "published_ts": 1795248161.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.319931
+    },
+    {
+      "title": "German bidder stages last-gasp bid to rescue Poundland",
+      "url": "https://news.sky.com/story/german-bidder-stages-last-gasp-bid-to-rescue-poundland-13614626",
+      "title_withheld": false,
+      "source": "Sky News Business",
+      "also_reported_by": [],
+      "published_ts": 1795246560.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.354561
+    },
+    {
+      "title": "\u2018Like an invisible stealth tax\u2019: ways to shield your cash from UK inflation",
+      "url": "https://www.theguardian.com/money/2026/nov/21/ways-to-shield-savings-pensions-from-uk-inflation-cost-of-living",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795244452.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "inflation",
+      "reason": "No clear strong/weak signal in headline.",
+      "in_24h": true,
+      "base_w": 0.33137
+    },
+    {
+      "title": "\u2018A new record for entertainment\u2019: Grand Theft Auto VI sales hit $3.8bn on first day of release, developer says",
+      "url": "https://www.theguardian.com/games/2026/nov/21/a-new-record-for-entertainment-grand-theft-auto-vi-sales-hit-38bn-on-first-day-of-release-developer-says",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795233063.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.229927
+    },
     {
       "title": "Trump calls for Nvidia to reinstate \u2018brilliant\u2019 Jensen Huang",
       "url": "https://www.aljazeera.com/news/2026/11/21/trump-calls-for-nvidia-to-reinstate-brilliant-jensen-huang?traffic_source=rss",
@@ -35,7 +189,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.311489
+      "base_w": 0.103894
     },
     {
       "title": "Denmark expels Russian diplomat over alleged plot to kill Ukrainian rapper",
@@ -49,7 +203,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.290453
+      "base_w": 0.096878
     },
     {
       "title": "Trump says he discussed Jensen Huang with Xi; Bessent tells CNBC Nvidia chip export policy is unchanged",
@@ -63,7 +217,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.305639
+      "base_w": 0.101943
     },
     {
       "title": "Denmark accuses Russia of plotting to assassinate US-Ukrainian rapper",
@@ -77,7 +231,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.24909
+      "base_w": 0.083081
     },
     {
       "title": "Trump threatens \u2018tremendous penalties\u2019 for US tech firms that build datacenters abroad",
@@ -91,7 +245,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.342449
+      "base_w": 0.11422
     },
     {
       "title": "Federal Reserve announces College Fed Challenge winners",
@@ -105,7 +259,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.459376
+      "base_w": 0.15322
     },
     {
       "title": "Trump threatens tax on US tech firms building AI data centres abroad",
@@ -119,7 +273,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.1823
+      "base_w": 0.060804
     },
     {
       "title": "Warsh wants Fed officials to talk less. Instead, they\u2019re talking more",
@@ -133,7 +287,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.273406
+      "base_w": 0.091192
     },
     {
       "title": "Trump defends Putin relationship, warns AI data centres must stay in US",
@@ -147,7 +301,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.180287
+      "base_w": 0.060133
     },
     {
       "title": "Trump threatens ban on US firms building AI data centres overseas",
@@ -163,7 +317,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.220671
+      "base_w": 0.073603
     },
     {
       "title": "Trump says he still has confidence in Lutnick",
@@ -177,7 +331,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.263754
+      "base_w": 0.087972
     },
     {
       "title": "Trump vows to stop U.S. companies from building data centers abroad, threatens 'tremendous tax'",
@@ -191,7 +345,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.261646
+      "base_w": 0.087269
     },
     {
       "title": "Russia complains of \u2018new Iron Curtain\u2019 as Estonia shuts its borders",
@@ -205,7 +359,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.168749
+      "base_w": 0.056284
     },
     {
       "title": "JP Morgan boss says he will find ways to offset \u2018unfair\u2019 rise in UK tax on banks",
@@ -219,7 +373,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.267287
+      "base_w": 0.089151
     },
     {
       "title": "Ukraine strikes Kerch Bridge as Putin ally declares \u2018no one needs Europe\u2019",
@@ -233,7 +387,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.135705
+      "base_w": 0.045263
     },
     {
       "title": "The Guardian view on Britain and Europe: Burnham\u2019s reset cannot be the final destination | Editorial",
@@ -247,7 +401,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.22668
+      "base_w": 0.075607
     },
     {
       "title": "Top US Democrat warns Trump admin against destroying records",
@@ -261,7 +415,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.113701
+      "base_w": 0.037924
     },
     {
       "title": "Data center construction costs soar 13% in 2026",
@@ -275,7 +429,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.166154
+      "base_w": 0.055419
     },
     {
       "title": "Faisal Islam: This cost-cutting UK-EU deal doesn't mean lower prices will follow",
@@ -291,7 +445,7 @@
       "driver": "inflation",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.135752
+      "base_w": 0.045279
     },
     {
       "title": "What we know about the latest Russian missile strikes on Ukraine",
@@ -305,7 +459,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.114627
+      "base_w": 0.038233
     },
     {
       "title": "British Gas owner Centrica cuts hundreds of jobs in Business unit",
@@ -319,7 +473,7 @@
       "driver": "rates",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.156505
+      "base_w": 0.052201
     },
     {
       "title": "Federal Reserve Board releases results from survey of senior financial officers at banks about their strategies and practices for managing reserve balances",
@@ -333,7 +487,7 @@
       "driver": "rates",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.223149
+      "base_w": 0.074429
     },
     {
       "title": "These US fishers see offshore wind as a \u2018godsend\u2019. Trump wants to shut it down",
@@ -347,7 +501,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.139301
+      "base_w": 0.046462
     },
     {
       "title": "Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk",
@@ -361,7 +515,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.097895
+      "base_w": 0.032652
     },
     {
       "title": "Trump, Putin, Xi pledge to increase global petrol supplies \u2013 but how?",
@@ -375,7 +529,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.076951
+      "base_w": 0.025666
     },
     {
       "title": "U.S.-China trade, Taiwan and tech tensions remain unresolved as Trump returns from Asia",
@@ -389,206 +543,10 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.112551
-    },
-    {
-      "title": "Research: Methodology: Economic Impact of the UK\u2013EU Youth Experience Scheme",
-      "url": "https://www.gov.uk/government/publications/methodology-economic-impact-of-the-uk-eu-youth-experience-scheme",
-      "title_withheld": false,
-      "source": "HM Treasury",
-      "also_reported_by": [],
-      "published_ts": 1795180199.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.180551
-    },
-    {
-      "title": "Moscow targets Kyiv crossings days after Ukraine hits Crimean Bridge",
-      "url": "https://www.bbc.co.uk/news/articles/c6x29gn4pdn9o?at_medium=RSS&at_campaign=rss",
-      "title_withheld": false,
-      "source": "BBC Top Stories",
-      "also_reported_by": [],
-      "published_ts": 1795179676.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.088773
-    },
-    {
-      "title": "Household rush to stockpile emergency supplies sends British retail sales soaring",
-      "url": "https://www.theguardian.com/world/2026/nov/20/rush-stockpile-emergency-supplies-sends-british-retail-sales-soaring",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1795177692.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "growth",
-      "reason": "No clear strong/weak signal in headline.",
-      "in_24h": true,
-      "base_w": 0.116616
-    },
-    {
-      "title": "Kushner says Russia OK with \u2018NATO-like\u2019 security pact for Ukraine: Is it?",
-      "url": "https://www.aljazeera.com/news/2026/11/20/kushner-says-russia-ok-with-nato-like-security-pact-for-ukraine-is-it?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1795172511.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.056431
-    },
-    {
-      "title": "Don\u2019t blame cyber-attacks for recent outages. The real villain is the US economy | Bruce Schneier",
-      "url": "https://www.theguardian.com/commentisfree/2026/nov/20/cyber-attacks-outages-blame-economy",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1795172431.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "growth",
-      "reason": "No clear strong/weak signal in headline.",
-      "in_24h": true,
-      "base_w": 0.098501
-    },
-    {
-      "title": "Kushner says Russia 'comfortable' with idea of NATO-like security guarantees for Ukraine",
-      "url": "https://www.cnbc.com/2026/11/20/kushner-ukraine-nato-russia-trump-putin.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1795168563.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.074574
-    },
-    {
-      "title": "Russia unleashes retaliatory barrage on Kyiv bridges",
-      "url": "https://www.aljazeera.com/news/2026/11/20/russia-unleashes-retaliatory-barrage-on-kyiv-bridges?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1795168440.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.04952
-    },
-    {
-      "title": "Tinned food and long-life milk boost retail sales after 'Be Ready' campaign launch",
-      "url": "https://www.bbc.co.uk/news/articles/ck053mzy2qqeo?at_medium=RSS&at_campaign=rss",
-      "title_withheld": false,
-      "source": "BBC Business",
-      "also_reported_by": [],
-      "published_ts": 1795167896.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "growth",
-      "reason": "No clear strong/weak signal in headline.",
-      "in_24h": true,
-      "base_w": 0.08516
-    },
-    {
-      "title": "Russia\u2019s day-long attack on Kyiv damages embassies",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/20/russias-day-long-attack-on-kyiv-damages-embassies?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1795164968.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.044299
-    },
-    {
-      "title": "UK government borrowing rises less than forecast in surprise boost for chancellor John Healey",
-      "url": "https://www.theguardian.com/business/2026/nov/20/uk-government-borrowing-rises-less-than-forecast-in-surprise-boost-for-chancellor-john-healey",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1795159531.0,
-      "direction": 1,
-      "confidence": 0.55,
-      "driver": "politics",
-      "reason": "UK news reads strong, which is bullish for GBP/USD.",
-      "in_24h": true,
-      "base_w": 0.065111
-    },
-    {
-      "title": "Households stockpiling 'emergency items' boosts retail sales",
-      "url": "https://news.sky.com/story/emergency-items-give-surprise-lift-to-retail-sales-13614254",
-      "title_withheld": false,
-      "source": "Sky News Business",
-      "also_reported_by": [],
-      "published_ts": 1795158240.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "growth",
-      "reason": "No clear strong/weak signal in headline.",
-      "in_24h": true,
-      "base_w": 0.062469
-    },
-    {
-      "title": "Retail sales, Great Britain: October 2026 time series",
-      "url": "https://www.ons.gov.uk/releases/retailsalesgreatbritainoctober2026timeseries",
-      "title_withheld": false,
-      "source": "ONS",
-      "also_reported_by": [],
-      "published_ts": 1795158000.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "growth",
-      "reason": "No clear strong/weak signal in headline.",
-      "in_24h": true,
-      "base_w": 0.088557
-    },
-    {
-      "title": "Retail sales, Great Britain: October 2026",
-      "url": "https://www.ons.gov.uk/releases/retailsalesgreatbritainoctober2026",
-      "title_withheld": false,
-      "source": "ONS",
-      "also_reported_by": [],
-      "published_ts": 1795158000.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "growth",
-      "reason": "No clear strong/weak signal in headline.",
-      "in_24h": true,
-      "base_w": 0.088557
-    },
-    {
-      "title": "U.K.-India trade deal faces a stiff test over Scotch whisky import taxes",
-      "url": "https://www.cnbc.com/2026/11/20/uk-india-trade-scotch-whisky-tariffs.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1795151392.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.042981
+      "base_w": 0.03754
     }
   ],
-  "neutral_stories_24h": 39,
+  "neutral_stories_24h": 35,
   "headlines_note": "Same-story duplicates are merged and counted once. Each headline is shown with its source, link and our own reason; headline text belongs to its publisher.",
   "feeds": {
     "ok": 11,
