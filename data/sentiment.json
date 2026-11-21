@@ -1,6 +1,6 @@
 {
   "pair": "GBP/USD",
-  "generated_ts": 1795215939,
+  "generated_ts": 1795233540,
   "scale": "-1 = strongly bearish for GBP/USD, +1 = strongly bullish",
   "windows": {
     "1h": {
@@ -14,15 +14,43 @@
       "articles": 0
     },
     "24h": {
-      "score": 0.667,
+      "score": 1.0,
       "label": "strongly bullish",
-      "articles": 2
+      "articles": 1
     }
   },
   "scorers_24h": {
-    "rules": 41
+    "rules": 40
   },
   "headlines": [
+    {
+      "title": "Trump calls for Nvidia to reinstate \u2018brilliant\u2019 Jensen Huang",
+      "url": "https://www.aljazeera.com/news/2026/11/21/trump-calls-for-nvidia-to-reinstate-brilliant-jensen-huang?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1795225747.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.311489
+    },
+    {
+      "title": "Denmark expels Russian diplomat over alleged plot to kill Ukrainian rapper",
+      "url": "https://www.aljazeera.com/news/2026/11/21/denmark-expels-russian-diplomat-over-alleged-plot-to-kill-ukrainian-rapper?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1795223568.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.290453
+    },
     {
       "title": "Trump says he discussed Jensen Huang with Xi; Bessent tells CNBC Nvidia chip export policy is unchanged",
       "url": "https://www.cnbc.com/2026/11/20/treasury-secretary-scott-bessent.html",
@@ -35,7 +63,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.537666
+      "base_w": 0.305639
     },
     {
       "title": "Denmark accuses Russia of plotting to assassinate US-Ukrainian rapper",
@@ -49,10 +77,10 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.438187
+      "base_w": 0.24909
     },
     {
-      "title": "Trump threatens \u2018tremendous penalties\u2019 on US tech firms that build datacenters abroad",
+      "title": "Trump threatens \u2018tremendous penalties\u2019 for US tech firms that build datacenters abroad",
       "url": "https://www.theguardian.com/us-news/2026/nov/20/trump-datacenters-white-house",
       "title_withheld": false,
       "source": "Guardian Business",
@@ -63,7 +91,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.602419
+      "base_w": 0.342449
     },
     {
       "title": "Federal Reserve announces College Fed Challenge winners",
@@ -77,7 +105,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.808111
+      "base_w": 0.459376
     },
     {
       "title": "Trump threatens tax on US tech firms building AI data centres abroad",
@@ -91,7 +119,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.320693
+      "base_w": 0.1823
     },
     {
       "title": "Warsh wants Fed officials to talk less. Instead, they\u2019re talking more",
@@ -105,7 +133,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.480962
+      "base_w": 0.273406
     },
     {
       "title": "Trump defends Putin relationship, warns AI data centres must stay in US",
@@ -119,7 +147,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.317152
+      "base_w": 0.180287
     },
     {
       "title": "Trump threatens ban on US firms building AI data centres overseas",
@@ -135,7 +163,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.388194
+      "base_w": 0.220671
     },
     {
       "title": "Trump says he still has confidence in Lutnick",
@@ -149,7 +177,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.463982
+      "base_w": 0.263754
     },
     {
       "title": "Trump vows to stop U.S. companies from building data centers abroad, threatens 'tremendous tax'",
@@ -163,7 +191,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.460275
+      "base_w": 0.261646
     },
     {
       "title": "Russia complains of \u2018new Iron Curtain\u2019 as Estonia shuts its borders",
@@ -177,7 +205,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.296854
+      "base_w": 0.168749
     },
     {
       "title": "JP Morgan boss says he will find ways to offset \u2018unfair\u2019 rise in UK tax on banks",
@@ -191,7 +219,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.470198
+      "base_w": 0.267287
     },
     {
       "title": "Ukraine strikes Kerch Bridge as Putin ally declares \u2018no one needs Europe\u2019",
@@ -205,7 +233,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.238726
+      "base_w": 0.135705
     },
     {
       "title": "The Guardian view on Britain and Europe: Burnham\u2019s reset cannot be the final destination | Editorial",
@@ -219,7 +247,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.398764
+      "base_w": 0.22668
     },
     {
       "title": "Top US Democrat warns Trump admin against destroying records",
@@ -233,7 +261,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.200018
+      "base_w": 0.113701
     },
     {
       "title": "Data center construction costs soar 13% in 2026",
@@ -247,7 +275,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.292291
+      "base_w": 0.166154
     },
     {
       "title": "Faisal Islam: This cost-cutting UK-EU deal doesn't mean lower prices will follow",
@@ -263,7 +291,7 @@
       "driver": "inflation",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.238808
+      "base_w": 0.135752
     },
     {
       "title": "What we know about the latest Russian missile strikes on Ukraine",
@@ -277,7 +305,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.201646
+      "base_w": 0.114627
     },
     {
       "title": "British Gas owner Centrica cuts hundreds of jobs in Business unit",
@@ -291,7 +319,7 @@
       "driver": "rates",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.275317
+      "base_w": 0.156505
     },
     {
       "title": "Federal Reserve Board releases results from survey of senior financial officers at banks about their strategies and practices for managing reserve balances",
@@ -305,7 +333,7 @@
       "driver": "rates",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.392553
+      "base_w": 0.223149
     },
     {
       "title": "These US fishers see offshore wind as a \u2018godsend\u2019. Trump wants to shut it down",
@@ -319,7 +347,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.245051
+      "base_w": 0.139301
     },
     {
       "title": "Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk",
@@ -333,7 +361,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.172212
+      "base_w": 0.097895
     },
     {
       "title": "Trump, Putin, Xi pledge to increase global petrol supplies \u2013 but how?",
@@ -347,7 +375,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.135368
+      "base_w": 0.076951
     },
     {
       "title": "U.S.-China trade, Taiwan and tech tensions remain unresolved as Trump returns from Asia",
@@ -361,7 +389,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.197994
+      "base_w": 0.112551
     },
     {
       "title": "Research: Methodology: Economic Impact of the UK\u2013EU Youth Experience Scheme",
@@ -375,7 +403,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.317616
+      "base_w": 0.180551
     },
     {
       "title": "Moscow targets Kyiv crossings days after Ukraine hits Crimean Bridge",
@@ -389,7 +417,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.156165
+      "base_w": 0.088773
     },
     {
       "title": "Household rush to stockpile emergency supplies sends British retail sales soaring",
@@ -403,7 +431,7 @@
       "driver": "growth",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.205146
+      "base_w": 0.116616
     },
     {
       "title": "Kushner says Russia OK with \u2018NATO-like\u2019 security pact for Ukraine: Is it?",
@@ -417,7 +445,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.09927
+      "base_w": 0.056431
     },
     {
       "title": "Don\u2019t blame cyber-attacks for recent outages. The real villain is the US economy | Bruce Schneier",
@@ -431,7 +459,7 @@
       "driver": "growth",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.173277
+      "base_w": 0.098501
     },
     {
       "title": "Kushner says Russia 'comfortable' with idea of NATO-like security guarantees for Ukraine",
@@ -445,7 +473,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.131186
+      "base_w": 0.074574
     },
     {
       "title": "Russia unleashes retaliatory barrage on Kyiv bridges",
@@ -459,7 +487,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.087113
+      "base_w": 0.04952
     },
     {
       "title": "Tinned food and long-life milk boost retail sales after 'Be Ready' campaign launch",
@@ -473,7 +501,7 @@
       "driver": "growth",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.14981
+      "base_w": 0.08516
     },
     {
       "title": "Russia\u2019s day-long attack on Kyiv damages embassies",
@@ -487,7 +515,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.077928
+      "base_w": 0.044299
     },
     {
       "title": "UK government borrowing rises less than forecast in surprise boost for chancellor John Healey",
@@ -501,7 +529,7 @@
       "driver": "politics",
       "reason": "UK news reads strong, which is bullish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.114541
+      "base_w": 0.065111
     },
     {
       "title": "Households stockpiling 'emergency items' boosts retail sales",
@@ -515,7 +543,7 @@
       "driver": "growth",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.109892
+      "base_w": 0.062469
     },
     {
       "title": "Retail sales, Great Britain: October 2026 time series",
@@ -529,7 +557,7 @@
       "driver": "growth",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.155785
+      "base_w": 0.088557
     },
     {
       "title": "Retail sales, Great Britain: October 2026",
@@ -543,7 +571,7 @@
       "driver": "growth",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.155785
+      "base_w": 0.088557
     },
     {
       "title": "U.K.-India trade deal faces a stiff test over Scotch whisky import taxes",
@@ -557,49 +585,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.075611
-    },
-    {
-      "title": "Senate passes BAAJA permitting reform bill backed by AI, energy sectors",
-      "url": "https://www.cnbc.com/2026/11/20/baaja-bill-senate-passes-permitting-reform.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1795146977.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "energy",
-      "reason": "No clear strong/weak signal in headline.",
-      "in_24h": true,
-      "base_w": 0.065623
-    },
-    {
-      "title": "Japan core inflation soars to highest this year as energy subsidy expiry pushes up consumer prices",
-      "url": "https://www.cnbc.com/2026/11/20/japan-inflation-cpi-october.html",
-      "title_withheld": false,
-      "source": "CNBC Economy",
-      "also_reported_by": [],
-      "published_ts": 1795139343.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "inflation",
-      "reason": "No clear strong/weak signal in headline.",
-      "in_24h": true,
-      "base_w": 0.051364
-    },
-    {
-      "title": "Six killed in suspected gas explosion at Georgia apartment building",
-      "url": "https://www.aljazeera.com/news/2026/11/19/six-killed-in-suspected-gas-explosion-at-georgia-apartment-building?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1795129788.0,
-      "direction": -1,
-      "confidence": 0.5,
-      "driver": "energy",
-      "reason": "Energy prices rising or supply tightening: negative for the pound, bearish for GBP/USD.",
-      "in_24h": true,
-      "base_w": 0.0252
+      "base_w": 0.042981
     }
   ],
   "neutral_stories_24h": 39,

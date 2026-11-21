@@ -1,5 +1,5 @@
 {
-  "generated_ts": 1795215939,
+  "generated_ts": 1795233540,
   "window_hours": 72,
   "note": "Report only. Nothing is removed or re-weighted by this file; the owner decides which sites to drop.",
   "thresholds": {
@@ -10,11 +10,11 @@
   },
   "sources": {
     "Al Jazeera": {
-      "stories": 34,
+      "stories": 36,
       "directional": 2,
-      "kept": 34,
+      "kept": 36,
       "absorbed": 0,
-      "weight_share_24h": 0.167,
+      "weight_share_24h": 0.0,
       "self_conflicts": 0,
       "cross_conflicts": 0,
       "cross_checked": 0,
@@ -23,11 +23,11 @@
       "cross_conflict_rate": null
     },
     "Guardian Business": {
-      "stories": 32,
+      "stories": 31,
       "directional": 7,
-      "kept": 31,
-      "absorbed": 1,
-      "weight_share_24h": 0.833,
+      "kept": 29,
+      "absorbed": 2,
+      "weight_share_24h": 1.0,
       "self_conflicts": 0,
       "cross_conflicts": 0,
       "cross_checked": 0,
@@ -36,9 +36,9 @@
       "cross_conflict_rate": null
     },
     "CNBC World Markets": {
-      "stories": 30,
+      "stories": 29,
       "directional": 4,
-      "kept": 29,
+      "kept": 28,
       "absorbed": 1,
       "weight_share_24h": 0.0,
       "self_conflicts": 0,
@@ -155,7 +155,7 @@
   },
   "flags": {
     "Guardian Business": [
-      "supplies 83% of the 24h directional signal"
+      "supplies 100% of the 24h directional signal"
     ]
   }
 }
