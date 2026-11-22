@@ -1,6 +1,6 @@
 {
   "pair": "GBP/USD",
-  "generated_ts": 1795317119,
+  "generated_ts": 1795353766,
   "scale": "-1 = strongly bearish for GBP/USD, +1 = strongly bullish",
   "windows": {
     "1h": {
@@ -14,15 +14,141 @@
       "articles": 0
     },
     "24h": {
-      "score": -0.316,
-      "label": "mildly bearish",
-      "articles": 3
+      "score": 1.0,
+      "label": "strongly bullish",
+      "articles": 1
     }
   },
   "scorers_24h": {
-    "rules": 19
+    "rules": 16
   },
   "headlines": [
+    {
+      "title": "\u2018I don\u2019t blame any woman for being sucked in\u2019: how the wellness industry is cynically exploiting menopause",
+      "url": "https://www.theguardian.com/society/2026/nov/22/wellness-industry-cynically-exploiting-menopause-women",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795348829.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.597433
+    },
+    {
+      "title": "What\u2019s behind Iran\u2019s escalation of attacks in the Gulf?",
+      "url": "https://www.aljazeera.com/news/2026/11/22/whats-behind-irans-escalation-of-attacks-in-the-gulf?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1795348002.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.332449
+    },
+    {
+      "title": "Russia-bound ship still on fire after attack in Gulf of Finland",
+      "url": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Top Stories",
+      "also_reported_by": [],
+      "published_ts": 1795346714.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.398736
+    },
+    {
+      "title": "The looming UK winter may spawn a double headache for Andy Burnham | Richard Partington",
+      "url": "https://www.theguardian.com/business/2026/nov/22/looming-uk-winter-spawns-double-headache-for-andy-burnham",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795346662.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.557299
+    },
+    {
+      "title": "Howard Lutnick has been Trump\u2019s ally for decades. His ties to Nvidia may spell his downfall",
+      "url": "https://www.theguardian.com/us-news/2026/nov/22/howard-lutnick-nvidia-china",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795345226.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.532201
+    },
+    {
+      "title": "Russian cargo ship still on fire off Finland after drone attack",
+      "url": "https://www.aljazeera.com/news/2026/11/22/russian-cargo-ship-still-on-fire-off-finland-after-drone-attack?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1795343990.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.292289
+    },
+    {
+      "title": "\u2018Trump\u2019s exit strategy may depend on quietly lifting Iran blockade\u2019",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/22/trumps-exit-strategy-may-depend-on-quietly-lifting-iran?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1795338387.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "rates",
+      "reason": "No clear strong/weak signal in headline.",
+      "in_24h": true,
+      "base_w": 0.244189
+    },
+    {
+      "title": "Revealed: profiles of UK experts on gambling harm being hijacked to push illegal online casinos",
+      "url": "https://www.theguardian.com/society/2026/nov/22/profiles-uk-experts-on-gambling-harm-hijacked-to-promote-online-casinos",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795334421.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.376263
+    },
+    {
+      "title": "Dashcam captures Russian missile strike on Lviv, Ukraine",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/22/dashcam-captures-russian-missile-strike-on-lviv-ukraine?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1795334369.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.214649
+    },
     {
       "title": "Russian cargo ship ablaze in Baltic Sea after drone strike, crew evacuates",
       "url": "https://www.cnbc.com/2026/11/21/russian-cargo-ship-hit-by-drones-in-baltic-finland-tightens-security.html",
@@ -35,7 +161,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.259267
+      "base_w": 0.079986
     },
     {
       "title": "Russia-bound ship attacked in Gulf of Finland",
@@ -49,7 +175,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.201652
+      "base_w": 0.062211
     },
     {
       "title": "Deadly attack in Kyiv as Russia launches barrage against Ukraine",
@@ -63,7 +189,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.150017
+      "base_w": 0.046281
     },
     {
       "title": "Trump says he wants \u2018permanent\u2019 deal to stop Iran getting nuclear weapons",
@@ -77,7 +203,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.13976
+      "base_w": 0.043117
     },
     {
       "title": "Trump says there could be a 'positive spin' from the latest FBI database hack",
@@ -91,7 +217,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.183812
+      "base_w": 0.056708
     },
     {
       "title": "Streeting calls Putin a 'cold-blooded killer' as he meets Zelensky in Kyiv",
@@ -105,7 +231,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.141527
+      "base_w": 0.043662
     },
     {
       "title": "US midterms 2026: What happens before the new Congress takes office?",
@@ -119,178 +245,10 @@
       "driver": "politics",
       "reason": "US political uncertainty: negative for that currency, bullish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.107496
-    },
-    {
-      "title": "Zelensky says Crimean Bridge strikes 'fair response' as he meets Wes Streeting",
-      "url": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss",
-      "title_withheld": false,
-      "source": "BBC Top Stories",
-      "also_reported_by": [],
-      "published_ts": 1795267058.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.100297
-    },
-    {
-      "title": "State and federal battle over prediction markets regulation heats up after midterms",
-      "url": "https://www.cnbc.com/2026/11/21/prediction-market-regulation-kalshi-cftc.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1795266761.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.119214
-    },
-    {
-      "title": "An early breakdown in the polar vortex is threatening already depleted gas stocks",
-      "url": "https://www.cnbc.com/2026/11/21/polar-vortex-europe-gas-prices.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1795265245.0,
-      "direction": -1,
-      "confidence": 0.5,
-      "driver": "energy",
-      "reason": "Energy prices rising or supply tightening: negative for the pound, bearish for GBP/USD.",
-      "in_24h": true,
-      "base_w": 0.113553
-    },
-    {
-      "title": "Russia says Kaliningrad-bound ship struck by drones in Gulf of Finland",
-      "url": "https://www.aljazeera.com/news/2026/11/21/russia-says-kaliningrad-bound-ship-struck-by-drones-in-gulf-of-finland?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1795265124.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.075409
-    },
-    {
-      "title": "Trump orders federal contractors to notify White House before giving Congress information",
-      "url": "https://www.cnbc.com/2026/11/21/trump-orders-federal-contractors-to-notify-white-house-before-giving-congress-information.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1795264031.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.109215
-    },
-    {
-      "title": "Mark Carney is so popular he can get away with a lot. Will it last if the Trump spell breaks?",
-      "url": "https://www.theguardian.com/world/2026/nov/21/mark-carney-popular-will-it-last-trump-spell-breaks-canada",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1795262458.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.121145
-    },
-    {
-      "title": "Fair-weather Silicon Valley pivots away from the right after blue wave: \u2018I\u2019m not Maga\u2019",
-      "url": "https://www.theguardian.com/us-news/2026/nov/21/silicon-valley-pivot-us-midterms",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1795258856.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.107921
-    },
-    {
-      "title": "Iran says it downed US drones over Hormuz as bid to end war remains stalled",
-      "url": "https://www.aljazeera.com/news/2026/11/21/irans-irgc-downs-us-drone-over-hormuz-as-efforts-to-end-war-remain-stalled?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1795253424.0,
-      "direction": -1,
-      "confidence": 0.7,
-      "driver": "energy",
-      "reason": "Attack on Middle East oil supply (owner ruling: outweighs a falling price): negative for the pound, bearish for GBP/USD.",
-      "in_24h": true,
-      "base_w": 0.051804
-    },
-    {
-      "title": "Countries agree to U.N. talks aiming to regulate 'killer robots' by 2028",
-      "url": "https://www.cnbc.com/2026/11/21/countries-agree-to-un-talks-aiming-to-regulate-killer-robots-by-2028.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1795248161.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.065631
-    },
-    {
-      "title": "German bidder stages last-gasp bid to rescue Poundland",
-      "url": "https://news.sky.com/story/german-bidder-stages-last-gasp-bid-to-rescue-poundland-13614626",
-      "title_withheld": false,
-      "source": "Sky News Business",
-      "also_reported_by": [],
-      "published_ts": 1795246560.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.072735
-    },
-    {
-      "title": "\u2018Like an invisible stealth tax\u2019: ways to shield your cash from UK inflation",
-      "url": "https://www.theguardian.com/money/2026/nov/21/ways-to-shield-savings-pensions-from-uk-inflation-cost-of-living",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1795244452.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "inflation",
-      "reason": "No clear strong/weak signal in headline.",
-      "in_24h": true,
-      "base_w": 0.067977
-    },
-    {
-      "title": "\u2018A new record for entertainment\u2019: Grand Theft Auto VI sales hit $3.8bn on first day of release, developer says",
-      "url": "https://www.theguardian.com/games/2026/nov/21/a-new-record-for-entertainment-grand-theft-auto-vi-sales-hit-38bn-on-first-day-of-release-developer-says",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1795233063.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.047167
+      "base_w": 0.033164
     }
   ],
-  "neutral_stories_24h": 16,
+  "neutral_stories_24h": 15,
   "headlines_note": "Same-story duplicates are merged and counted once. Each headline is shown with its source, link and our own reason; headline text belongs to its publisher.",
   "feeds": {
     "ok": 11,
