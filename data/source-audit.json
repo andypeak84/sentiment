@@ -1,5 +1,5 @@
 {
-  "generated_ts": 1795299104,
+  "generated_ts": 1795317119,
   "window_hours": 72,
   "note": "Report only. Nothing is removed or re-weighted by this file; the owner decides which sites to drop.",
   "thresholds": {
@@ -23,9 +23,9 @@
       "cross_conflict_rate": null
     },
     "CNBC World Markets": {
-      "stories": 25,
+      "stories": 24,
       "directional": 2,
-      "kept": 25,
+      "kept": 24,
       "absorbed": 0,
       "weight_share_24h": 0.401,
       "self_conflicts": 0,
@@ -36,9 +36,9 @@
       "cross_conflict_rate": null
     },
     "Guardian Business": {
-      "stories": 19,
+      "stories": 18,
       "directional": 1,
-      "kept": 18,
+      "kept": 17,
       "absorbed": 1,
       "weight_share_24h": 0.0,
       "self_conflicts": 0,
@@ -49,10 +49,10 @@
       "cross_conflict_rate": null
     },
     "BBC Top Stories": {
-      "stories": 17,
-      "directional": 1,
+      "stories": 16,
+      "directional": 0,
       "kept": 15,
-      "absorbed": 2,
+      "absorbed": 1,
       "weight_share_24h": 0.0,
       "self_conflicts": 0,
       "cross_conflicts": 0,
@@ -62,9 +62,9 @@
       "cross_conflict_rate": null
     },
     "BBC Business": {
-      "stories": 5,
-      "directional": 1,
-      "kept": 3,
+      "stories": 4,
+      "directional": 0,
+      "kept": 2,
       "absorbed": 2,
       "weight_share_24h": 0.0,
       "self_conflicts": 0,

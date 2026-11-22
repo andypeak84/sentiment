@@ -1,6 +1,6 @@
 {
   "pair": "GBP/USD",
-  "generated_ts": 1795299104,
+  "generated_ts": 1795317119,
   "scale": "-1 = strongly bearish for GBP/USD, +1 = strongly bullish",
   "windows": {
     "1h": {
@@ -20,7 +20,7 @@
     }
   },
   "scorers_24h": {
-    "rules": 21
+    "rules": 19
   },
   "headlines": [
     {
@@ -35,7 +35,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.462183
+      "base_w": 0.259267
     },
     {
       "title": "Russia-bound ship attacked in Gulf of Finland",
@@ -49,7 +49,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.359475
+      "base_w": 0.201652
     },
     {
       "title": "Deadly attack in Kyiv as Russia launches barrage against Ukraine",
@@ -63,7 +63,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.267428
+      "base_w": 0.150017
     },
     {
       "title": "Trump says he wants \u2018permanent\u2019 deal to stop Iran getting nuclear weapons",
@@ -77,7 +77,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.249143
+      "base_w": 0.13976
     },
     {
       "title": "Trump says there could be a 'positive spin' from the latest FBI database hack",
@@ -91,7 +91,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.327674
+      "base_w": 0.183812
     },
     {
       "title": "Streeting calls Putin a 'cold-blooded killer' as he meets Zelensky in Kyiv",
@@ -105,7 +105,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.252294
+      "base_w": 0.141527
     },
     {
       "title": "US midterms 2026: What happens before the new Congress takes office?",
@@ -119,7 +119,7 @@
       "driver": "politics",
       "reason": "US political uncertainty: negative for that currency, bullish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.191629
+      "base_w": 0.107496
     },
     {
       "title": "Zelensky says Crimean Bridge strikes 'fair response' as he meets Wes Streeting",
@@ -133,7 +133,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.178794
+      "base_w": 0.100297
     },
     {
       "title": "State and federal battle over prediction markets regulation heats up after midterms",
@@ -147,7 +147,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.212518
+      "base_w": 0.119214
     },
     {
       "title": "An early breakdown in the polar vortex is threatening already depleted gas stocks",
@@ -161,7 +161,7 @@
       "driver": "energy",
       "reason": "Energy prices rising or supply tightening: negative for the pound, bearish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.202427
+      "base_w": 0.113553
     },
     {
       "title": "Russia says Kaliningrad-bound ship struck by drones in Gulf of Finland",
@@ -175,7 +175,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.134428
+      "base_w": 0.075409
     },
     {
       "title": "Trump orders federal contractors to notify White House before giving Congress information",
@@ -189,7 +189,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.194692
+      "base_w": 0.109215
     },
     {
       "title": "Mark Carney is so popular he can get away with a lot. Will it last if the Trump spell breaks?",
@@ -203,7 +203,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.21596
+      "base_w": 0.121145
     },
     {
       "title": "Fair-weather Silicon Valley pivots away from the right after blue wave: \u2018I\u2019m not Maga\u2019",
@@ -217,7 +217,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.192386
+      "base_w": 0.107921
     },
     {
       "title": "Iran says it downed US drones over Hormuz as bid to end war remains stalled",
@@ -231,7 +231,7 @@
       "driver": "energy",
       "reason": "Attack on Middle East oil supply (owner ruling: outweighs a falling price): negative for the pound, bearish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.092349
+      "base_w": 0.051804
     },
     {
       "title": "Countries agree to U.N. talks aiming to regulate 'killer robots' by 2028",
@@ -245,7 +245,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.116997
+      "base_w": 0.065631
     },
     {
       "title": "German bidder stages last-gasp bid to rescue Poundland",
@@ -259,7 +259,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.129661
+      "base_w": 0.072735
     },
     {
       "title": "\u2018Like an invisible stealth tax\u2019: ways to shield your cash from UK inflation",
@@ -273,7 +273,7 @@
       "driver": "inflation",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.12118
+      "base_w": 0.067977
     },
     {
       "title": "\u2018A new record for entertainment\u2019: Grand Theft Auto VI sales hit $3.8bn on first day of release, developer says",
@@ -287,38 +287,10 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.084083
-    },
-    {
-      "title": "Trump calls for Nvidia to reinstate \u2018brilliant\u2019 Jensen Huang",
-      "url": "https://www.aljazeera.com/news/2026/11/21/trump-calls-for-nvidia-to-reinstate-brilliant-jensen-huang?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1795225747.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.037994
-    },
-    {
-      "title": "Denmark expels Russian diplomat over alleged plot to kill Ukrainian rapper",
-      "url": "https://www.aljazeera.com/news/2026/11/21/denmark-expels-russian-diplomat-over-alleged-plot-to-kill-ukrainian-rapper?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1795223568.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.035428
+      "base_w": 0.047167
     }
   ],
-  "neutral_stories_24h": 18,
+  "neutral_stories_24h": 16,
   "headlines_note": "Same-story duplicates are merged and counted once. Each headline is shown with its source, link and our own reason; headline text belongs to its publisher.",
   "feeds": {
     "ok": 11,
