@@ -1,5 +1,5 @@
 {
-  "generated_ts": 1795353766,
+  "generated_ts": 1795386497,
   "window_hours": 72,
   "note": "Report only. Nothing is removed or re-weighted by this file; the owner decides which sites to drop.",
   "thresholds": {
@@ -10,11 +10,11 @@
   },
   "sources": {
     "Al Jazeera": {
-      "stories": 27,
+      "stories": 25,
       "directional": 3,
-      "kept": 27,
+      "kept": 25,
       "absorbed": 0,
-      "weight_share_24h": 1.0,
+      "weight_share_24h": 0.0,
       "self_conflicts": 0,
       "cross_conflicts": 0,
       "cross_checked": 0,
@@ -22,10 +22,10 @@
       "self_conflict_rate": 0.0,
       "cross_conflict_rate": null
     },
-    "Guardian Business": {
-      "stories": 19,
-      "directional": 1,
-      "kept": 18,
+    "BBC Top Stories": {
+      "stories": 16,
+      "directional": 0,
+      "kept": 15,
       "absorbed": 1,
       "weight_share_24h": 0.0,
       "self_conflicts": 0,
@@ -36,9 +36,9 @@
       "cross_conflict_rate": null
     },
     "CNBC World Markets": {
-      "stories": 19,
-      "directional": 2,
-      "kept": 19,
+      "stories": 16,
+      "directional": 1,
+      "kept": 16,
       "absorbed": 0,
       "weight_share_24h": 0.0,
       "self_conflicts": 0,
@@ -48,10 +48,10 @@
       "self_conflict_rate": null,
       "cross_conflict_rate": null
     },
-    "BBC Top Stories": {
-      "stories": 14,
-      "directional": 0,
-      "kept": 13,
+    "Guardian Business": {
+      "stories": 16,
+      "directional": 1,
+      "kept": 15,
       "absorbed": 1,
       "weight_share_24h": 0.0,
       "self_conflicts": 0,
@@ -62,10 +62,10 @@
       "cross_conflict_rate": null
     },
     "BBC Business": {
-      "stories": 4,
+      "stories": 5,
       "directional": 0,
       "kept": 2,
-      "absorbed": 2,
+      "absorbed": 3,
       "weight_share_24h": 0.0,
       "self_conflicts": 0,
       "cross_conflicts": 0,
@@ -88,19 +88,6 @@
       "cross_conflict_rate": null
     },
     "Federal Reserve": {
-      "stories": 3,
-      "directional": 0,
-      "kept": 3,
-      "absorbed": 0,
-      "weight_share_24h": 0.0,
-      "self_conflicts": 0,
-      "cross_conflicts": 0,
-      "cross_checked": 0,
-      "kinds": {},
-      "self_conflict_rate": null,
-      "cross_conflict_rate": null
-    },
-    "ONS": {
       "stories": 2,
       "directional": 0,
       "kept": 2,
@@ -113,7 +100,7 @@
       "self_conflict_rate": null,
       "cross_conflict_rate": null
     },
-    "CNBC Economy": {
+    "ONS": {
       "stories": 2,
       "directional": 0,
       "kept": 2,
@@ -138,11 +125,20 @@
       "kinds": {},
       "self_conflict_rate": null,
       "cross_conflict_rate": null
+    },
+    "CNBC Economy": {
+      "stories": 1,
+      "directional": 0,
+      "kept": 1,
+      "absorbed": 0,
+      "weight_share_24h": 0.0,
+      "self_conflicts": 0,
+      "cross_conflicts": 0,
+      "cross_checked": 0,
+      "kinds": {},
+      "self_conflict_rate": null,
+      "cross_conflict_rate": null
     }
   },
-  "flags": {
-    "Al Jazeera": [
-      "supplies 100% of the 24h directional signal"
-    ]
-  }
+  "flags": {}
 }
