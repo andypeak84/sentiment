@@ -1,28 +1,312 @@
 {
   "pair": "GBP/USD",
-  "generated_ts": 1795405457,
+  "generated_ts": 1795449580,
   "scale": "-1 = strongly bearish for GBP/USD, +1 = strongly bullish",
   "windows": {
     "1h": {
-      "score": 0.0,
-      "label": "neutral",
-      "articles": 0
+      "score": 1.0,
+      "label": "strongly bullish",
+      "articles": 1
     },
     "6h": {
-      "score": -1.0,
-      "label": "strongly bearish",
+      "score": 1.0,
+      "label": "strongly bullish",
       "articles": 1
     },
     "24h": {
-      "score": -1.0,
-      "label": "strongly bearish",
-      "articles": 1
+      "score": -0.022,
+      "label": "neutral",
+      "articles": 4
     }
   },
   "scorers_24h": {
-    "rules": 27
+    "rules": 36
   },
   "headlines": [
+    {
+      "title": "Trump tells CNBC 'I convinced\u2019 Nvidia board to reinstate Jensen Huang",
+      "url": "https://www.cnbc.com/2026/11/23/trump-nvidia-jensen-huang.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
+      "published_ts": 1795448881.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.586675
+    },
+    {
+      "title": "Nvidia shares surge 33% on Jensen Huang\u2018s return, adding $1tn to company\u2019s value \u2013 business live",
+      "url": "https://www.theguardian.com/business/live/2026/nov/23/tech-sell-off-ai-stock-market-support-measures-deployed-south-korea-taiwan-china-ftse-nasdaq-latest-news-updates",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795448541.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.677026
+    },
+    {
+      "title": "Russian warship hit by Ukrainian drones in Libya, Zelensky says",
+      "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Top Stories",
+      "also_reported_by": [
+        "Al Jazeera"
+      ],
+      "published_ts": 1795448483.0,
+      "direction": 1,
+      "confidence": 0.6,
+      "driver": "war",
+      "reason": "Ukrainian assault on Russia: positive for the pound, bullish for GBP/USD.",
+      "in_24h": true,
+      "base_w": 0.482691
+    },
+    {
+      "title": "Stuck: How a frozen housing market is hitting buyers, sellers and the economy",
+      "url": "https://www.cnbc.com/2026/11/23/housing-market-real-estate-economy.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
+      "published_ts": 1795447323.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "growth",
+      "reason": "No clear strong/weak signal in headline.",
+      "in_24h": true,
+      "base_w": 0.558064
+    },
+    {
+      "title": "How important are Nvidia and Jensen Huang to the US economy?",
+      "url": "https://www.bbc.co.uk/news/articles/c68798vdprwpo?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Business",
+      "also_reported_by": [],
+      "published_ts": 1795446948.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "growth",
+      "reason": "No clear strong/weak signal in headline.",
+      "in_24h": true,
+      "base_w": 0.643287
+    },
+    {
+      "title": "Wild stock market swings: will I lose money, and is there anything I can do?",
+      "url": "https://www.theguardian.com/business/2026/nov/23/falling-markets-will-i-lose-money-shares-tech-ai-investments",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795445505.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.614178
+    },
+    {
+      "title": "Next issues cyber-attack warning after \u2018benign\u2019 data accessed by hackers",
+      "url": "https://www.theguardian.com/business/2026/nov/23/next-issues-cyber-attack-warning-after-benign-data-accessed-by-hackers",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795445431.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.612721
+    },
+    {
+      "title": "Trump hosts crypto gala as his meme coin falls below $1",
+      "url": "https://www.cnbc.com/2026/11/23/trump-meme-coin-gala.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
+      "published_ts": 1795443342.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.491137
+    },
+    {
+      "title": "'They were all asleep': Ukrainians describe deadly overnight Russian apartment strike",
+      "url": "https://www.bbc.co.uk/news/articles/c3j4r2elrvj8o?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Top Stories",
+      "also_reported_by": [],
+      "published_ts": 1795443079.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.405841
+    },
+    {
+      "title": "\u2018It\u2019s an embarrassment\u2019: how LA\u2019s desperately needed airport tram went off the rails",
+      "url": "https://www.theguardian.com/us-news/2026/nov/23/lax-skylink-people-mover-los-angeles",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795442449.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "rates",
+      "reason": "No clear strong/weak signal in headline.",
+      "in_24h": true,
+      "base_w": 0.556806
+    },
+    {
+      "title": "Flights cancelled in Belgium due to cost-of-living strike",
+      "url": "https://www.bbc.co.uk/news/articles/cwdr155e2d05o?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Top Stories",
+      "also_reported_by": [
+        "BBC Business"
+      ],
+      "published_ts": 1795440842.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.377729
+    },
+    {
+      "title": "Here are Monday's biggest analyst calls: Anthropic, SpaceX, Apple, Nvidia, Dollar General, Evercore ISI & more",
+      "url": "https://www.cnbc.com/2026/11/23/big-monday-wall-street-calls-like-anthropic.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
+      "published_ts": 1795439985.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.440979
+    },
+    {
+      "title": "More Americans pay this Obama-era investment tax every year \u2014 how to avoid it",
+      "url": "https://www.cnbc.com/2026/11/23/net-investment-income-tax-niit.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
+      "published_ts": 1795439701.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.436978
+    },
+    {
+      "title": "How the US, China and Russia are competing for Africa\u2019s mineral wealth",
+      "url": "https://www.aljazeera.com/news/2026/11/23/how-the-us-china-and-russia-are-competing-for-africas-mineral-wealth?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1795437294.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.269664
+    },
+    {
+      "title": "Infantino\u2019s $20bn World Cup sell-off plan was to run for up to 96 years, documents show",
+      "url": "https://www.theguardian.com/football/2026/nov/23/gianni-infantino-world-cup-sell-off-plan-96-years-documents-payouts",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795433682.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.420264
+    },
+    {
+      "title": "NHS caterer Compass \u2018plans stock market switch\u2019 in blow to London",
+      "url": "https://www.theguardian.com/business/2026/nov/23/nhs-caterer-compass-plans-stock-market-switch-in-blow-to-london",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795431100.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.386846
+    },
+    {
+      "title": "At least 15 killed in Ukraine\u2019s Kyiv region as Russia intensifies attacks",
+      "url": "https://www.aljazeera.com/news/2026/11/23/death-toll-rises-after-deadly-russian-attacks-on-ukraine?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1795426465.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.190504
+    },
+    {
+      "title": "New\u202finsights\u202fon labour market dynamics from\u202fUK Linked\u202fEmployer-Employee\u202fData\u202f(LEED)",
+      "url": "https://www.ons.gov.uk/releases/insightsonuklabourmarketdynamismfromlinkedemployeremployeedata2014to2026",
+      "title_withheld": false,
+      "source": "ONS",
+      "also_reported_by": [],
+      "published_ts": 1795426200.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.472227
+    },
+    {
+      "title": "Gas prices in Europe surge as forecast cold snap feeds supply shortage fears",
+      "url": "https://www.theguardian.com/business/2026/nov/23/gas-prices-in-europe-surge-as-forecast-cold-snap-feeds-supply-shortage-fears",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795423513.0,
+      "direction": -1,
+      "confidence": 0.5,
+      "driver": "energy",
+      "reason": "Energy prices rising or supply tightening: negative for the pound, bearish for GBP/USD.",
+      "in_24h": true,
+      "base_w": 0.30325
+    },
+    {
+      "title": "Yemen's Houthis claim attacks on Saudi oil refinery as Trump warns of new strikes next year",
+      "url": "https://www.cnbc.com/2026/11/23/trump-iran-war-hormuz-saudi-.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
+      "published_ts": 1795405937.0,
+      "direction": -1,
+      "confidence": 0.6,
+      "driver": "energy",
+      "reason": "Middle East oil disruption (owner: generally negative for the pound): negative for the pound, bearish for GBP/USD.",
+      "in_24h": true,
+      "base_w": 0.147879
+    },
     {
       "title": "Boy, 7, pulled alive from rubble hours after Russian strike on Ukraine, rescuers say",
       "url": "https://www.bbc.co.uk/news/articles/cqdr15l32d3go?at_medium=RSS&at_campaign=rss",
@@ -35,7 +319,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.439274
+      "base_w": 0.106611
     },
     {
       "title": "US intelligence chief defends Trump\u2019s comments calling Putin his \u2018friend\u2019",
@@ -49,7 +333,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.342194
+      "base_w": 0.083049
     },
     {
       "title": "Manchester Co-op Live evacuated after suspected tear gas incident",
@@ -63,7 +347,7 @@
       "driver": "energy",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.414979
+      "base_w": 0.100714
     },
     {
       "title": "Poland says Russia tried to assassinate Ukrainian rapper twice",
@@ -77,7 +361,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.323091
+      "base_w": 0.078413
     },
     {
       "title": "Energy bills will soar - here's how you can ease the pain",
@@ -93,7 +377,7 @@
       "driver": "energy",
       "reason": "Energy prices rising or supply tightening: negative for the pound, bearish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.515232
+      "base_w": 0.125045
     },
     {
       "title": "Trump criticises Schumer amid push for new Democrat leadership in US Senate",
@@ -107,7 +391,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.241859
+      "base_w": 0.058698
     },
     {
       "title": "Trump to host private dinner for largest owners of his meme coin",
@@ -121,7 +405,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.221636
+      "base_w": 0.05379
     },
     {
       "title": "Democrats win largest House majority since 1992 with North Carolina seat",
@@ -137,7 +421,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.214148
+      "base_w": 0.051973
     },
     {
       "title": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
@@ -151,7 +435,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.215912
+      "base_w": 0.052401
     },
     {
       "title": "On China, is Trump bucking the US national security establishment?",
@@ -165,7 +449,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.154434
+      "base_w": 0.037481
     },
     {
       "title": "Employees at Eric Trump-backed robot startup lose health benefits as company's cash crunch deepens",
@@ -179,7 +463,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.216589
+      "base_w": 0.052566
     },
     {
       "title": "'Danger seems greater all the time': Ukrainians search for missing after Russian strikes",
@@ -193,7 +477,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.161616
+      "base_w": 0.039224
     },
     {
       "title": "Russia-bound ship towed away after it was attacked in Gulf of Finland",
@@ -207,7 +491,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.149843
+      "base_w": 0.036367
     },
     {
       "title": "Russian vessel hit by suspected Ukrainian drone at Libya\u2019s Benghazi port",
@@ -221,7 +505,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.118581
+      "base_w": 0.028779
     },
     {
       "title": "\u2018Disappointing\u2019: Delegates react after COP31 climate talks end without deal",
@@ -235,7 +519,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.109925
+      "base_w": 0.026679
     },
     {
       "title": "Canada\u2019s PM appears next to Trump impersonator at press dinner",
@@ -249,164 +533,10 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.104424
-    },
-    {
-      "title": "Boss of British Gas owner Centrica 'hugely concerned' over impact of soaring energy bills",
-      "url": "https://www.bbc.co.uk/news/articles/c6jre7gpdw13o?at_medium=RSS&at_campaign=rss",
-      "title_withheld": false,
-      "source": "BBC Top Stories",
-      "also_reported_by": [],
-      "published_ts": 1795355421.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "energy",
-      "reason": "No clear strong/weak signal in headline.",
-      "in_24h": true,
-      "base_w": 0.100378
-    },
-    {
-      "title": "Centrica boss 'hugely concerned' over impact of soaring energy bills",
-      "url": "https://www.bbc.co.uk/news/articles/c6jre7gpdw13o?at_medium=RSS&at_campaign=rss",
-      "title_withheld": false,
-      "source": "BBC Business",
-      "also_reported_by": [],
-      "published_ts": 1795355421.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "energy",
-      "reason": "No clear strong/weak signal in headline.",
-      "in_24h": true,
-      "base_w": 0.140529
-    },
-    {
-      "title": "\u2018I don\u2019t blame any woman for being sucked in\u2019: how the wellness industry is cynically exploiting menopause",
-      "url": "https://www.theguardian.com/society/2026/nov/22/wellness-industry-cynically-exploiting-menopause-women",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1795348829.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.113736
-    },
-    {
-      "title": "What\u2019s behind Iran\u2019s escalation of attacks in the Gulf?",
-      "url": "https://www.aljazeera.com/news/2026/11/22/whats-behind-irans-escalation-of-attacks-in-the-gulf?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1795348002.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.06329
-    },
-    {
-      "title": "Russia-bound ship still on fire after attack in Gulf of Finland",
-      "url": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
-      "title_withheld": false,
-      "source": "BBC Top Stories",
-      "also_reported_by": [],
-      "published_ts": 1795346714.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.075909
-    },
-    {
-      "title": "The looming UK winter may spawn a double headache for Andy Burnham | Richard Partington",
-      "url": "https://www.theguardian.com/business/2026/nov/22/looming-uk-winter-spawns-double-headache-for-andy-burnham",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1795346662.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.106095
-    },
-    {
-      "title": "Howard Lutnick has been Trump\u2019s ally for decades. His ties to Nvidia may spell his downfall",
-      "url": "https://www.theguardian.com/us-news/2026/nov/22/howard-lutnick-nvidia-china",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1795345226.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.101317
-    },
-    {
-      "title": "Russian cargo ship still on fire off Finland after drone attack",
-      "url": "https://www.aljazeera.com/news/2026/11/22/russian-cargo-ship-still-on-fire-off-finland-after-drone-attack?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1795343990.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.055644
-    },
-    {
-      "title": "\u2018Trump\u2019s exit strategy may depend on quietly lifting Iran blockade\u2019",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/22/trumps-exit-strategy-may-depend-on-quietly-lifting-iran?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1795338387.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "rates",
-      "reason": "No clear strong/weak signal in headline.",
-      "in_24h": true,
-      "base_w": 0.046487
-    },
-    {
-      "title": "Revealed: profiles of UK experts on gambling harm being hijacked to push illegal online casinos",
-      "url": "https://www.theguardian.com/society/2026/nov/22/profiles-uk-experts-on-gambling-harm-hijacked-to-promote-online-casinos",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1795334421.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.071631
-    },
-    {
-      "title": "Dashcam captures Russian missile strike on Lviv, Ukraine",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/22/dashcam-captures-russian-missile-strike-on-lviv-ukraine?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1795334369.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.040864
+      "base_w": 0.025343
     }
   ],
-  "neutral_stories_24h": 26,
+  "neutral_stories_24h": 32,
   "headlines_note": "Same-story duplicates are merged and counted once. Each headline is shown with its source, link and our own reason; headline text belongs to its publisher.",
   "feeds": {
     "ok": 11,

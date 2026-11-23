@@ -1,5 +1,5 @@
 {
-  "generated_ts": 1795405457,
+  "generated_ts": 1795449580,
   "window_hours": 72,
   "note": "Report only. Nothing is removed or re-weighted by this file; the owner decides which sites to drop.",
   "thresholds": {
@@ -11,62 +11,75 @@
   "sources": {
     "Al Jazeera": {
       "stories": 29,
-      "directional": 2,
-      "kept": 29,
-      "absorbed": 0,
+      "directional": 4,
+      "kept": 27,
+      "absorbed": 2,
       "weight_share_24h": 0.0,
       "self_conflicts": 0,
       "cross_conflicts": 0,
       "cross_checked": 0,
       "kinds": {},
-      "self_conflict_rate": null,
+      "self_conflict_rate": 0.0,
       "cross_conflict_rate": null
     },
     "BBC Top Stories": {
-      "stories": 19,
-      "directional": 1,
+      "stories": 20,
+      "directional": 3,
       "kept": 16,
-      "absorbed": 3,
-      "weight_share_24h": 0.0,
+      "absorbed": 4,
+      "weight_share_24h": 0.489,
       "self_conflicts": 0,
       "cross_conflicts": 0,
       "cross_checked": 0,
+      "kinds": {},
+      "self_conflict_rate": 0.0,
+      "cross_conflict_rate": null
+    },
+    "Guardian Business": {
+      "stories": 19,
+      "directional": 1,
+      "kept": 18,
+      "absorbed": 1,
+      "weight_share_24h": 0.256,
+      "self_conflicts": 0,
+      "cross_conflicts": 0,
+      "cross_checked": 1,
       "kinds": {},
       "self_conflict_rate": null,
       "cross_conflict_rate": null
     },
     "CNBC World Markets": {
-      "stories": 16,
-      "directional": 1,
-      "kept": 16,
+      "stories": 18,
+      "directional": 2,
+      "kept": 18,
       "absorbed": 0,
-      "weight_share_24h": 0.0,
+      "weight_share_24h": 0.15,
       "self_conflicts": 0,
       "cross_conflicts": 0,
-      "cross_checked": 0,
-      "kinds": {},
-      "self_conflict_rate": null,
-      "cross_conflict_rate": null
-    },
-    "Guardian Business": {
-      "stories": 16,
-      "directional": 1,
-      "kept": 15,
-      "absorbed": 1,
-      "weight_share_24h": 0.0,
-      "self_conflicts": 0,
-      "cross_conflicts": 0,
-      "cross_checked": 0,
+      "cross_checked": 1,
       "kinds": {},
       "self_conflict_rate": null,
       "cross_conflict_rate": null
     },
     "BBC Business": {
-      "stories": 6,
+      "stories": 7,
       "directional": 1,
       "kept": 3,
-      "absorbed": 3,
-      "weight_share_24h": 1.0,
+      "absorbed": 4,
+      "weight_share_24h": 0.106,
+      "self_conflicts": 0,
+      "cross_conflicts": 0,
+      "cross_checked": 1,
+      "kinds": {},
+      "self_conflict_rate": null,
+      "cross_conflict_rate": null
+    },
+    "ONS": {
+      "stories": 1,
+      "directional": 0,
+      "kept": 1,
+      "absorbed": 0,
+      "weight_share_24h": 0.0,
       "self_conflicts": 0,
       "cross_conflicts": 0,
       "cross_checked": 0,
@@ -75,9 +88,9 @@
       "cross_conflict_rate": null
     },
     "Sky News Business": {
-      "stories": 3,
+      "stories": 1,
       "directional": 0,
-      "kept": 3,
+      "kept": 1,
       "absorbed": 0,
       "weight_share_24h": 0.0,
       "self_conflicts": 0,
@@ -88,32 +101,6 @@
       "cross_conflict_rate": null
     },
     "Federal Reserve": {
-      "stories": 2,
-      "directional": 0,
-      "kept": 2,
-      "absorbed": 0,
-      "weight_share_24h": 0.0,
-      "self_conflicts": 0,
-      "cross_conflicts": 0,
-      "cross_checked": 0,
-      "kinds": {},
-      "self_conflict_rate": null,
-      "cross_conflict_rate": null
-    },
-    "ONS": {
-      "stories": 2,
-      "directional": 0,
-      "kept": 2,
-      "absorbed": 0,
-      "weight_share_24h": 0.0,
-      "self_conflicts": 0,
-      "cross_conflicts": 0,
-      "cross_checked": 0,
-      "kinds": {},
-      "self_conflict_rate": null,
-      "cross_conflict_rate": null
-    },
-    "HM Treasury": {
       "stories": 1,
       "directional": 0,
       "kept": 1,
@@ -128,8 +115,8 @@
     }
   },
   "flags": {
-    "BBC Business": [
-      "supplies 100% of the 24h directional signal"
+    "BBC Top Stories": [
+      "supplies 49% of the 24h directional signal"
     ]
   }
 }
