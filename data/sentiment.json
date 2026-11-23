@@ -1,6 +1,6 @@
 {
   "pair": "GBP/USD",
-  "generated_ts": 1795386497,
+  "generated_ts": 1795405457,
   "scale": "-1 = strongly bearish for GBP/USD, +1 = strongly bullish",
   "windows": {
     "1h": {
@@ -9,20 +9,136 @@
       "articles": 0
     },
     "6h": {
-      "score": 0.0,
-      "label": "neutral",
-      "articles": 0
+      "score": -1.0,
+      "label": "strongly bearish",
+      "articles": 1
     },
     "24h": {
-      "score": 0.0,
-      "label": "neutral",
-      "articles": 0
+      "score": -1.0,
+      "label": "strongly bearish",
+      "articles": 1
     }
   },
   "scorers_24h": {
-    "rules": 20
+    "rules": 27
   },
   "headlines": [
+    {
+      "title": "Boy, 7, pulled alive from rubble hours after Russian strike on Ukraine, rescuers say",
+      "url": "https://www.bbc.co.uk/news/articles/cqdr15l32d3go?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Top Stories",
+      "also_reported_by": [],
+      "published_ts": 1795401422.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.439274
+    },
+    {
+      "title": "US intelligence chief defends Trump\u2019s comments calling Putin his \u2018friend\u2019",
+      "url": "https://www.aljazeera.com/news/2026/11/23/us-intelligence-chief-defends-trumps-comments-calling-putin-his?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1795400593.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.342194
+    },
+    {
+      "title": "Manchester Co-op Live evacuated after suspected tear gas incident",
+      "url": "https://www.bbc.co.uk/news/articles/c9e851dn8516o?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Top Stories",
+      "also_reported_by": [],
+      "published_ts": 1795399649.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "energy",
+      "reason": "No clear strong/weak signal in headline.",
+      "in_24h": true,
+      "base_w": 0.414979
+    },
+    {
+      "title": "Poland says Russia tried to assassinate Ukrainian rapper twice",
+      "url": "https://www.aljazeera.com/news/2026/11/23/poland-says-russia-tried-to-assassinate-ukrainian-rapper-twice?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1795398803.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.323091
+    },
+    {
+      "title": "Energy bills will soar - here's how you can ease the pain",
+      "url": "https://www.bbc.co.uk/news/articles/crm4rygl4m3o?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Business",
+      "also_reported_by": [
+        "BBC Top Stories"
+      ],
+      "published_ts": 1795395907.0,
+      "direction": -1,
+      "confidence": 0.5,
+      "driver": "energy",
+      "reason": "Energy prices rising or supply tightening: negative for the pound, bearish for GBP/USD.",
+      "in_24h": true,
+      "base_w": 0.515232
+    },
+    {
+      "title": "Trump criticises Schumer amid push for new Democrat leadership in US Senate",
+      "url": "https://www.aljazeera.com/news/2026/11/22/trump-criticises-schumer-amid-push-for-new-democrat-leadership-in-us-senate?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1795389779.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.241859
+    },
+    {
+      "title": "Trump to host private dinner for largest owners of his meme coin",
+      "url": "https://www.aljazeera.com/news/2026/11/22/trump-to-host-private-dinner-for-largest-owners-of-his-meme-coin?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1795387058.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.221636
+    },
+    {
+      "title": "Democrats win largest House majority since 1992 with North Carolina seat",
+      "url": "https://www.aljazeera.com/news/2026/11/22/democrats-win-largest-house-majority-since-1992-with-north-carolina-seat?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [
+        "BBC Top Stories"
+      ],
+      "published_ts": 1795385987.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.214148
+    },
     {
       "title": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
       "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
@@ -35,21 +151,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.396739
-    },
-    {
-      "title": "Democrats win largest House majority since 1992 after flipping North Carolina seat",
-      "url": "https://www.bbc.co.uk/news/articles/c6vg29g7dlyno?at_medium=RSS&at_campaign=rss",
-      "title_withheld": false,
-      "source": "BBC Top Stories",
-      "also_reported_by": [],
-      "published_ts": 1795379184.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "inflation",
-      "reason": "No clear strong/weak signal in headline.",
-      "in_24h": true,
-      "base_w": 0.395404
+      "base_w": 0.215912
     },
     {
       "title": "On China, is Trump bucking the US national security establishment?",
@@ -63,7 +165,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.283772
+      "base_w": 0.154434
     },
     {
       "title": "Employees at Eric Trump-backed robot startup lose health benefits as company's cash crunch deepens",
@@ -77,7 +179,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.397983
+      "base_w": 0.216589
     },
     {
       "title": "'Danger seems greater all the time': Ukrainians search for missing after Russian strikes",
@@ -91,7 +193,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.29697
+      "base_w": 0.161616
     },
     {
       "title": "Russia-bound ship towed away after it was attacked in Gulf of Finland",
@@ -105,7 +207,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.275337
+      "base_w": 0.149843
     },
     {
       "title": "Russian vessel hit by suspected Ukrainian drone at Libya\u2019s Benghazi port",
@@ -119,7 +221,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.217893
+      "base_w": 0.118581
     },
     {
       "title": "\u2018Disappointing\u2019: Delegates react after COP31 climate talks end without deal",
@@ -133,7 +235,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.201988
+      "base_w": 0.109925
     },
     {
       "title": "Canada\u2019s PM appears next to Trump impersonator at press dinner",
@@ -147,7 +249,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.191879
+      "base_w": 0.104424
     },
     {
       "title": "Boss of British Gas owner Centrica 'hugely concerned' over impact of soaring energy bills",
@@ -161,7 +263,7 @@
       "driver": "energy",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.184445
+      "base_w": 0.100378
     },
     {
       "title": "Centrica boss 'hugely concerned' over impact of soaring energy bills",
@@ -175,7 +277,7 @@
       "driver": "energy",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.258223
+      "base_w": 0.140529
     },
     {
       "title": "\u2018I don\u2019t blame any woman for being sucked in\u2019: how the wellness industry is cynically exploiting menopause",
@@ -189,7 +291,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.20899
+      "base_w": 0.113736
     },
     {
       "title": "What\u2019s behind Iran\u2019s escalation of attacks in the Gulf?",
@@ -203,7 +305,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.116295
+      "base_w": 0.06329
     },
     {
       "title": "Russia-bound ship still on fire after attack in Gulf of Finland",
@@ -217,7 +319,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.139483
+      "base_w": 0.075909
     },
     {
       "title": "The looming UK winter may spawn a double headache for Andy Burnham | Richard Partington",
@@ -231,7 +333,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.19495
+      "base_w": 0.106095
     },
     {
       "title": "Howard Lutnick has been Trump\u2019s ally for decades. His ties to Nvidia may spell his downfall",
@@ -245,7 +347,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.186171
+      "base_w": 0.101317
     },
     {
       "title": "Russian cargo ship still on fire off Finland after drone attack",
@@ -259,7 +361,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.102246
+      "base_w": 0.055644
     },
     {
       "title": "\u2018Trump\u2019s exit strategy may depend on quietly lifting Iran blockade\u2019",
@@ -273,7 +375,7 @@
       "driver": "rates",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.08542
+      "base_w": 0.046487
     },
     {
       "title": "Revealed: profiles of UK experts on gambling harm being hijacked to push illegal online casinos",
@@ -287,7 +389,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.131621
+      "base_w": 0.071631
     },
     {
       "title": "Dashcam captures Russian missile strike on Lviv, Ukraine",
@@ -301,10 +403,10 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.075087
+      "base_w": 0.040864
     }
   ],
-  "neutral_stories_24h": 20,
+  "neutral_stories_24h": 26,
   "headlines_note": "Same-story duplicates are merged and counted once. Each headline is shown with its source, link and our own reason; headline text belongs to its publisher.",
   "feeds": {
     "ok": 11,
