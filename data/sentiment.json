@@ -1,6 +1,6 @@
 {
   "pair": "GBP/USD",
-  "generated_ts": 1795490410,
+  "generated_ts": 1795535651,
   "scale": "-1 = strongly bearish for GBP/USD, +1 = strongly bullish",
   "windows": {
     "1h": {
@@ -11,18 +11,316 @@
     "6h": {
       "score": 0.0,
       "label": "neutral",
-      "articles": 0
+      "articles": 1
     },
     "24h": {
-      "score": -0.377,
-      "label": "mildly bearish",
-      "articles": 6
+      "score": -0.837,
+      "label": "strongly bearish",
+      "articles": 4
     }
   },
   "scorers_24h": {
     "rules": 45
   },
   "headlines": [
+    {
+      "title": "Trump made up to $15m on Nvidia stock after Huang\u2019s return",
+      "url": "https://www.theguardian.com/technology/2026/nov/24/donald-trump-nvidia-stock-jensen-huang-stock-market",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795533800.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.659625
+    },
+    {
+      "title": "Russia tows it cargo ship back home after Ukrainian drone attack",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/24/russia-tows-it-cargo-ship-back-home-after-ukrainian-drone-attack?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1795532178.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.357811
+    },
+    {
+      "title": "Could Russia-Ukraine war threaten Libya\u2019s fragile reunification process?",
+      "url": "https://www.aljazeera.com/news-analysis/2026/11/24/could-russia-ukraine-war-threaten-libyas-fragile-reunification-process?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1795529793.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.331448
+    },
+    {
+      "title": "The Nvidia case is just the latest episode of Trump disregarding intelligence",
+      "url": "https://www.theguardian.com/technology/2026/nov/24/nvidia-trump-huang-intelligence",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795528848.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.562708
+    },
+    {
+      "title": "Russia accuses NATO member Estonia of hostile actions \u2018on the verge of unleashing open war\u2019",
+      "url": "https://www.cnbc.com/2026/11/24/russia-estonia-ukraine-war-nato-finland.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
+      "published_ts": 1795527775.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.465996
+    },
+    {
+      "title": "NHS caterer Compass confirms plan to ditch main London listing for New York",
+      "url": "https://www.theguardian.com/business/2026/nov/24/nhs-caterer-compass-london-listing-new-york-us-ftse-100",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795527022.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.530683
+    },
+    {
+      "title": "Russia-Ukraine war live: Kyiv says attacks on ships off Libya self-defence",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/russia-ukraine-war-live-kyiv-says-attack-on-ships-off-libya-self-delfence?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1795527000.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.303033
+    },
+    {
+      "title": "UK sanctions Yemen\u2019s Houthi group and four of its top officials",
+      "url": "https://www.aljazeera.com/news/2026/11/24/uk-sanctions-yemens-houthi-group-four-senior-officials?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1795524955.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.283785
+    },
+    {
+      "title": "\u2018We\u2019ll keep sinking Russian ships\u2019: Ukraine challenges Putin\u2019s global reach",
+      "url": "https://www.aljazeera.com/news/2026/11/24/can-ukraine-disrupt-russias-operations-in-africa?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1795524443.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.279161
+    },
+    {
+      "title": "Trump\u2019s Nvidia intervention: What\u2019s at stake?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/24/trumps-nvidia-intervention-whats-at-stake?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1795524296.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.277847
+    },
+    {
+      "title": "The \u2018eighth front\u2019: Why Israel\u2019s influence war in the US is failing",
+      "url": "https://www.aljazeera.com/news/2026/11/24/the-eighth-front-why-israels-influence-war-in-the-us-is-failing?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1795519807.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.240572
+    },
+    {
+      "title": "Why are Russian warships off Libya, and will Ukraine\u2019s attack change that?",
+      "url": "https://www.aljazeera.com/news/2026/11/24/why-are-russian-warships-off-libya-and-will-ukraines-attack-change-that?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1795519655.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.239401
+    },
+    {
+      "title": "Why France is at risk of recession \u2014 and what could keep it out of one",
+      "url": "https://www.cnbc.com/2026/11/24/france-recession-risk-pmi.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [
+        "CNBC Economy"
+      ],
+      "published_ts": 1795518930.0,
+      "direction": 0,
+      "confidence": 0.1,
+      "driver": "growth",
+      "reason": "Could not tell whether this is UK or US news.",
+      "in_24h": true,
+      "base_w": 0.350843
+    },
+    {
+      "title": "EU to impose cap on Chinese hybrid EV imports next month",
+      "url": "https://www.theguardian.com/business/2026/nov/24/eu-cap-chinese-hybrid-ev-imports-tariff-uk",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795517980.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.397027
+    },
+    {
+      "title": "Trump faces backlash after saying he 'convinced' Nvidia to reinstate CEO Jensen Huang",
+      "url": "https://www.bbc.co.uk/news/articles/cq5y1k8ez407o?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Business",
+      "also_reported_by": [],
+      "published_ts": 1795517617.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.392429
+    },
+    {
+      "title": "Trump, Nvidia and power: could we be nearing the end of tech\u2019s Gilded Age?",
+      "url": "https://www.theguardian.com/technology/2026/nov/24/trump-nvidia-gilded-age",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795507211.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.28102
+    },
+    {
+      "title": "'I'm going to be a better CEO': Jensen Huang rejoins Nvidia after Trump intervention \u2013 video",
+      "url": "https://www.theguardian.com/technology/video/2026/nov/24/jensen-huang-rejoins-nvidia-after-trump-intervention-video",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795506885.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.278096
+    },
+    {
+      "title": "What Jensen Huang's return teaches China's Xi about Trump",
+      "url": "https://www.bbc.co.uk/news/articles/c63rgpy50x98o?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Top Stories",
+      "also_reported_by": [],
+      "published_ts": 1795505187.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.188106
+    },
+    {
+      "title": "Council tax and stamp duty: both are a disaster zone. Scrap them and start from scratch | Polly Toynbee",
+      "url": "https://www.theguardian.com/commentisfree/2026/nov/24/council-tax-stamp-duty-labour-property",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795503610.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.250352
+    },
+    {
+      "title": "Iran says three tankers hit mines in Hormuz despite U.S. escort, as Treasury widens sanctions",
+      "url": "https://www.cnbc.com/2026/11/24/iran-trump-hormuz-crude-.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [
+        "Al Jazeera"
+      ],
+      "published_ts": 1795496708.0,
+      "direction": -1,
+      "confidence": 0.7,
+      "driver": "energy",
+      "reason": "Iran-linked oil disruption (owner: especially negative for the pound): negative for the pound, bearish for GBP/USD.",
+      "in_24h": true,
+      "base_w": 0.171955
+    },
+    {
+      "title": "Channel 4 hit as Unilever switches from TV to influencer marketing",
+      "url": "https://www.theguardian.com/media/2026/nov/24/channel-4-unilever-tv-influencer-marketing",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795496407.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.198686
+    },
     {
       "title": "Six key questions raised by Jensen Huang's return to Nvidia",
       "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-politics-market.html",
@@ -35,7 +333,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.583649
+      "base_w": 0.13666
     },
     {
       "title": "How Nvidia is reacting to Jensen Huang's return as CEO",
@@ -49,7 +347,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.398011
+      "base_w": 0.093194
     },
     {
       "title": "Appeals court renews Trump bid for federal jurisdiction in hush-money case",
@@ -63,7 +361,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.316037
+      "base_w": 0.073999
     },
     {
       "title": "Nvidia reinstates CEO Jensen Huang after affair with alleged spy as Trump says 'I made the deal'",
@@ -77,7 +375,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.546817
+      "base_w": 0.128036
     },
     {
       "title": "What could Democrats do with their expanding congressional majority?",
@@ -91,7 +389,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.293494
+      "base_w": 0.068721
     },
     {
       "title": "Trump calls to \u2018expedite\u2019 US federal executions, blasts Gavin Newsom",
@@ -105,7 +403,7 @@
       "driver": "rates",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.274306
+      "base_w": 0.064228
     },
     {
       "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
@@ -119,7 +417,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.272071
+      "base_w": 0.063705
     },
     {
       "title": "Trump sealed deal for Nvidia to rehire Jensen Huang as CEO",
@@ -133,7 +431,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.394419
+      "base_w": 0.092353
     },
     {
       "title": "EU plans sports ban in sweeping new Russia sanctions proposal",
@@ -147,7 +445,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.254961
+      "base_w": 0.059699
     },
     {
       "title": "What Nvidia\u2019s Jensen Huang\u2019s return means for Washington and Wall Street?",
@@ -161,7 +459,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.245227
+      "base_w": 0.05742
     },
     {
       "title": "DNI Jay Clayton tapped as acting national cyber director",
@@ -175,7 +473,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.365195
+      "base_w": 0.08551
     },
     {
       "title": "Trump postpones US Army plan to detonate toxic explosives in Iowa",
@@ -189,7 +487,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.239965
+      "base_w": 0.056187
     },
     {
       "title": "Jensen Huang reinstated as Nvidia CEO after Trump intervenes",
@@ -203,7 +501,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.395518
+      "base_w": 0.09261
     },
     {
       "title": "A comeback for the ages: Trump's influence on Huang's return to Nvidia",
@@ -217,7 +515,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.363974
+      "base_w": 0.085224
     },
     {
       "title": "US escalates sanctions on Iran, targets \u2018shadow banking\u2019 networks",
@@ -231,7 +529,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.204084
+      "base_w": 0.047786
     },
     {
       "title": "Fed's John Williams indicates higher interest rates likely 'over time' to address inflation",
@@ -245,7 +543,7 @@
       "driver": "inflation",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.289846
+      "base_w": 0.067867
     },
     {
       "title": "Peterson: Here\u2019s what Bessent\u2019s about-face on Jensen Huang reveals about Trump and China",
@@ -261,7 +559,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.289121
+      "base_w": 0.067697
     },
     {
       "title": "What strike on Russian ship in Libya says about spread of Ukraine war",
@@ -275,7 +573,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.23525
+      "base_w": 0.055083
     },
     {
       "title": "Iran hits US bases and civilian sites in the Gulf after a lull",
@@ -289,7 +587,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.180424
+      "base_w": 0.042246
     },
     {
       "title": "Congress shreds Nvidia's 'outrageous' decision to bring back Huang: 'Failure of character'",
@@ -303,7 +601,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.268637
+      "base_w": 0.062901
     },
     {
       "title": "Trump administration proposes rule that could curb ESG investing in 401(k)s",
@@ -317,7 +615,7 @@
       "driver": "growth",
       "reason": "New investment in the US: positive for that currency.",
       "in_24h": true,
-      "base_w": 0.250478
+      "base_w": 0.058649
     },
     {
       "title": "'Biggest U-turn in economic history': Experts react to Jensen Huang's return to Nvidia",
@@ -331,7 +629,7 @@
       "driver": "politics",
       "reason": "UK policy reversal (owner ruling): uncertainty for the pound, bearish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.25861
+      "base_w": 0.060553
     },
     {
       "title": "What collapse of COP31 talks reveals about an increasingly divided world",
@@ -345,7 +643,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.158784
+      "base_w": 0.037179
     },
     {
       "title": "Comedian impersonates Trump's dance moves, mocks trade talks at Canada press dinner",
@@ -359,308 +657,10 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.155881
-    },
-    {
-      "title": "Trump tells CNBC 'I convinced\u2019 Nvidia board to reinstate Jensen Huang",
-      "url": "https://www.cnbc.com/2026/11/23/trump-nvidia-jensen-huang.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1795448881.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.158263
-    },
-    {
-      "title": "Nvidia shares surge 33% on Jensen Huang\u2018s return, adding $1tn to company\u2019s value \u2013 business live",
-      "url": "https://www.theguardian.com/business/live/2026/nov/23/tech-sell-off-ai-stock-market-support-measures-deployed-south-korea-taiwan-china-ftse-nasdaq-latest-news-updates",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1795448541.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.182636
-    },
-    {
-      "title": "Russian warship hit by Ukrainian drones in Libya, Zelensky says",
-      "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
-      "title_withheld": false,
-      "source": "BBC Top Stories",
-      "also_reported_by": [
-        "Al Jazeera"
-      ],
-      "published_ts": 1795448483.0,
-      "direction": 1,
-      "confidence": 0.6,
-      "driver": "war",
-      "reason": "Ukrainian assault on Russia: positive for the pound, bullish for GBP/USD.",
-      "in_24h": true,
-      "base_w": 0.130212
-    },
-    {
-      "title": "Stuck: How a frozen housing market is hitting buyers, sellers and the economy",
-      "url": "https://www.cnbc.com/2026/11/23/housing-market-real-estate-economy.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1795447323.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "growth",
-      "reason": "No clear strong/weak signal in headline.",
-      "in_24h": true,
-      "base_w": 0.150545
-    },
-    {
-      "title": "How important are Nvidia and Jensen Huang to the US economy?",
-      "url": "https://www.bbc.co.uk/news/articles/c68798vdprwpo?at_medium=RSS&at_campaign=rss",
-      "title_withheld": false,
-      "source": "BBC Business",
-      "also_reported_by": [],
-      "published_ts": 1795446948.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "growth",
-      "reason": "No clear strong/weak signal in headline.",
-      "in_24h": true,
-      "base_w": 0.173535
-    },
-    {
-      "title": "Wild stock market swings: will I lose money, and is there anything I can do?",
-      "url": "https://www.theguardian.com/business/2026/nov/23/falling-markets-will-i-lose-money-shares-tech-ai-investments",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1795445505.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.165682
-    },
-    {
-      "title": "Next issues cyber-attack warning after \u2018benign\u2019 data accessed by hackers",
-      "url": "https://www.theguardian.com/business/2026/nov/23/next-issues-cyber-attack-warning-after-benign-data-accessed-by-hackers",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1795445431.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.165289
-    },
-    {
-      "title": "How Ukraine drone attacks on Russian ships unfolded",
-      "url": "https://www.bbc.co.uk/news/videos/c3y0xjqxy871o?at_medium=RSS&at_campaign=rss",
-      "title_withheld": false,
-      "source": "BBC Top Stories",
-      "also_reported_by": [],
-      "published_ts": 1795443396.0,
-      "direction": 1,
-      "confidence": 0.6,
-      "driver": "war",
-      "reason": "Ukrainian assault on Russia: positive for the pound, bullish for GBP/USD.",
-      "in_24h": true,
-      "base_w": 0.1106
-    },
-    {
-      "title": "Trump hosts crypto gala as his meme coin falls below $1",
-      "url": "https://www.cnbc.com/2026/11/23/trump-meme-coin-gala.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1795443342.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.13249
-    },
-    {
-      "title": "'They were all asleep': Ukrainians describe deadly overnight Russian apartment strike",
-      "url": "https://www.bbc.co.uk/news/articles/c3j4r2elrvj8o?at_medium=RSS&at_campaign=rss",
-      "title_withheld": false,
-      "source": "BBC Top Stories",
-      "also_reported_by": [],
-      "published_ts": 1795443079.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.109481
-    },
-    {
-      "title": "\u2018It\u2019s an embarrassment\u2019: how LA\u2019s desperately needed airport tram went off the rails",
-      "url": "https://www.theguardian.com/us-news/2026/nov/23/lax-skylink-people-mover-los-angeles",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1795442449.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "rates",
-      "reason": "No clear strong/weak signal in headline.",
-      "in_24h": true,
-      "base_w": 0.150205
-    },
-    {
-      "title": "Flights cancelled in Belgium due to cost-of-living strike",
-      "url": "https://www.bbc.co.uk/news/articles/cwdr155e2d05o?at_medium=RSS&at_campaign=rss",
-      "title_withheld": false,
-      "source": "BBC Top Stories",
-      "also_reported_by": [
-        "BBC Business"
-      ],
-      "published_ts": 1795440842.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.101897
-    },
-    {
-      "title": "Here are Monday's biggest analyst calls: Anthropic, SpaceX, Apple, Nvidia, Dollar General, Evercore ISI & more",
-      "url": "https://www.cnbc.com/2026/11/23/big-monday-wall-street-calls-like-anthropic.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1795439985.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.11896
-    },
-    {
-      "title": "More Americans pay this Obama-era investment tax every year \u2014 how to avoid it",
-      "url": "https://www.cnbc.com/2026/11/23/net-investment-income-tax-niit.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1795439701.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.11788
-    },
-    {
-      "title": "How the US, China and Russia are competing for Africa\u2019s mineral wealth",
-      "url": "https://www.aljazeera.com/news/2026/11/23/how-the-us-china-and-russia-are-competing-for-africas-mineral-wealth?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1795437294.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.072745
-    },
-    {
-      "title": "Infantino\u2019s $20bn World Cup sell-off plan was to run for up to 96 years, documents show",
-      "url": "https://www.theguardian.com/football/2026/nov/23/gianni-infantino-world-cup-sell-off-plan-96-years-documents-payouts",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1795433682.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.113371
-    },
-    {
-      "title": "NHS caterer Compass \u2018plans stock market switch\u2019 in blow to London",
-      "url": "https://www.theguardian.com/business/2026/nov/23/nhs-caterer-compass-plans-stock-market-switch-in-blow-to-london",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1795431100.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.104357
-    },
-    {
-      "title": "At least 15 killed in Ukraine\u2019s Kyiv region as Russia intensifies attacks",
-      "url": "https://www.aljazeera.com/news/2026/11/23/death-toll-rises-after-deadly-russian-attacks-on-ukraine?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1795426465.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.051391
-    },
-    {
-      "title": "New\u202finsights\u202fon labour market dynamics from\u202fUK Linked\u202fEmployer-Employee\u202fData\u202f(LEED)",
-      "url": "https://www.ons.gov.uk/releases/insightsonuklabourmarketdynamismfromlinkedemployeremployeedata2014to2026",
-      "title_withheld": false,
-      "source": "ONS",
-      "also_reported_by": [],
-      "published_ts": 1795426200.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.127389
-    },
-    {
-      "title": "Gas prices in Europe surge as forecast cold snap feeds supply shortage fears",
-      "url": "https://www.theguardian.com/business/2026/nov/23/gas-prices-in-europe-surge-as-forecast-cold-snap-feeds-supply-shortage-fears",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1795423513.0,
-      "direction": -1,
-      "confidence": 0.5,
-      "driver": "energy",
-      "reason": "Energy prices rising or supply tightening: negative for the pound, bearish for GBP/USD.",
-      "in_24h": true,
-      "base_w": 0.081806
-    },
-    {
-      "title": "Yemen's Houthis claim attacks on Saudi oil refinery as Trump warns of new strikes next year",
-      "url": "https://www.cnbc.com/2026/11/23/trump-iran-war-hormuz-saudi-.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1795405937.0,
-      "direction": -1,
-      "confidence": 0.6,
-      "driver": "energy",
-      "reason": "Middle East oil disruption (owner: generally negative for the pound): negative for the pound, bearish for GBP/USD.",
-      "in_24h": true,
-      "base_w": 0.039892
+      "base_w": 0.036499
     }
   ],
-  "neutral_stories_24h": 39,
+  "neutral_stories_24h": 42,
   "headlines_note": "Same-story duplicates are merged and counted once. Each headline is shown with its source, link and our own reason; headline text belongs to its publisher.",
   "feeds": {
     "ok": 11,
