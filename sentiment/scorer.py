@@ -481,7 +481,10 @@ _UK_ENERGY_RISE = (r"\b" + _UK_ENERGY_NOUN + r"\b.{0,30}\b(rise|rises|rising|ros
                    r"increase\w*|hike\w*|go(es)? up|higher|record high|highest|to rise|set to rise|skyrocket\w*)\b"
                    r"|\b(soaring|surging|rising|spiralling|spiraling|sky-?high|higher|record|increased|hiked)\b.{0,12}\b" + _UK_ENERGY_NOUN + r"\b"
                    r"|\b(rise|rises|hike|hikes|increase|increases|jump|surge)\b in\b.{0,15}\b" + _UK_ENERGY_NOUN + r"\b"
-                   r"|\bprice cap\b.{0,30}\b(rise|rises|rising|rose|up|increase\w*|higher|hike\w*)\b")
+                   r"|\bprice cap\b.{0,30}\b(rise|rises|rising|rose|up|increase\w*|higher|hike\w*)\b"
+                   # "Ofgem raises Britain's energy price cap 26% from January" (25 Nov 2026): the verb comes first
+                   r"|\b(raises?|raised|lifts?|lifted|hikes?|hiked|increases?|increased|pushes up|pushed up)\b.{0,30}"
+                   r"\b(price cap|energy bills?|gas prices?|electricity prices?|energy prices?)\b")
 
 
 _UK_ENERGY_BIG_RISE_PCT = 4.0   # "more than a few percent"
