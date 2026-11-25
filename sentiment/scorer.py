@@ -484,6 +484,11 @@ _UK_ENERGY_RISE = (r"\b" + _UK_ENERGY_NOUN + r"\b.{0,30}\b(rise|rises|rising|ros
                    r"|\bprice cap\b.{0,30}\b(rise|rises|rising|rose|up|increase\w*|higher|hike\w*)\b")
 
 
+_UK_ENERGY_BIG_RISE_PCT = 4.0   # "more than a few percent"
+_UK_ENERGY_BIG_WORDS = (r"\b(soar\w*|surg\w*|skyrocket\w*|spiral\w*|sky-?high|record|highest|doubl\w*|tripl\w*|spike\w*|"
+                        r"jump\w*|shock|crisis|hugely)\b")
+
+
 def _uk_energy_price_rise(text):
     # A named central bank: the rate logic decides, as for the general energy rule (test_energy_rule_skips_central_bank_headlines).
     if not re.search(_UK_ENERGY_RISE, text) or re.search(CENTRAL_BANK, text):
@@ -491,8 +496,20 @@ def _uk_energy_price_rise(text):
     uk = bool(re.search(UK_MARKERS, text) or re.search(_UK_ENERGY_TERMS, text))
     if not uk or (re.search(US_MARKERS, text) and not re.search(UK_MARKERS, text)):
         return None
-    return dict(direction=-1, confidence=0.8, driver="energy",
-                reason="UK gas or energy prices rising (owner ruling): quite strongly negative for the pound, bearish for GBP/USD.")
+    # Size (owner, 2026-11-25: "if it's more than a few percentage increase, strongly bearish"). A stated rise above
+    # _UK_ENERGY_BIG_RISE_PCT, or soaring/record wording with no figure, is strong; a stated small rise is mild; a plain
+    # "rise" with no figure sits between the two.
+    pcts = [float(p) for p in re.findall(r"(\d+(?:\.\d+)?)\s?(?:%|per ?cent|percent)", text)]
+    if pcts:
+        big = max(pcts) > _UK_ENERGY_BIG_RISE_PCT
+        conf, size = (0.8, f"a {max(pcts):g}% rise, more than a few percent") if big else (0.4, f"a small {max(pcts):g}% rise")
+    elif re.search(_UK_ENERGY_BIG_WORDS, text):
+        conf, size = 0.8, "a big rise"
+    else:
+        conf, size = 0.55, "a rise of unstated size"
+    return dict(direction=-1, confidence=conf, driver="energy",
+                reason=f"UK gas or energy prices rising, {size} (owner ruling): negative for the pound, "
+                       f"{'strongly ' if conf >= 0.8 else ''}bearish for GBP/USD.")
 
 
 # UK support for Ukraine (owner flag 2026-10-28: "UK boosts support to Ukraine with GBP10 billion package" = +1).
