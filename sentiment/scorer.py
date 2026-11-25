@@ -331,7 +331,14 @@ POLITICAL_UNCERTAINTY = (r"\b(elections?|snap election|general election|midterms
                          r"sued|sues|lawsuits?|legal challenges?|struck down|strikes down)\b")
 
 
+# A past event named only as a point in time ("pound rises to its highest level since the Brexit referendum") is not uncertainty now:
+# that headline scored -1 as UK political uncertainty, while it reports the pound RISING (owner flag 2026-11-05 = +1). Real reversal
+# talk ("Could a major part of Brexit be reversed?") is still caught by _uk_policy_reversal.
+_SINCE_PAST_EVENT = r"\b(since|before|after) the (\w+ ){0,2}(referendum|election|vote|crisis|mini-?budget)\b"
+
+
 def _uncertainty(text):
+    text = re.sub(_SINCE_PAST_EVENT, " ", text)
     if not re.search(POLITICAL_UNCERTAINTY, text):
         return None
     uk = bool(re.search(UK_MARKERS, text))
@@ -461,6 +468,31 @@ def _uk_energy_bill_relief(text):
                     reason="UK help with energy bills (owner ruling): eases inflation pressure, positive for the pound, "
                            "bullish for GBP/USD. Overrides the energy rule.")
     return None
+
+
+# UK gas or energy prices rising (owner ruling 2026-11-25: "if there's any news about gas prices or energy pricing increasing in the UK
+# it's quite strongly negative for the pound"; flag "Boss of British Gas owner Centrica 'hugely concerned' over impact of soaring energy
+# bills" = -1). Strong (0.8) and an override, so another rule cannot cancel it. A UK context is a UK marker or a UK-only energy term
+# (energy bills, price cap, Ofgem, British Gas and the other UK suppliers); a US-only headline ("gas prices" there means petrol) is skipped.
+# Bill cuts or support are the opposite case and stay with _uk_energy_bill_relief, which is checked first.
+_UK_ENERGY_TERMS = r"\b(energy bills?|price cap|ofgem|british gas|centrica|octopus energy|ovo|e\.on|edf|sse|scottishpower|uk households?)\b"
+_UK_ENERGY_NOUN = r"(gas|energy|electricity|power|heating|household energy|wholesale gas)( prices?| bills?| costs?| price cap| tariffs?)"
+_UK_ENERGY_RISE = (r"\b" + _UK_ENERGY_NOUN + r"\b.{0,30}\b(rise|rises|rising|rose|soar\w*|surge\w*|jump\w*|climb\w*|spike\w*|"
+                   r"increase\w*|hike\w*|go(es)? up|higher|record high|highest|to rise|set to rise|skyrocket\w*)\b"
+                   r"|\b(soaring|surging|rising|spiralling|spiraling|sky-?high|higher|record|increased|hiked)\b.{0,12}\b" + _UK_ENERGY_NOUN + r"\b"
+                   r"|\b(rise|rises|hike|hikes|increase|increases|jump|surge)\b in\b.{0,15}\b" + _UK_ENERGY_NOUN + r"\b"
+                   r"|\bprice cap\b.{0,30}\b(rise|rises|rising|rose|up|increase\w*|higher|hike\w*)\b")
+
+
+def _uk_energy_price_rise(text):
+    # A named central bank: the rate logic decides, as for the general energy rule (test_energy_rule_skips_central_bank_headlines).
+    if not re.search(_UK_ENERGY_RISE, text) or re.search(CENTRAL_BANK, text):
+        return None
+    uk = bool(re.search(UK_MARKERS, text) or re.search(_UK_ENERGY_TERMS, text))
+    if not uk or (re.search(US_MARKERS, text) and not re.search(UK_MARKERS, text)):
+        return None
+    return dict(direction=-1, confidence=0.8, driver="energy",
+                reason="UK gas or energy prices rising (owner ruling): quite strongly negative for the pound, bearish for GBP/USD.")
 
 
 # UK support for Ukraine (owner flag 2026-10-28: "UK boosts support to Ukraine with GBP10 billion package" = +1).
@@ -640,7 +672,7 @@ def _special(text, hinted=False):
     if held:
         return held
     # Company results and household bill help are not the oil price level: they win over the energy rule.
-    for override in (_uk_energy_bill_relief, _uk_energy_profits, _house_prices_neutral, _energy_supply_easing):
+    for override in (_uk_energy_bill_relief, _uk_energy_profits, _house_prices_neutral, _energy_supply_easing, _uk_energy_price_rise):
         hit = override(text)
         if hit:
             return hit
