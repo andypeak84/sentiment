@@ -1,6 +1,6 @@
 {
   "pair": "GBP/USD",
-  "generated_ts": 1795792036,
+  "generated_ts": 1795825968,
   "scale": "-1 = strongly bearish for GBP/USD, +1 = strongly bullish",
   "windows": {
     "1h": {
@@ -9,20 +9,174 @@
       "articles": 0
     },
     "6h": {
+      "score": 0.0,
+      "label": "neutral",
+      "articles": 0
+    },
+    "24h": {
       "score": 1.0,
       "label": "strongly bullish",
       "articles": 1
-    },
-    "24h": {
-      "score": 0.835,
-      "label": "strongly bullish",
-      "articles": 4
     }
   },
   "scorers_24h": {
-    "rules": 30
+    "rules": 28
   },
   "headlines": [
+    {
+      "title": "Inflation has shoppers hunting for value. That bodes well for Black Friday",
+      "url": "https://www.cnbc.com/2026/11/27/black-friday-2026-inflation-value-deals.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
+      "published_ts": 1795816857.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "inflation",
+      "reason": "No clear strong/weak signal in headline.",
+      "in_24h": true,
+      "base_w": 0.447881
+    },
+    {
+      "title": "Why are families going hungry in northern Yemen even where food is on sale?",
+      "url": "https://www.aljazeera.com/economy/2026/11/27/why-are-families-going-hungry-in-northern-yemen-even-where-food-is-on-sale?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1795813887.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.271444
+    },
+    {
+      "title": "Weary of war but with no sign of backing down, Kyiv faces another punishing winter",
+      "url": "https://www.bbc.co.uk/news/articles/c3pw4yrr8kz9o?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Top Stories",
+      "also_reported_by": [],
+      "published_ts": 1795804970.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.254869
+    },
+    {
+      "title": "SpaceX shares jump over 4% amid tech rally and after Musk says he will expand on Trump Account share donations",
+      "url": "https://www.cnbc.com/2026/11/27/spacex-shares-musk-donations.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
+      "published_ts": 1795803846.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.295008
+    },
+    {
+      "title": "Kyiv offers Black Sea ceasefire to protect grain exports",
+      "url": "https://www.aljazeera.com/news/2026/11/27/kyiv-offers-black-sea-ceasefire-as-putin-expands-russias-navy?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1795801473.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.182251
+    },
+    {
+      "title": "Labour row over Rosebank deepens as dozens of MPs warn PM not to block oilfield",
+      "url": "https://www.theguardian.com/politics/2026/nov/27/rosebank-supporting-mps-warn-pm-blocking-the-oilfield-would-mean-lights-out-for-labour-in-scotland",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795801150.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.315651
+    },
+    {
+      "title": "\u2018Bear trap\u2019: Ukraine hails new operation as Russian casualties mount",
+      "url": "https://www.aljazeera.com/news/2026/11/27/ukraine-rejects-unfavourable-compromises-as-it-frees-more-territory?traffic_source=rss",
+      "title_withheld": false,
+      "source": "Al Jazeera",
+      "also_reported_by": [],
+      "published_ts": 1795799626.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.171763
+    },
+    {
+      "title": "Will new energy fixes cost more in January?",
+      "url": "https://www.bbc.co.uk/news/videos/cwjd7y4jk581o?at_medium=RSS&at_campaign=rss",
+      "title_withheld": false,
+      "source": "BBC Business",
+      "also_reported_by": [],
+      "published_ts": 1795795532.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "energy",
+      "reason": "No clear strong/weak signal in headline.",
+      "in_24h": true,
+      "base_w": 0.26358
+    },
+    {
+      "title": "British Gas owner seeks urgent government talks over future of storage facility",
+      "url": "https://www.theguardian.com/business/2026/nov/27/british-gas-owner-seeks-urgent-government-talks-gas-storage-faciity-future",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795794991.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "politics",
+      "reason": "No clear strong/weak signal in headline.",
+      "in_24h": true,
+      "base_w": 0.259043
+    },
+    {
+      "title": "Trump demands probe into 'record setting error' after third-quarter GDP data gets massive revision higher",
+      "url": "https://www.cnbc.com/2026/11/26/trump-gdp-revision-investigation.html",
+      "title_withheld": false,
+      "source": "CNBC World Markets",
+      "also_reported_by": [],
+      "published_ts": 1795794720.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "growth",
+      "reason": "No clear strong/weak signal in headline.",
+      "in_24h": true,
+      "base_w": 0.220114
+    },
+    {
+      "title": "\u2018Punched in the guts\u2019: Poundland staff left reeling as it goes into administration",
+      "url": "https://www.theguardian.com/business/2026/nov/27/poundland-staff-administration-closures-job-losses-suppliers",
+      "title_withheld": false,
+      "source": "Guardian Business",
+      "also_reported_by": [],
+      "published_ts": 1795791613.0,
+      "direction": 0,
+      "confidence": 0.0,
+      "driver": "other",
+      "reason": "No economic subject in the headline.",
+      "in_24h": true,
+      "base_w": 0.232431
+    },
     {
       "title": "Europe joins global stock market rally as AI trade rebounds - business live",
       "url": "https://www.theguardian.com/business/live/2026/nov/27/uk-bank-tax-borrowers-savers-andrew-bailey-stocks-economy-businses-news-live-updates-latest",
@@ -35,7 +189,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.662672
+      "base_w": 0.223049
     },
     {
       "title": "EU leaders fail to break $1.7 trillion budget deadlock as political pressure mounts",
@@ -49,7 +203,7 @@
       "driver": "politics",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.540374
+      "base_w": 0.181884
     },
     {
       "title": "Budget airline Norse Atlantic files for bankruptcy in Europe after failing to secure funding",
@@ -63,7 +217,7 @@
       "driver": "politics",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.525395
+      "base_w": 0.176843
     },
     {
       "title": "The S&P 500 is in a correction. Bear markets and recessions don't always follow",
@@ -77,7 +231,7 @@
       "driver": "growth",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.489849
+      "base_w": 0.164878
     },
     {
       "title": "Spain\u2019s election could pull Madrid closer to Trump\u2019s Washington",
@@ -91,7 +245,7 @@
       "driver": "politics",
       "reason": "US political uncertainty: negative for that currency, bullish for GBP/USD.",
       "in_24h": true,
-      "base_w": 0.470226
+      "base_w": 0.158274
     },
     {
       "title": "Trump embraced Xi, then slapped new tariffs on China: What\u2019s his game plan?",
@@ -105,7 +259,7 @@
       "driver": "politics",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.306344
+      "base_w": 0.103112
     },
     {
       "title": "Russia\u2019s hybrid war on Europe evolving, but failing: IISS",
@@ -119,7 +273,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.270845
+      "base_w": 0.091164
     },
     {
       "title": "Tyson Fury\u2019s wife backtracks on claim boxer suffers from schizophrenia",
@@ -133,7 +287,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.254759
+      "base_w": 0.085749
     },
     {
       "title": "Australia sanctions suspects in Iran-linked anti-Semitic attacks",
@@ -147,21 +301,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.235134
-    },
-    {
-      "title": "SpaceX shares jump 4% amid tech rally and after Musk says he will expand on Trump Account share donations",
-      "url": "https://www.cnbc.com/2026/11/27/spacex-shares-musk-donations.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1795774839.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.345521
+      "base_w": 0.079144
     },
     {
       "title": "Banks may pass on \u00a31.5bn tax rise to customers, warns Bank of England chief",
@@ -175,7 +315,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.395293
+      "base_w": 0.133052
     },
     {
       "title": "Democrats want to end Trump\u2019s Iran war. But how different are they?",
@@ -189,7 +329,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.214247
+      "base_w": 0.072113
     },
     {
       "title": "Centrica warns on jobs after government snubs Rough gas storage deal",
@@ -203,7 +343,7 @@
       "driver": "jobs",
       "reason": "No clear strong/weak signal in headline.",
       "in_24h": true,
-      "base_w": 0.353877
+      "base_w": 0.119111
     },
     {
       "title": "Zelensky criticises 'strange' Trump-Putin friendship in BBC interview",
@@ -217,7 +357,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.250251
+      "base_w": 0.084232
     },
     {
       "title": "'We're scared to turn our heating on'",
@@ -231,7 +371,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.336598
+      "base_w": 0.113295
     },
     {
       "title": "China\u2019s factories are growing profits again, but the AI boom is picking the winners",
@@ -245,7 +385,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.213185
+      "base_w": 0.071756
     },
     {
       "title": "Two Italians killed in Kuwait drone attack; Trump says Iran war ends \u2018whenever I want it\u2019",
@@ -259,7 +399,7 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.156824
+      "base_w": 0.052785
     },
     {
       "title": "Inside Ukraine\u2019s power crisis amid its war with Russia",
@@ -273,180 +413,10 @@
       "driver": "other",
       "reason": "No economic subject in the headline.",
       "in_24h": true,
-      "base_w": 0.07623
-    },
-    {
-      "title": "Sovereign wealth funds are acting more like private equity giants \u2014 and inheriting their risks",
-      "url": "https://www.cnbc.com/2026/11/27/swf-private-equity-risks.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1795738949.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.109217
-    },
-    {
-      "title": "US too focused on Middle East and not pushing Russia hard enough, Zelensky tells BBC",
-      "url": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss",
-      "title_withheld": false,
-      "source": "BBC Top Stories",
-      "also_reported_by": [],
-      "published_ts": 1795733367.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.076088
-    },
-    {
-      "title": "Trump demands probe into \u2018record setting error\u2019 after third-quarter GDP data gets massive revision higher",
-      "url": "https://www.cnbc.com/2026/11/26/trump-gdp-revision-investigation.html",
-      "title_withheld": false,
-      "source": "CNBC World Markets",
-      "also_reported_by": [],
-      "published_ts": 1795727597.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "growth",
-      "reason": "No clear strong/weak signal in headline.",
-      "in_24h": true,
-      "base_w": 0.075872
-    },
-    {
-      "title": "Faisal Islam: Why Trump's new tariffs are less of a threat",
-      "url": "https://www.bbc.co.uk/news/articles/c6r7g4e3yep1o?at_medium=RSS&at_campaign=rss",
-      "title_withheld": false,
-      "source": "BBC Top Stories",
-      "also_reported_by": [
-        "BBC Business"
-      ],
-      "published_ts": 1795722958.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "politics",
-      "reason": "No clear strong/weak signal in headline.",
-      "in_24h": true,
-      "base_w": 0.054482
-    },
-    {
-      "title": "Judge strikes down Trump\u2019s latest restrictions on US birthright citizenship",
-      "url": "https://www.aljazeera.com/news/2026/11/26/judge-strikes-down-trumps-latest-restrictions-on-us-birthright-citizenship?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1795720179.0,
-      "direction": 1,
-      "confidence": 0.45,
-      "driver": "politics",
-      "reason": "US political uncertainty: negative for that currency, bullish for GBP/USD.",
-      "in_24h": true,
-      "base_w": 0.039867
-    },
-    {
-      "title": "What will Trump\u2019s latest tariffs mean for the world?",
-      "url": "https://www.aljazeera.com/video/inside-story/2026/11/26/what-will-trumps-latest-tariffs-mean-for-the-world?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1795719195.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "politics",
-      "reason": "No clear strong/weak signal in headline.",
-      "in_24h": true,
-      "base_w": 0.038627
-    },
-    {
-      "title": "Can Elon Musk really put AI datacentres in space? - The Latest",
-      "url": "https://www.theguardian.com/news/video/2026/nov/26/can-elon-musk-really-put-ai-datacentres-in-space-the-latest",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1795718057.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.065174
-    },
-    {
-      "title": "Trump calls GDP data released before midterms \u2018fake\u2019, demands investigation",
-      "url": "https://www.aljazeera.com/economy/2026/11/26/trump-calls-gdp-data-released-before-midterms-fake-demands-investigation?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1795717647.0,
-      "direction": 1,
-      "confidence": 0.45,
-      "driver": "politics",
-      "reason": "US political uncertainty: negative for that currency, bullish for GBP/USD.",
-      "in_24h": true,
-      "base_w": 0.036755
-    },
-    {
-      "title": "EU leaders struggle to agree on long-term budget, $49bn Ukraine loan",
-      "url": "https://www.aljazeera.com/economy/2026/11/26/eu-leaders-struggle-to-agree-on-long-term-budget-more-money-for-ukraine?traffic_source=rss",
-      "title_withheld": false,
-      "source": "Al Jazeera",
-      "also_reported_by": [],
-      "published_ts": 1795715624.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "politics",
-      "reason": "No clear strong/weak signal in headline.",
-      "in_24h": true,
-      "base_w": 0.034445
-    },
-    {
-      "title": "Nearly 100 Labour MPs including ministerial aides oppose Rosebank oil field",
-      "url": "https://www.bbc.co.uk/news/articles/cw24ez32d1n4o?at_medium=RSS&at_campaign=rss",
-      "title_withheld": false,
-      "source": "BBC Top Stories",
-      "also_reported_by": [],
-      "published_ts": 1795710594.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "energy",
-      "reason": "No clear strong/weak signal in headline.",
-      "in_24h": true,
-      "base_w": 0.036638
-    },
-    {
-      "title": "Labour\u2019s split over Rosebank oilfield exposed by letter from nearly 100 MPs",
-      "url": "https://www.theguardian.com/politics/2026/nov/26/labour-split-over-rosebank-oilfield-exposed-by-letter-from-nearly-100-mps",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1795709589.0,
-      "direction": 0,
-      "confidence": 0.0,
-      "driver": "other",
-      "reason": "No economic subject in the headline.",
-      "in_24h": true,
-      "base_w": 0.049666
-    },
-    {
-      "title": "Rosebank rebellion: are resignations next? \u2013 podcast",
-      "url": "https://www.theguardian.com/politics/audio/2026/nov/26/rosebank-rebellion-are-resignations-next-podcast",
-      "title_withheld": false,
-      "source": "Guardian Business",
-      "also_reported_by": [],
-      "published_ts": 1795709261.0,
-      "direction": -1,
-      "confidence": 0.45,
-      "driver": "politics",
-      "reason": "UK political uncertainty: negative for that currency, bearish for GBP/USD.",
-      "in_24h": true,
-      "base_w": 0.049146
+      "base_w": 0.025658
     }
   ],
-  "neutral_stories_24h": 26,
+  "neutral_stories_24h": 27,
   "headlines_note": "Same-story duplicates are merged and counted once. Each headline is shown with its source, link and our own reason; headline text belongs to its publisher.",
   "feeds": {
     "ok": 11,
